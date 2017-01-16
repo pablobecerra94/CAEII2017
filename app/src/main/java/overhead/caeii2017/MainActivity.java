@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_main, fragment).commit();
         }
 
+        setTitle(item.getTitle());
 
         return true;
     }
