@@ -17,7 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener,AboutUsFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener,AboutUsFragment.OnFragmentInteractionListener,InitFragment.OnFragmentInteractionListener,ActivitiesFragment.OnFragmentInteractionListener,NewsFragment.OnFragmentInteractionListener,TuristicGuideFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentManager manager = getSupportFragmentManager();
+        manager.beginTransaction().replace(R.id.content_main,new InitFragment()).commit();
     }
 
     @Override
@@ -87,28 +90,29 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_news) {
-
+            fragment= new NewsFragment();
         } else if (id == R.id.nav_activities) {
-
+            fragment= new ActivitiesFragment();
         } else if (id == R.id.nav_about_us) {
             fragment=new AboutUsFragment();
         } else if (id == R.id.nav_tourist_guide) {
-
+            fragment=new TuristicGuideFragment();
+        } else if(id == R.id.nav_init){
+            fragment=new InitFragment();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
         }
 
-        if (fragment != null) {
-            fragmentManager
-                    .beginTransaction()
-                    .replace(R.id.content_main, fragment)
-                    .commit();
-        }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
+        if (fragment != null) {
+            fragmentManager.beginTransaction().replace(R.id.content_main, fragment).commit();
+        }
+
+
         return true;
     }
 
