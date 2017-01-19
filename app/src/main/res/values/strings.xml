@@ -15,4 +15,8 @@
     <string name="aareiiTitle">¿Que es AArEII?</string>
     <string name="delegationsTitle">Delegaciones Organizadoras</string>
     <string name="contactTitle">Contacto</string>
+    <string name="scheduleTitle">Cronograma</string>
+    <string name="conferencesTitle">Conferencias y Talleres</string>
+    <string name="technicalVisitsTitle">Visitas Tecnicas</string>
+    <string name="speakersTitle">Disertantes</string>
 </resources>

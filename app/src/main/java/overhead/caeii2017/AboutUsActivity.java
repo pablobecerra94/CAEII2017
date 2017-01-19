@@ -22,16 +22,10 @@ public class AboutUsActivity extends AppCompatActivity implements MisionFragment
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
-
-        setToolbar(); 
-
-        
+        setToolbar();
         viewPager = (ViewPager) findViewById(R.id.pager);
         setupViewPager(viewPager);
-
-        
         TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
-
         tabs.setupWithViewPager(viewPager);
         setTitle(R.string.AboutUsTitle);
     }
@@ -63,32 +57,5 @@ public class AboutUsActivity extends AppCompatActivity implements MisionFragment
     }
 
 
-    public class SectionsPagerAdapter extends FragmentPagerAdapter {
-        private final List<Fragment> mFragments = new ArrayList<>();
-        private final List<String> mFragmentTitles = new ArrayList<>();
 
-        public SectionsPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return mFragments.get(position);
-        }
-
-        @Override
-        public int getCount() {
-            return mFragments.size();
-        }
-
-        public void addFragment(Fragment fragment, String title) {
-            mFragments.add(fragment);
-            mFragmentTitles.add(title);
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return mFragmentTitles.get(position);
-        }
-    }
 }
