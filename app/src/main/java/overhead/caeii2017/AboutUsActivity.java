@@ -14,7 +14,7 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AboutUsActivity extends AppCompatActivity implements MisionFragment.OnFragmentInteractionListener {
+public class AboutUsActivity extends AppCompatActivity implements MisionFragment.OnFragmentInteractionListener,DelegationsFragment.OnFragmentInteractionListener,ContactFragment.OnFragmentInteractionListener,AareiiFragment.OnFragmentInteractionListener {
 
     private ViewPager viewPager;
 
@@ -33,6 +33,7 @@ public class AboutUsActivity extends AppCompatActivity implements MisionFragment
         TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
 
         tabs.setupWithViewPager(viewPager);
+        setTitle(R.string.AboutUsTitle);
     }
 
     private void setToolbar() {
@@ -50,8 +51,9 @@ public class AboutUsActivity extends AppCompatActivity implements MisionFragment
     public void setupViewPager(ViewPager upViewPager) {
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new MisionFragment(), getString(R.string.mision_fragment));
-        adapter.addFragment(new MisionFragment(), getString(R.string.mision_fragment));
-        adapter.addFragment(new MisionFragment(), getString(R.string.mision_fragment));
+        adapter.addFragment(new AareiiFragment(), getString(R.string.aareiiTitle));
+        adapter.addFragment(new DelegationsFragment(), getString(R.string.delegationsTitle));
+        adapter.addFragment(new ContactFragment(), getString(R.string.contactTitle));
         viewPager.setAdapter(adapter);
     }
 

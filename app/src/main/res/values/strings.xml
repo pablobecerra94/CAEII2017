@@ -9,4 +9,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="activitiesTitle">Actividades</string>
+    <string name="newsTitle">Novedades</string>
+    <string name="TouristicGuideTitle">Guia Turistica</string>
+    <string name="AboutUsTitle">Quienes Somos</string>
+    <string name="aareiiTitle">¿Que es AArEII?</string>
+    <string name="delegationsTitle">Delegaciones Organizadoras</string>
+    <string name="contactTitle">Contacto</string>
 </resources>

@@ -18,7 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener,MisionFragment.OnFragmentInteractionListener,InitFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +45,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        FragmentManager manager = getSupportFragmentManager();
-        manager.beginTransaction().replace(R.id.content_main,new InitFragment()).commit();
+
     }
 
     @Override
@@ -101,8 +100,6 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_tourist_guide) {
             Intent touristicGuide= new Intent(this, TouristicGuideActivity.class );
             startActivity(touristicGuide);
-        } else if(id == R.id.nav_init){
-            fragment=new InitFragment();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
@@ -116,13 +113,8 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_main, fragment).commit();
         }
 
-        setTitle(item.getTitle());
-
         return true;
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
 
-    }
 }
