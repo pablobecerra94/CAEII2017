@@ -1,5 +1,6 @@
 package overhead.caeii2017;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -17,13 +18,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener,AboutUsFragment.OnFragmentInteractionListener,InitFragment.OnFragmentInteractionListener,ActivitiesFragment.OnFragmentInteractionListener,NewsFragment.OnFragmentInteractionListener,TuristicGuideFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener,MisionFragment.OnFragmentInteractionListener,InitFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("CAEII 2017");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -90,13 +90,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_news) {
-            fragment= new NewsFragment();
+            Intent news = new Intent(this, NewsActivity.class );
+            startActivity(news);
         } else if (id == R.id.nav_activities) {
-            fragment= new ActivitiesFragment();
+            Intent activities = new Intent(this, ActivitiesActivity.class );
+            startActivity(activities);
         } else if (id == R.id.nav_about_us) {
-            fragment=new AboutUsFragment();
+            Intent aboutUsIntent = new Intent(this, AboutUsActivity.class );
+            startActivity(aboutUsIntent);
         } else if (id == R.id.nav_tourist_guide) {
-            fragment=new TuristicGuideFragment();
+            Intent touristicGuide= new Intent(this, TouristicGuideActivity.class );
+            startActivity(touristicGuide);
         } else if(id == R.id.nav_init){
             fragment=new InitFragment();
         } else if (id == R.id.nav_share) {
