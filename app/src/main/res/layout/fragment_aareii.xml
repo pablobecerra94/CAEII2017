@@ -8,8 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
-        tools:text="La Asociación Argentina de Estudiantes de Ingeniería Industrial y carreras afines es una asociación civil sin fines de lucro con personería jurídica, que nuclea a los estudiantes de Ingeniería Industrial y carreras afines de todo el país. Actualmente la AArEII posee más de 7000 asociados con 40 universidades activas en todo el país y donde participan 141 Universidades (65 de Argentina y 76 del resto de América), las cuales nuclean a más de 20.000 estudiantes de Ingeniería Industrial y carreras afines."
+        android:text="La Asociación Argentina de Estudiantes de Ingeniería Industrial y carreras afines es una asociación civil sin fines de lucro con personería jurídica, que nuclea a los estudiantes de Ingeniería Industrial y carreras afines de todo el país. Actualmente la AArEII posee más de 7000 asociados con 40 universidades activas en todo el país y donde participan 141 Universidades (65 de Argentina y 76 del resto de América), las cuales nuclean a más de 20.000 estudiantes de Ingeniería Industrial y carreras afines."
         android:padding="20dp" />
 
 </FrameLayout>
