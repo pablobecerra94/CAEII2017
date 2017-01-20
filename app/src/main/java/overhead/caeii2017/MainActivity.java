@@ -1,7 +1,6 @@
 package overhead.caeii2017;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "No creo que usemos el mail para esto pero bueno, sino lo sacamos(?", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -98,7 +97,7 @@ public class MainActivity extends AppCompatActivity
             Intent aboutUsIntent = new Intent(this, AboutUsActivity.class );
             startActivity(aboutUsIntent);
         } else if (id == R.id.nav_tourist_guide) {
-            Intent touristicGuide= new Intent(this, TouristicGuideActivity.class );
+            Intent touristicGuide= new Intent(this, TouristGuideActivity.class );
             startActivity(touristicGuide);
         } else if (id == R.id.nav_share) {
 

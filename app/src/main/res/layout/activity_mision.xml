@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mision_textView2"
+        tools:text="Su Misión es propiciar la integración nacional de los estudiantes de Ingeniería Industrial y afines a través del intercambio permanente de información, la realización de congresos, seminarios y jornadas regionales, nacionales, internacionales y toda otra actividad que persiga tal fin."
+        android:textAppearance="@android:style/TextAppearance.Theme"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" />
+</LinearLayout>

@@ -22,7 +22,7 @@
         <activity android:name=".AboutUsActivity" />
         <activity android:name=".ActivitiesActivity" />
         <activity android:name=".NewsActivity" />
-        <activity android:name=".TouristicGuideActivity"></activity>
+        <activity android:name=".TouristGuideActivity"></activity>
     </application>
 
 </manifest>
