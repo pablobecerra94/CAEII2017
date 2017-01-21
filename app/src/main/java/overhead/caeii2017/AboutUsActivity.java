@@ -1,61 +1,56 @@
 package overhead.caeii2017;
 
-import android.net.Uri;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class AboutUsActivity extends AppCompatActivity implements MisionFragment.OnFragmentInteractionListener,DelegationsFragment.OnFragmentInteractionListener,ContactFragment.OnFragmentInteractionListener,AareiiFragment.OnFragmentInteractionListener {
-
-    private ViewPager viewPager;
+public class AboutUsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+         String[]items={getString(R.string.mision_fragment),getString(R.string.aareiiTitle),getString(R.string.delegationsTitle),getString(R.string.contactTitle)};
+         ListView itemList;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
-        setToolbar();
-        viewPager = (ViewPager) findViewById(R.id.pager);
-        setupViewPager(viewPager);
-        TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
-        tabs.setupWithViewPager(viewPager);
-        setTitle(R.string.AboutUsTitle);
-    }
-
-    private void setToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        final ActionBar ab = getSupportActionBar();
-        if (ab != null) {
-            
-            //ab.setHomeAsUpIndicator(R.drawable.ic_menu_camera);
-            ab.setDisplayHomeAsUpEnabled(true);
+        setTitle(R.string.aboutUsTitle);
+        itemList=(ListView) findViewById(R.id.itemList);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items);
+        itemList.setAdapter(adapter);
 
-        }
+        itemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                switch (i){
+                    case 0:
+                        Intent mision = new Intent(getApplicationContext(), MisionActivity.class);
+                        startActivity(mision);
+                        break;
+                    case 1:
+                        Intent mision2 = new Intent(getApplicationContext(), MisionActivity.class);
+                        startActivity(mision2);
+                        break;
+                    case 2:
+                        Intent mision3 = new Intent(getApplicationContext(), MisionActivity.class);
+                        startActivity(mision3);
+                        break;
+
+                    case 3:
+                        Intent mision4 = new Intent(getApplicationContext(), MisionActivity.class);
+                        startActivity(mision4);
+                        break;
+                    default:
+
+                }
+
+
+            }
+        });
     }
-
-    public void setupViewPager(ViewPager upViewPager) {
-        SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new MisionFragment(), getString(R.string.mision_fragment));
-        adapter.addFragment(new AareiiFragment(), getString(R.string.aareiiTitle));
-        adapter.addFragment(new DelegationsFragment(), getString(R.string.delegationsTitle));
-        adapter.addFragment(new ContactFragment(), getString(R.string.contactTitle));
-        viewPager.setAdapter(adapter);
-    }
-
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-
-    }
-
-
-
 }

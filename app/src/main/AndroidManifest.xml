@@ -19,10 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AboutUsActivity" />
         <activity android:name=".ActivitiesActivity" />
         <activity android:name=".NewsActivity" />
-        <activity android:name=".TouristGuideActivity"></activity>
+        <activity android:name=".TouristGuideActivity" />
+        <activity android:name=".AboutUsActivity"></activity>
+        <activity android:name=".MisionActivity" />
     </application>
 
 </manifest>
