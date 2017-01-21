@@ -33,17 +33,17 @@ public class AboutUsActivity extends AppCompatActivity {
                         startActivity(mision);
                         break;
                     case 1:
-                        Intent mision2 = new Intent(getApplicationContext(), MisionActivity.class);
-                        startActivity(mision2);
+                        Intent aareii = new Intent(getApplicationContext(), AareiiActivity.class);
+                        startActivity(aareii);
                         break;
                     case 2:
-                        Intent mision3 = new Intent(getApplicationContext(), MisionActivity.class);
-                        startActivity(mision3);
+                        Intent delegations = new Intent(getApplicationContext(), DelegationsActivity.class);
+                        startActivity(delegations);
                         break;
 
                     case 3:
-                        Intent mision4 = new Intent(getApplicationContext(), MisionActivity.class);
-                        startActivity(mision4);
+                        Intent contact = new Intent(getApplicationContext(), ContactActivity.class);
+                        startActivity(contact);
                         break;
                     default:
 

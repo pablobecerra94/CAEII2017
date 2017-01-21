@@ -22,8 +22,11 @@
         <activity android:name=".ActivitiesActivity" />
         <activity android:name=".NewsActivity" />
         <activity android:name=".TouristGuideActivity" />
-        <activity android:name=".AboutUsActivity"></activity>
+        <activity android:name=".AboutUsActivity" />
         <activity android:name=".MisionActivity" />
+        <activity android:name=".AareiiActivity" />
+        <activity android:name=".DelegationsActivity" />
+        <activity android:name=".ContactActivity"></activity>
     </application>
 
 </manifest>
