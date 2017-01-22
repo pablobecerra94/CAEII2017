@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+
+
         ImageView twitterImageView = (ImageView) findViewById(R.id.twitterImage);
         twitterImageView.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
@@ -76,16 +78,9 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-
-
-
-
-
-
-
-
-
     }
+
+    public void startActivities(View view) { startActivity(new Intent(this, ActivitiesActivity.class)); }
 
     @Override
     public void onBackPressed() {
