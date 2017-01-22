@@ -1,6 +1,7 @@
 package overhead.caeii2017;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -19,6 +20,7 @@ public class AboutUsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about_us);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setDisplayHomeAsUp();
         setTitle(R.string.aboutUsTitle);
         itemList=(ListView) findViewById(R.id.itemList);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items);
@@ -53,4 +55,13 @@ public class AboutUsActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void setDisplayHomeAsUp() {
+        ActionBar supportActionBar = getSupportActionBar();
+        if(supportActionBar!=null){
+            supportActionBar.setDisplayHomeAsUpEnabled(true);
+        }
+    }
+
+    public void startActivities(View view) { startActivity(new Intent(this, AboutUsActivity.class)); }
 }
