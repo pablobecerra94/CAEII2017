@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+/*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -46,15 +46,40 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        ImageView imageView = (ImageView) findViewById(R.id.facebookImage);
-        imageView.setOnClickListener(new View.OnClickListener() {
+        ImageView facebookImageView = (ImageView) findViewById(R.id.facebookImage);
+        facebookImageView.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                Uri uri = Uri.parse("https://www.facebook.com/CAEII");
+                Uri uri = Uri.parse(getString(R.string.facebookURL));
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
         });
+
+        ImageView twitterImageView = (ImageView) findViewById(R.id.twitterImage);
+        twitterImageView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                Uri uri = Uri.parse(getString(R.string.twitterURL));
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
+        ImageView aareiiImageView = (ImageView) findViewById(R.id.aareiiImage);
+        aareiiImageView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                Uri uri = Uri.parse(getString(R.string.aareiiURL));
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
 
 
 

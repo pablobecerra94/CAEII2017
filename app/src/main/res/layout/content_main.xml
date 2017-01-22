@@ -25,6 +25,25 @@ tools:showIn="@layout/app_bar_main"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/twitter"
+        android:id="@+id/twitterImage"
+        android:layout_alignTop="@+id/facebookImage"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/aareii"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:id="@+id/aareiiImage"
+        android:layout_alignTop="@+id/twitterImage"
+        android:layout_toRightOf="@+id/twitterImage"
+        android:layout_toEndOf="@+id/twitterImage" />
+
 </RelativeLayout>
 
 
