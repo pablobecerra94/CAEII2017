@@ -1,6 +1,7 @@
 package overhead.caeii2017;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,8 +20,15 @@ public class AareiiActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         aareiiiText = (TextView) findViewById(R.id.aareiiiText);
         setTitle(R.string.aareiiTitle);
+        setFont(aareiiiText);
         setDisplayHomeAsUp();
     }
+
+    private void setFont(TextView aareiiiText) {
+        Typeface font = Typeface.createFromAsset(getAssets(),"fonts/monserratregular.ttf");
+        aareiiiText.setTypeface(font);
+    }
+
     private void setDisplayHomeAsUp() {
         ActionBar supportActionBar = getSupportActionBar();
         if(supportActionBar!=null){

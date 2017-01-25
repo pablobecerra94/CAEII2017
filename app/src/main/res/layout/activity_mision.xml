@@ -42,49 +42,74 @@
                     android:layout_height="182dp">
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:id="@+id/misionTitleTextView"
+                        android:text="@string/misionTitle"
+                        android:fontFamily="sans-serif"
+                        android:layout_above="@+id/misionTextView"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
                         android:text="@string/misionText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/misionTextView"
-                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
                         android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginLeft="21dp"
-                        android:layout_marginStart="21dp"
-                        android:layout_marginTop="31dp" />
+                        android:layout_alignParentStart="true" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="177dp">
+                    android:layout_height="217dp">
+
+                    <TextView
+                        android:text="@string/visionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/visionTitleTextView"
+                        android:layout_marginTop="35dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/visionTextView"
                         android:text="@string/visionText"
-                        android:layout_alignParentTop="true"
+                        android:layout_below="@+id/visionTitleTextView"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
-                        android:layout_marginLeft="28dp"
-                        android:layout_marginStart="28dp"
-                        android:layout_marginTop="29dp" />
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="25dp" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="238dp">
+
+                    <TextView
+                        android:text="@string/objectiveTItle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/objectiveTitleTexvView"
+                        android:layout_marginBottom="45dp"
+                        android:layout_above="@+id/objectiveTextView"
+                        android:layout_centerHorizontal="true" />
 
                     <TextView
                         android:text="@string/objetiveText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/objectiveTextView"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginTop="40dp" />
+                        android:layout_marginBottom="19dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
 
                 </RelativeLayout>
 

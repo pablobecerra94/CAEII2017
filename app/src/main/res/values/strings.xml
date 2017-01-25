@@ -27,4 +27,7 @@
     <string name="facebookURL">https://www.facebook.com/CAEII</string>
     <string name="twitterURL">https://twitter.com/caeii_oficial</string>
     <string name="aareiiURL">http://www.aareii.org.ar/</string>
+    <string name="misionTitle">Misión</string>
+    <string name="visionTitle">Visión</string>
+    <string name="objectiveTItle">Objetivos</string>
 </resources>
