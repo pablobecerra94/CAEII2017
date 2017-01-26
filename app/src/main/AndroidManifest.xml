@@ -22,32 +22,31 @@
         <activity
             android:name=".ActivitiesActivity"
             android:label="ActivitiesActivity"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
-        <activity android:name=".NewsActivity"
+        <activity
+            android:name=".NewsActivity"
             android:label="NewsActivity"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
-        <activity android:name=".TouristGuideActivity"
+        <activity
+            android:name=".TouristGuideActivity"
             android:label="TouristGuideActivity"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity
             android:name=".AboutUsActivity"
             android:label="AboutUsActivity"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -55,37 +54,36 @@
         <activity
             android:name=".MisionActivity"
             android:label="MisionActivity"
-            android:parentActivityName=".AboutUsActivity" >
+            android:parentActivityName=".AboutUsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AboutUsActivity" />
         </activity>
-
         <activity
             android:name=".AareiiActivity"
             android:label="AareiiActivity"
-            android:parentActivityName=".AboutUsActivity" >
+            android:parentActivityName=".AboutUsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AboutUsActivity" />
         </activity>
-
         <activity
             android:name=".DelegationsActivity"
             android:label="DelegationsActivity"
-            android:parentActivityName=".AboutUsActivity" >
+            android:parentActivityName=".AboutUsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AboutUsActivity" />
         </activity>
-        <activity android:name=".ContactActivity"
+        <activity
+            android:name=".ContactActivity"
             android:label="ContactActivity"
-            android:parentActivityName=".AboutUsActivity" >
+            android:parentActivityName=".AboutUsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AboutUsActivity" />
         </activity>
-
+        <activity android:name=".ScheduleActivity"></activity>
     </application>
 
 </manifest>
