@@ -25,4 +25,40 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <TextView
+        android:text="@string/coordinationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/coordinationTItle"
+        android:layout_below="@+id/appbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/coordinationMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/coordinationMail"
+        android:layout_below="@+id/coordinationTItle"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/diffusionMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/diffusionMail"
+        android:layout_below="@+id/diffusionTitle"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/diffusionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/diffusionTitle"
+        android:layout_below="@+id/coordinationMail"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

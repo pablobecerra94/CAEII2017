@@ -30,4 +30,8 @@
     <string name="misionTitle">Misión</string>
     <string name="visionTitle">Visión</string>
     <string name="objectiveTItle">Objetivos</string>
+    <string name="coordinationTitle">Coordinación CAEII</string>
+    <string name="coordinationMail">coordinacion@caeii.com.ar</string>
+    <string name="diffusionTitle">Difusion</string>
+    <string name="diffusionMail">difusion@caeii.com.ar</string>
 </resources>
