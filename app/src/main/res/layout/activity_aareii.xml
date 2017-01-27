@@ -30,8 +30,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/aareiiiText"
-        android:layout_marginTop="115dp"
         android:layout_below="@+id/appbar"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:padding="20dp" />
 
 </RelativeLayout>

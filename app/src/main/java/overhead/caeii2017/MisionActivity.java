@@ -38,7 +38,7 @@ public class MisionActivity extends AppCompatActivity {
         setTitleFont(misionTitleTextView);
         visionTitleTextView=(TextView) findViewById(R.id.visionTitleTextView);
         setTitleFont(visionTitleTextView);
-        objectiveTitleTextView=(TextView) findViewById(R.id.objectiveTitleTexvView);
+        objectiveTitleTextView=(TextView) findViewById(R.id.objectiveTitleTextView);
         setTitleFont(objectiveTitleTextView);
         setDisplayHomeAsUp();
 

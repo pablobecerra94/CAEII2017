@@ -47,7 +47,7 @@ public class ContactActivity extends AppCompatActivity {
         //  Typeface font = Typeface.createFromAsset(getAssets(),"fonts/SignPainter-HouseScript.ttf");
         Typeface font = Typeface.createFromAsset(getAssets(),"fonts/Montserrat-Bold_0.ttf");
         textView.setTypeface(font);
-        textView.setTextSize(35);
+        textView.setTextSize(30);
         textView.setTextColor(Color.RED);
     }
 

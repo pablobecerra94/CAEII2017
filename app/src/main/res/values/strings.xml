@@ -21,7 +21,7 @@
     <string name="speakersTitle">Disertantes</string>
     <string name="misionText">Su Misión es propiciar la integración nacional de los estudiantes de Ingeniería Industrial y afines a través del intercambio permanente de información, la realización de congresos, seminarios y jornadas regionales, nacionales, internacionales y toda otra actividad que persiga tal fin.</string>
     <string name="visionText">Siendo su Visión consolidarnos como la Asociación de estudiantes más importante del país en Ingeniería Industrial y carreras afines y ser reconocida por las comunidades social, universitaria y empresarial como referente nacional e internacional de integración, perfeccionamiento y potenciación de los estudiantes de nuestra carrera.</string>
-    <string name="objetiveText">Realizar un congreso del más alto nivel académico, que trate temáticas innovadoras no desarrolladas por la formación tradicional, complementando la carrera universitaria, promoviendo el interés y el involucramiento de los asistentes en los diferentes roles que el ingeniero puede adoptar tanto en el ámbito público como el sector privado.</string>
+    <string name="objectiveText">Realizar un congreso del más alto nivel académico, que trate temáticas innovadoras no desarrolladas por la formación tradicional, complementando la carrera universitaria, promoviendo el interés y el involucramiento de los asistentes en los diferentes roles que el ingeniero puede adoptar tanto en el ámbito público como el sector privado.</string>
     <string name="aboutUsTitle">Quienes Somos</string>
     <string name="aareiiText">La Asociación Argentina de Estudiantes de Ingeniería Industrial y carreras afines es una asociación civil sin fines de lucro con personería jurídica, que nuclea a los estudiantes de Ingeniería Industrial y carreras afines de todo el país. Actualmente la AArEII posee más de 7000 asociados con 40 universidades activas en todo el país y donde participan 141 Universidades (65 de Argentina y 76 del resto de América), las cuales nuclean a más de 20.000 estudiantes de Ingeniería Industrial y carreras afines.</string>
     <string name="facebookURL">https://www.facebook.com/CAEII</string>
@@ -29,7 +29,7 @@
     <string name="aareiiURL">http://www.aareii.org.ar/</string>
     <string name="misionTitle">Misión</string>
     <string name="visionTitle">Visión</string>
-    <string name="objectiveTItle">Objetivos</string>
+    <string name="objectiveTitle">Objetivos</string>
     <string name="coordinationTitle">Coordinación CAEII</string>
     <string name="coordinationMail">coordinacion@caeii.com.ar</string>
     <string name="diffusionTitle">Difusión</string>
