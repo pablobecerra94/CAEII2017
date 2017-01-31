@@ -126,8 +126,7 @@ public class MainActivity extends AppCompatActivity
             Intent news = new Intent(this, NewsActivity.class );
             startActivity(news);
         } else if (id == R.id.nav_activities) {
-            //Intent activities = new Intent(this, ActivitiesActivity.class );
-            Intent  activities = new Intent(this, ScheduleActivity.class );
+            Intent activities = new Intent(this, ActivitiesActivity.class );
             startActivity(activities);
         } else if (id == R.id.nav_about_us) {
             Intent aboutUsIntent = new Intent(this, AboutUsActivity.class );

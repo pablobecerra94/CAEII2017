@@ -34,4 +34,6 @@
     <string name="coordinationMail">coordinacion@caeii.com.ar</string>
     <string name="diffusionTitle">Difusión</string>
     <string name="diffusionMail">difusion@caeii.com.ar</string>
+    <string name="visitItemTest1">Bodega Garbin</string>
+    <string name="visitItemTest2">Ketobac</string>
 </resources>

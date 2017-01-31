@@ -23,7 +23,7 @@ public class ScheduleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
         ImageView image = (ImageView) findViewById(R.id.schedule);
-        image.setImageResource(R.drawable.schedule);
+        image.setImageResource(R.drawable.aareii);
     }
 
     /**
