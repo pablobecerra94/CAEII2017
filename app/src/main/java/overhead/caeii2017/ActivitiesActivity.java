@@ -35,7 +35,7 @@ public class ActivitiesActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setDisplayHomeAsUp();
-        setTitle(R.string.aboutUsTitle);
+        setTitle(R.string.activitiesTitle);
         itemList=(ListView) findViewById(R.id.itemList);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items);
         itemList.setAdapter(adapter);
