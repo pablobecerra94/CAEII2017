@@ -107,7 +107,14 @@
         <activity android:name=".ItemTest2" />
         <activity android:name=".AlarmActivity" />
         <activity android:name=".SpeakersActivity" />
-        <activity android:name=".ConferencesActivity"></activity>
+        <activity
+            android:name=".ConferencesActivity"
+            android:label="ConferencesActivity"
+            android:parentActivityName=".ActivitiesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivitiesActivity" />
+        </activity>
     </application>
 
 </manifest>

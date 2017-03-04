@@ -37,4 +37,5 @@
     <string name="visitItemTest1">Bodega Garbin</string>
     <string name="visitItemTest2">Ketobac</string>
     <string name="stopAlarm">Apagar Alarma</string>
+    <string name="construction">En construcción</string>
 </resources>
