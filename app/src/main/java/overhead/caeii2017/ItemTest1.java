@@ -28,16 +28,16 @@ public class ItemTest1 extends AppCompatActivity {
         if(checkBox.isChecked()){
             AlarmManager objAlarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
             Calendar cal = Calendar.getInstance();
-            cal.set(Calendar.DAY_OF_MONTH,31);
-            cal.set(Calendar.MONTH,Calendar.JANUARY);
+            cal.set(Calendar.DAY_OF_MONTH,4);
+            cal.set(Calendar.MONTH,Calendar.MARCH);
             cal.set(Calendar.YEAR,2017);
-            cal.set(Calendar.HOUR_OF_DAY, 18);
-            cal.set(Calendar.MINUTE, 27);
+            cal.set(Calendar.HOUR_OF_DAY, 10);
+            cal.set(Calendar.MINUTE, 40);
             cal.set(Calendar.SECOND, 0);
             cal.set(Calendar.MILLISECOND, 0);
 
-            Intent alamShowIntent = new Intent(this,AlarmActivity.class);
-            PendingIntent alarmPendingIntent = PendingIntent.getActivity(this, 0,alamShowIntent,0 );
+            Intent alarmShowIntent = new Intent(this,AlarmActivity.class);
+            PendingIntent alarmPendingIntent = PendingIntent.getActivity(this, 0,alarmShowIntent,0 );
 
             objAlarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), alarmPendingIntent);
         }

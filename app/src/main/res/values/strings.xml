@@ -36,4 +36,5 @@
     <string name="diffusionMail">difusion@caeii.com.ar</string>
     <string name="visitItemTest1">Bodega Garbin</string>
     <string name="visitItemTest2">Ketobac</string>
+    <string name="stopAlarm">Apagar Alarma</string>
 </resources>
