@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="overhead.caeii2017">
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -94,7 +94,6 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-
         <activity
             android:name=".TechnicalVisitisActivity"
             android:label="TechnicalVisitisActivity"
@@ -114,6 +113,13 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ActivitiesActivity" />
+        </activity>
+        <activity android:name=".SpeakerItemActivity"
+            android:label="SpeakerItemActivity"
+            android:parentActivityName=".SpeakersActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SpeakersActivity" />
         </activity>
     </application>
 
