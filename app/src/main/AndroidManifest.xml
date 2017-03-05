@@ -105,7 +105,14 @@
         <activity android:name=".ItemTest1" />
         <activity android:name=".ItemTest2" />
         <activity android:name=".AlarmActivity" />
-        <activity android:name=".SpeakersActivity" />
+        <activity
+            android:name=".SpeakersActivity"
+            android:label="SpeakersActivity"
+            android:parentActivityName=".ActivitiesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivitiesActivity" />
+        </activity>
         <activity
             android:name=".ConferencesActivity"
             android:label="ConferencesActivity"
@@ -114,7 +121,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ActivitiesActivity" />
         </activity>
-        <activity android:name=".SpeakerItemActivity"
+        <activity
+            android:name=".SpeakerItemActivity"
             android:label="SpeakerItemActivity"
             android:parentActivityName=".SpeakersActivity">
             <meta-data
