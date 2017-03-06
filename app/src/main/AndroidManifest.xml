@@ -102,7 +102,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ActivitiesActivity" />
         </activity>
-        <activity android:name=".VisitItem" />
+        <activity
+            android:name=".VisitItem"
+            android:label="VisitItem"
+            android:parentActivityName=".TechnicalVisitisActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TechnicalVisitisActivity" />
+        </activity>
         <activity android:name=".AlarmActivity" />
         <activity
             android:name=".SpeakersActivity"

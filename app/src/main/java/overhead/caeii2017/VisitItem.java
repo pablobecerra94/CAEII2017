@@ -8,8 +8,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
@@ -35,6 +37,10 @@ public class VisitItem extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_test1);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        setDisplayHomeAsUp();
         checkBox=(CheckBox) findViewById(R.id.checkBox);
         name= (TextView) findViewById(R.id.nameTextView);
         duration= (TextView) findViewById(R.id.durationTextView);
@@ -128,6 +134,15 @@ public class VisitItem extends AppCompatActivity {
 
 
     }
+
+    private void setDisplayHomeAsUp() {
+        ActionBar supportActionBar = getSupportActionBar();
+        if(supportActionBar!=null){
+            supportActionBar.setDisplayHomeAsUpEnabled(true);
+        }
+    }
+
+    public void startActivities(View view) { startActivity(new Intent(this, AboutUsActivity.class)); }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void alarm(View view){
