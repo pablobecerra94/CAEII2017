@@ -22,7 +22,7 @@ public class SqliteConector extends SQLiteOpenHelper {
         sqlCreate = "CREATE TABLE TechnicalVisits(name TEXT, duration INTEGER, address TEXT, day INTEGER, month INTEGER, year INTEGER, place TEXT)";
         sqLiteDatabase.execSQL(sqlCreate);
         insertTechnicalVisits(sqLiteDatabase);
-        sqlCreate = "CREATE TABLE Turns(name Text, hour INTEGER, minute INTEGER)";
+        sqlCreate = "CREATE TABLE Turns(name Text, hour INTEGER, minute INTEGER, number TEXT)";
         sqLiteDatabase.execSQL(sqlCreate);
         insertTurns(sqLiteDatabase);
 
@@ -34,48 +34,57 @@ public class SqliteConector extends SQLiteOpenHelper {
         String name = "Bodega Garbin";
         int hour = 7;
         int minute = 45;
+        int number=1;
 
 
-        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
         hour = 8;
         minute = 45;
-        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+        number=2;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
         hour = 9;
         minute = 45;
-        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+        number=3;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
         name="Ketobac";
         hour=7;
         minute=45;
-        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+        number=1;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
         hour=8;
         minute=30;
-        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+        number=2;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
         hour=9;
         minute=15;
-        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+        number=3;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
         hour=10;
         minute=00;
-        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+        number=4;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
         name="El Secreto";
         hour=7;
         minute=45;
-        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+        number=1;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
 
     }
 
-    private void insertSpecificTurn(SQLiteDatabase sqLiteDatabase, String name, int hour, int minute) {
+    private void insertSpecificTurn(SQLiteDatabase sqLiteDatabase, String name, int hour, int minute,int number) {
         ContentValues turn = new ContentValues();
         turn.put("name", name);
         turn.put("hour", hour);
         turn.put("minute", minute);
+        turn.put("number",number);
         sqLiteDatabase.insert("Turns", null, turn);
 
     }
@@ -288,7 +297,7 @@ public class SqliteConector extends SQLiteOpenHelper {
         sqlDestroy = "DROP TABLE Turns";
         sqLiteDatabase.execSQL(sqlDestroy);
 
-        sqlCreate = "CREATE TABLE Turns(name Text, hour INTEGER, minute INTEGER)";
+        sqlCreate = "CREATE TABLE Turns(name Text, hour INTEGER, minute INTEGER, number TEXT)";
         sqLiteDatabase.execSQL(sqlCreate);
         insertTurns(sqLiteDatabase);
     }
