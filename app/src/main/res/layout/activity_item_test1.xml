@@ -52,8 +52,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/dayTextView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/turn1TextView"
-            android:layout_weight="0.73" />
+            android:layout_weight="0.97" />
 
 
 

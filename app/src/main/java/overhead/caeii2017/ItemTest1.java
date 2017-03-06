@@ -24,6 +24,7 @@ public class ItemTest1 extends AppCompatActivity {
     private TextView name;
     private TextView duration;
     private TextView address;
+    private TextView day;
     private TextView turn1;
 
     private  TextView place;
@@ -38,8 +39,8 @@ public class ItemTest1 extends AppCompatActivity {
         name= (TextView) findViewById(R.id.nameTextView);
         duration= (TextView) findViewById(R.id.durationTextView);
         address= (TextView) findViewById(R.id.addressTextView);
+        day= (TextView) findViewById(R.id.dayTextView);
         turn1= (TextView) findViewById(R.id.turn1TextView);
-
         place= (TextView) findViewById(R.id.placeTextView);
 
         Bundle bundle = getIntent().getExtras();
@@ -68,6 +69,14 @@ public class ItemTest1 extends AppCompatActivity {
             if(cursor.moveToFirst()){
                 String text= cursor.getString(0);
                 address.setText(text);
+            }
+
+            String[] dayFields = {"day","month","year"};
+            cursor = database.query("TechnicalVisits",dayFields,"name=?",arguments,null,null,null);
+
+            if(cursor.moveToFirst()){
+                String text= cursor.getString(0)+"/"+cursor.getString(1)+"/"+cursor.getString(2);
+                day.setText(text);
             }
 
             String[] placeField = {"place"};

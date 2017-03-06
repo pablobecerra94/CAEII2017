@@ -273,12 +273,21 @@ public class SqliteConector extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+        String sqlDestroy = "DROP TABLE Speakers";
+        sqLiteDatabase.execSQL(sqlDestroy);
         sqlCreate = "CREATE TABLE Speakers (name TEXT, SpeakerText TEXT)";
         sqLiteDatabase.execSQL(sqlCreate);
         insertSpeakers(sqLiteDatabase);
+         sqlDestroy = "DROP TABLE TechnicalVisits";
+        sqLiteDatabase.execSQL(sqlDestroy);
+
         sqlCreate = "CREATE TABLE TechnicalVisits(name TEXT, duration INTEGER, address TEXT, day INTEGER, month INTEGER, year INTEGER, place TEXT)";
         sqLiteDatabase.execSQL(sqlCreate);
         insertTechnicalVisits(sqLiteDatabase);
+
+        sqlDestroy = "DROP TABLE Turns";
+        sqLiteDatabase.execSQL(sqlDestroy);
+
         sqlCreate = "CREATE TABLE Turns(name Text, hour INTEGER, minute INTEGER)";
         sqLiteDatabase.execSQL(sqlCreate);
         insertTurns(sqLiteDatabase);
