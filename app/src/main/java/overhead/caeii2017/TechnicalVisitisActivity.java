@@ -14,7 +14,7 @@ public class TechnicalVisitisActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String[]items={getString(R.string.visitItemTest1),getString(R.string.visitItemTest2)};
+        String[]items={getString(R.string.visitItemTest1),getString(R.string.visitItemTest2),getString(R.string.visitItemTest3)};
         ListView itemList;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
@@ -23,26 +23,16 @@ public class TechnicalVisitisActivity extends AppCompatActivity {
         setDisplayHomeAsUp();
         setTitle(R.string.technicalVisitsTitle);
         itemList=(ListView) findViewById(R.id.itemList);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items);
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items);
         itemList.setAdapter(adapter);
 
         itemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                switch (i){
-                    case 0:
-                        Intent test1 = new Intent(getApplicationContext(), ItemTest1.class);
-                        startActivity(test1);
-                        break;
-                    case 1:
-                        Intent aareii = new Intent(getApplicationContext(), ItemTest2.class);
-                        startActivity(aareii);
-                        break;
-                    default:
-
-                }
-
-
+                String selectedItem = adapter.getItem(i);
+                Intent intent = new Intent(getApplicationContext(), ItemTest1.class);
+                intent.putExtra("VisitName", selectedItem);
+                startActivity(intent);
             }
         });
     }

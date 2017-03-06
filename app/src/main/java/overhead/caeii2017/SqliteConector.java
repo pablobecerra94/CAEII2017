@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class SqliteConector extends SQLiteOpenHelper {
 
-    private String sqlCreate = "CREATE TABLE Speakers (name TEXT, SpeakerText TEXT)";
+    private String sqlCreate;
 
     public SqliteConector(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -16,10 +16,120 @@ public class SqliteConector extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
+        sqlCreate = "CREATE TABLE Speakers (name TEXT, SpeakerText TEXT)";
         sqLiteDatabase.execSQL(sqlCreate);
-        ContentValues speaker1 = new ContentValues();
-        speaker1.put("name", "Marcela Riccillo");
-        speaker1.put("SpeakerText", "Doctora en Ciencias de la Computación de la Universidad de Buenos " +
+        insertSpeakers(sqLiteDatabase);
+        sqlCreate = "CREATE TABLE TechnicalVisits(name TEXT, duration INTEGER, address TEXT, day INTEGER, month INTEGER, year INTEGER, place TEXT)";
+        sqLiteDatabase.execSQL(sqlCreate);
+        insertTechnicalVisits(sqLiteDatabase);
+        sqlCreate = "CREATE TABLE Turns(name Text, hour INTEGER, minute INTEGER)";
+        sqLiteDatabase.execSQL(sqlCreate);
+        insertTurns(sqLiteDatabase);
+
+
+        // sqLiteDatabase.close();
+    }
+
+    private void insertTurns(SQLiteDatabase sqLiteDatabase) {
+        String name = "Bodega Garbin";
+        int hour = 7;
+        int minute = 45;
+
+
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+
+        hour = 8;
+        minute = 45;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+
+        hour = 9;
+        minute = 45;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+
+        name="Ketobac";
+        hour=7;
+        minute=45;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+
+        hour=8;
+        minute=30;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+
+        hour=9;
+        minute=15;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+
+        hour=10;
+        minute=00;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+
+        name="El Secreto";
+        hour=7;
+        minute=45;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute);
+
+
+    }
+
+    private void insertSpecificTurn(SQLiteDatabase sqLiteDatabase, String name, int hour, int minute) {
+        ContentValues turn = new ContentValues();
+        turn.put("name", name);
+        turn.put("hour", hour);
+        turn.put("minute", minute);
+        sqLiteDatabase.insert("Turns", null, turn);
+
+    }
+
+    private void insertTechnicalVisits(SQLiteDatabase sqLiteDatabase) {
+        String name = "Bodega Garbin";
+        int duration = 60;
+        String address = "Castelli 1331";
+        int day = 19;
+        int month = 8;
+        int year = 2017;
+        String place = "Terminal de ómnibus Nestor Kirchner";
+
+        insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
+
+        name = "Ketobac";
+        duration = 40;
+        address = "Av San Martin 175 - Av. Hip. Irigoyen y Pelegrini";
+        day = 19;
+        month = 8;
+        year = 2017;
+        place = "Terminal de ómnibus Nestor Kirchner";
+
+        insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
+
+        name = "El Secreto";
+        duration = 90;
+        address = "Ruta 144, km 674.5";
+        day = 19;
+        month = 8;
+        year = 2017;
+        place = "Terminal de ómnibus Nestor Kirchner";
+
+        insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
+
+
+    }
+
+    private void insertSpecificVisit(SQLiteDatabase sqLiteDatabase, String name, int duration, String address, int day, int month, int year, String place) {
+        ContentValues visit = new ContentValues();
+        visit.put("name", name);
+        visit.put("duration", duration);
+        visit.put("address", address);
+        visit.put("day", day);
+        visit.put("month", month);
+        visit.put("year", year);
+        visit.put("place", place);
+        sqLiteDatabase.insert("TechnicalVisits", null, visit);
+    }
+
+    private void insertSpeakers(SQLiteDatabase sqLiteDatabase) {
+
+        String name = "Marcela Riccillo";
+        String text = "Doctora en Ciencias de la Computación de la Universidad de Buenos " +
                 "Aires, con especialización en Robótica e Inteligencia Artificial. " +
                 "Su foco actual es la Robótica Humanoide en el mundo, estudia las " +
                 "características de los principales robots, la historia de su evolución y el " +
@@ -33,12 +143,12 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "otros. " +
                 "Participa como jurado de competencias de robots en universidades y condujo por 2 temporadas una " +
                 "columna sobre Robótica en radio. Fue profesora varios años en la Universidad de Buenos Aires. Lleva " +
-                "varios años de estudio de Coreano, Japonés,Chino, Inglés, Alemán y Latín.");
-        sqLiteDatabase.insert("Speakers", null, speaker1);
+                "varios años de estudio de Coreano, Japonés,Chino, Inglés, Alemán y Latín.";
 
-        ContentValues speaker2 = new ContentValues();
-        speaker2.put("name", "Lino Barañao");
-        speaker2.put("SpeakerText", "Recibido como Licenciado en Ciencias Quimicas y luego Doctor en " +
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Lino Barañao";
+        text = "Recibido como Licenciado en Ciencias Quimicas y luego Doctor en " +
                 "Ciencias Quimicas en la UBA, realizó diversos posgrados en instituciones " +
                 "de renombre como ser el Instituto Max Planck. " +
                 "Profecionalmente se desempeña como investigador principal del " +
@@ -50,12 +160,12 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "del CONICET entre 1999 y 2000, del 2003 al 2007 ocupó el cargo de " +
                 "Presidente de la Agencia Nacional de Promoción Cientifica y Tecnología. " +
                 "Desde el 2007 hasta la fecha es el Ministro de Ciencia, Tecnología e Innovación " +
-                "Productiva de la Nación.");
-        sqLiteDatabase.insert("Speakers", null, speaker2);
+                "Productiva de la Nación.";
 
-        ContentValues speaker3 = new ContentValues();
-        speaker3.put("name", "Debora Giorgi");
-        speaker3.put("SpeakerText", "Es Licenciada en Economía de la Universidad " +
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Debora Giorgi";
+        text = "Es Licenciada en Economía de la Universidad " +
                 "Católica Argentina con Diploma de Honor. " +
                 "Ex Secretaria de industria, comercio, minería " +
                 "Fue directora del Centro de Estudios para las " +
@@ -63,13 +173,12 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "(CENI) " +
                 "A partir de 2005 fue Ministra de " +
                 "Asuntos Agrarios y Producción " +
-                "Ex Ministra de Industria");
-        sqLiteDatabase.insert("Speakers", null, speaker3);
+                "Ex Ministra de Industria";
 
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
 
-        ContentValues speaker4 = new ContentValues();
-        speaker4.put("name", "Gino Tubaro");
-        speaker4.put("SpeakerText", "Es inventor, fundador de Atomic Lab, donde se " +
+        name = "Gino Tubaro";
+        text = "Es inventor, fundador de Atomic Lab, donde se " +
                 "encuentra innovaciones como “Libs”, una plataforma " +
                 "para solicitar una prótesis 3D, un “braile dinamico” " +
                 "que traduce texto a braile y muchas cosas más. Fue " +
@@ -81,13 +190,12 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "soluciones para ayudar a las personas con " +
                 "discapacidades a vivir sin límites”. Ganó el primer " +
                 "premio de Una Idea para Cambiar la historia de The " +
-                "History Channel.");
-        sqLiteDatabase.insert("Speakers", null, speaker4);
+                "History Channel.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
 
 
-        ContentValues speaker5 = new ContentValues();
-        speaker5.put("name", "Andy Freire");
-        speaker5.put("SpeakerText", "Andrés \"Andy\" Freire es el Ministro de Modernización, Innovación y " +
+        name = "Andy Freire";
+        text = "Andrés \"Andy\" Freire es el Ministro de Modernización, Innovación y " +
                 "Tecnología y titular del Ente de Turismo de la Ciudad de Buenos Aires. " +
                 "Es licenciado en Economía Magna Cum Laude por la Universidad " +
                 "de San Andrés, Argentina, y realizó el Owner President Management " +
@@ -103,22 +211,22 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "“Líder Global del Mañana” (2002) por el Foro Económico Mundial, también fue uno de los dos finalistas " +
                 "premiados en el “World Young Business Achiever Award”, celebrado en Filipinas en 2002, y en 2008 fue " +
                 "distinguido como “Joven Líder Global” entre más de 100 jóvenes empresarios por el Foro Económico " +
-                "Mundial en Davos, Suiza.");
-        sqLiteDatabase.insert("Speakers", null, speaker5);
+                "Mundial en Davos, Suiza.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
 
-        ContentValues speaker6 = new ContentValues();
-        speaker6.put("name", "Miguel Galuccio");
-        speaker6.put("SpeakerText", "Ingeniero en Petroleo del Instituto Tecnológico de Buenos Aires (ITBA). Ex " +
+
+        name = "Miguel Galuccio";
+        text = "Ingeniero en Petroleo del Instituto Tecnológico de Buenos Aires (ITBA). Ex " +
                 "CEO de YPF. " +
                 "Es un experto en la localización y perforación para hallar petróleo, lo que " +
                 "se conoce como \"reservorista\". A pesar de su corta edad, tiene una " +
                 "experiencia confiable en todos los continentes y un alto grado de " +
-                "especialización en la profesión.");
-        sqLiteDatabase.insert("Speakers", null, speaker6);
+                "especialización en la profesión.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
 
-        ContentValues speaker7 = new ContentValues();
-        speaker7.put("name", "Cecilia Smoglie");
-        speaker7.put("SpeakerText", "Licenciada en Física (Instituto Balseiro, abanderada, 1977), Postgrado " +
+
+        name = "Cecilia Smoglie";
+        text = "Licenciada en Física (Instituto Balseiro, abanderada, 1977), Postgrado " +
                 "en Ingeniería Nuclear (Universidad de Londres, 1982) y Doctora en " +
                 "Ingeniería Mecánica (Universidad de Karlsruhe, 1984). Fue Profesora " +
                 "Adjunta de Termodinámica en el Instituto Balseiro (1985-88), " +
@@ -129,12 +237,11 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "Tecnológico de Buenos Aires, donde es Profesora Titular de " +
                 "Termodinámica y de Transferencia de Calor, fue Directora de Ingeniería Mecánica e Ingeniería Naval " +
                 "(1996-2010) y desde 2011 es Directora del Área de Energía. Su principal interés es la cooperación entre " +
-                "universidad - empresa. Tiene 22 trabajos escritos para la Industria, 14 publicaciones y 3 patentes.");
-        sqLiteDatabase.insert("Speakers", null, speaker7);
+                "universidad - empresa. Tiene 22 trabajos escritos para la Industria, 14 publicaciones y 3 patentes.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
 
-        ContentValues speaker8 = new ContentValues();
-        speaker8.put("name", "Alejandro Ceccatto");
-        speaker8.put("SpeakerText", "Realizó sus estudios en la Universidad Nacional de Rosario como " +
+        name = "Alejandro Ceccatto";
+        text = "Realizó sus estudios en la Universidad Nacional de Rosario como " +
                 "Licenciado en Física recibiendose en 1979. En 1985 culmina con " +
                 "su doctorado en Fisica en la Universidad Nacional de La Plata, " +
                 "dando lugar luego a dos Posdoctorados en la Universidad de " +
@@ -143,25 +250,37 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "ademas de ser miembro asociado del Centro Internacional de " +
                 "Fisica Teorica (Triesta, Italia). Además desde 2008 es el " +
                 "Secretario de Articulacíón Cientifico Tecnologico del Ministerio de " +
-                "Ciencia, Tecnología e Innovación Productiva.");
-        sqLiteDatabase.insert("Speakers", null, speaker8);
+                "Ciencia, Tecnología e Innovación Productiva.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
 
-        ContentValues speaker9 = new ContentValues();
-        speaker9.put("name", "Graciela Chichilnisky");
-        speaker9.put("SpeakerText", "Doctora en Matemáticas recibida en la " +
+        name = "Graciela Chichilnisky";
+        text = "Doctora en Matemáticas recibida en la " +
                 "Universidad de California. " +
                 "Economista y Profesora de economía de " +
                 "la Universidad de Columbia. Experta en " +
                 "Cambio climático. Participó en el " +
-                "TEDxUTN 2013, entre otros.");
-        sqLiteDatabase.insert("Speakers", null, speaker9);
+                "TEDxUTN 2013, entre otros.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
 
+    }
 
-        // sqLiteDatabase.close();
+    private void insertSpecificSpeaker(SQLiteDatabase sqLiteDatabase, String name, String text) {
+        ContentValues speaker1 = new ContentValues();
+        speaker1.put("name", name);
+        speaker1.put("SpeakerText", text);
+        sqLiteDatabase.insert("Speakers", null, speaker1);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+        sqlCreate = "CREATE TABLE Speakers (name TEXT, SpeakerText TEXT)";
         sqLiteDatabase.execSQL(sqlCreate);
+        insertSpeakers(sqLiteDatabase);
+        sqlCreate = "CREATE TABLE TechnicalVisits(name TEXT, duration INTEGER, address TEXT, day INTEGER, month INTEGER, year INTEGER, place TEXT)";
+        sqLiteDatabase.execSQL(sqlCreate);
+        insertTechnicalVisits(sqLiteDatabase);
+        sqlCreate = "CREATE TABLE Turns(name Text, hour INTEGER, minute INTEGER)";
+        sqLiteDatabase.execSQL(sqlCreate);
+        insertTurns(sqLiteDatabase);
     }
 }
