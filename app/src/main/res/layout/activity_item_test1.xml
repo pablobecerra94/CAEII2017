@@ -4,7 +4,7 @@
     android:id="@+id/activity_item_test1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="overhead.caeii2017.ItemTest1">
+    tools:context="overhead.caeii2017.VisitItem">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"

@@ -19,7 +19,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class ItemTest1 extends AppCompatActivity {
+public class VisitItem extends AppCompatActivity {
     private CheckBox checkBox;
     private TextView name;
     private TextView duration;

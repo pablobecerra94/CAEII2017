@@ -102,8 +102,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ActivitiesActivity" />
         </activity>
-        <activity android:name=".ItemTest1" />
-        <activity android:name=".ItemTest2" />
+        <activity android:name=".VisitItem" />
         <activity android:name=".AlarmActivity" />
         <activity
             android:name=".SpeakersActivity"

@@ -30,7 +30,7 @@ public class TechnicalVisitisActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String selectedItem = adapter.getItem(i);
-                Intent intent = new Intent(getApplicationContext(), ItemTest1.class);
+                Intent intent = new Intent(getApplicationContext(), VisitItem.class);
                 intent.putExtra("VisitName", selectedItem);
                 startActivity(intent);
             }
