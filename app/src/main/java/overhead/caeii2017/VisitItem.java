@@ -21,6 +21,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class VisitItem extends AppCompatActivity {
     private CheckBox checkBox;
@@ -175,6 +176,8 @@ public class VisitItem extends AppCompatActivity {
             cal.set(Calendar.SECOND, 0);
             cal.set(Calendar.MILLISECOND, 0);
 
+
+
             SqliteConector conector = new SqliteConector(this, "DBCaeii2017", null, 1);
             SQLiteDatabase database = conector.getReadableDatabase();
             if (database != null) {
@@ -190,9 +193,12 @@ public class VisitItem extends AppCompatActivity {
 
 
             Intent alarmShowIntent = new Intent(this, AlarmActivity.class);
+            alarmShowIntent.putExtra("Title",visitName);
             PendingIntent alarmPendingIntent = PendingIntent.getActivity(this, 0, alarmShowIntent, 0);
 
+
             objAlarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), alarmPendingIntent);
+
 
             database.close();
         }
