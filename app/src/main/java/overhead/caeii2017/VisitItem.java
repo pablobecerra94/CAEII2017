@@ -110,9 +110,11 @@ public class VisitItem extends AppCompatActivity {
                 String hour = cursor.getString(0);
                 String minute = cursor.getString(1);
                 if (count != 0) {
-                    turn1.setText(turn1.getText() + "\n" + String.valueOf(count + 1) + "º Turno " + hour + ":" + minute);
+
+                    turn1.setText(Integer.valueOf(minute)>=10?turn1.getText() + "\n" + String.valueOf(count + 1) + "º Turno " + hour + ":" + minute:turn1.getText() + "\n" + String.valueOf(count + 1) + "º Turno " + hour + ":0" + minute);
+
                 } else {
-                    turn1.setText(String.valueOf(count + 1) + "º Turno " + hour + ":" + minute);
+                    turn1.setText(Integer.valueOf(minute)>=10?String.valueOf(count + 1) + "º Turno " + hour + ":" + minute:String.valueOf(count + 1) + "º Turno " + hour + ":0" + minute);
                 }
                 count++;
 
