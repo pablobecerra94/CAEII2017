@@ -85,7 +85,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AboutUsActivity" />
         </activity>
-        <activity android:name=".ScheduleActivity" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:label="ScheduleActivity"
+            android:parentActivityName=".ActivitiesActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivitiesActivity" />
+        </activity>
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
