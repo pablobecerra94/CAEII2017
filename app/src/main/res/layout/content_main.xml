@@ -13,36 +13,52 @@ tools:showIn="@layout/app_bar_main"
     android:layout_height="match_parent">
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/twitter"
-        android:id="@+id/twitterImage"
-        android:layout_alignTop="@+id/facebookImage"
-        android:layout_centerHorizontal="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/aareii"
-        android:layout_marginLeft="23dp"
-        android:layout_marginStart="23dp"
-        android:id="@+id/aareiiImage"
-        android:layout_alignTop="@+id/twitterImage"
-        android:layout_toRightOf="@+id/twitterImage"
-        android:layout_toEndOf="@+id/twitterImage" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/facebook"
-        android:layout_marginBottom="18dp"
-        android:id="@+id/facebookImage"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/twitterImage"
-        android:layout_toStartOf="@+id/twitterImage"
-        android:layout_marginRight="20dp"
-        android:layout_marginEnd="20dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="517dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/aareii"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:id="@+id/aareiiImage"
+                    android:layout_alignTop="@+id/twitterImage"
+                    android:layout_toRightOf="@+id/twitterImage"
+                    android:layout_toEndOf="@+id/twitterImage" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/twitter"
+                    android:id="@+id/twitterImage"
+                    android:layout_alignTop="@+id/facebookImage"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/facebook"
+                    android:layout_marginBottom="18dp"
+                    android:id="@+id/facebookImage"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/twitterImage"
+                    android:layout_toStartOf="@+id/twitterImage"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
 

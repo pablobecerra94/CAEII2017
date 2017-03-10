@@ -39,7 +39,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="217dp">
+                    android:layout_height="333dp">
 
                     <TextView
                         android:text="@string/misionTitle"
@@ -65,14 +65,14 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="217dp">
+                    android:layout_height="344dp">
 
                     <TextView
                         android:text="@string/visionTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/visionTitleTextView"
-                        android:layout_marginTop="35dp"
+                        android:layout_marginTop="24dp"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true" />
 
@@ -81,17 +81,17 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/visionTextView"
                         android:text="@string/visionText"
+                        android:layout_marginTop="21dp"
                         android:layout_below="@+id/visionTitleTextView"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginStart="18dp"
-                        android:layout_marginTop="20dp" />
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginStart="21dp" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="250dp">
+                    android:layout_height="297dp">
 
                     <TextView
                         android:text="@string/objectiveTitle"

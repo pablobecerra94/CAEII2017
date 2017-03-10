@@ -8,6 +8,68 @@
 
     tools:context="overhead.caeii2017.ActivitiesActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="519dp">
+
+                <TextView
+                    android:text="@string/coordinationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/coordinationTItle"
+                    android:layout_below="@+id/appbar"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:text="@string/coordinationMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/coordinationMail"
+                    android:layout_below="@+id/coordinationTItle"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:text="@string/diffusionMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:id="@+id/diffusionMail"
+                    android:layout_below="@+id/diffusionTitle"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:text="@string/diffusionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:id="@+id/diffusionTitle"
+                    android:layout_below="@+id/coordinationMail"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/lineasinferiores"
+                    android:id="@+id/imageView6"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
@@ -25,50 +87,5 @@
             />
 
     </android.support.design.widget.AppBarLayout>
-
-    <TextView
-        android:text="@string/coordinationTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/coordinationTItle"
-        android:layout_below="@+id/appbar"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="@string/coordinationMail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:id="@+id/coordinationMail"
-        android:layout_below="@+id/coordinationTItle"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="@string/diffusionMail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:id="@+id/diffusionMail"
-        android:layout_below="@+id/diffusionTitle"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="@string/diffusionTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:id="@+id/diffusionTitle"
-        android:layout_below="@+id/coordinationMail"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/lineasinferiores"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/imageView6" />
 
 </RelativeLayout>
