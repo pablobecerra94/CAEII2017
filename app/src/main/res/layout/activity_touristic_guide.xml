@@ -26,21 +26,39 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logotransparente"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/imageView3" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
 
-    <TextView
-        android:text="@string/construction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
-        android:id="@+id/constructionTextView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="518dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/logotransparente"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/imageView3" />
+
+                <TextView
+                    android:text="@string/construction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="51dp"
+                    android:id="@+id/constructionTextView" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
