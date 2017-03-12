@@ -18,6 +18,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -111,10 +112,10 @@ public class VisitItem extends AppCompatActivity {
                 String minute = cursor.getString(1);
                 if (count != 0) {
 
-                    turn1.setText(Integer.valueOf(minute)>=10?turn1.getText() + "\n" + String.valueOf(count + 1) + "º Turno " + hour + ":" + minute:turn1.getText() + "\n" + String.valueOf(count + 1) + "º Turno " + hour + ":0" + minute);
+                    turn1.setText(Integer.valueOf(minute) >= 10 ? turn1.getText() + "\n" + String.valueOf(count + 1) + "º Turno " + hour + ":" + minute : turn1.getText() + "\n" + String.valueOf(count + 1) + "º Turno " + hour + ":0" + minute);
 
                 } else {
-                    turn1.setText(Integer.valueOf(minute)>=10?String.valueOf(count + 1) + "º Turno " + hour + ":" + minute:String.valueOf(count + 1) + "º Turno " + hour + ":0" + minute);
+                    turn1.setText(Integer.valueOf(minute) >= 10 ? String.valueOf(count + 1) + "º Turno " + hour + ":" + minute : String.valueOf(count + 1) + "º Turno " + hour + ":0" + minute);
                 }
                 count++;
 
@@ -179,7 +180,6 @@ public class VisitItem extends AppCompatActivity {
             cal.set(Calendar.MILLISECOND, 0);
 
 
-
             SqliteConector conector = new SqliteConector(this, "DBCaeii2017", null, 1);
             SQLiteDatabase database = conector.getReadableDatabase();
             if (database != null) {
@@ -193,13 +193,18 @@ public class VisitItem extends AppCompatActivity {
                 }
             }
 
+            Calendar today = Calendar.getInstance();
+            if (cal.compareTo(today) >= 0) {
 
-            Intent alarmShowIntent = new Intent(this, AlarmActivity.class);
-            alarmShowIntent.putExtra("Title",visitName);
+
+                Intent alarmShowIntent = new Intent(this, AlarmActivity.class);
+            alarmShowIntent.putExtra("Title", visitName);
             PendingIntent alarmPendingIntent = PendingIntent.getActivity(this, 0, alarmShowIntent, 0);
 
 
             objAlarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), alarmPendingIntent);
+
+        }
 
 
             database.close();
