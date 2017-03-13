@@ -223,26 +223,4 @@ public class VisitItem extends AppCompatActivity {
         objAlarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), alarmPendingIntent);
     }
 
-    private void launchNotification(Calendar calendar) {
-
-        Intent alarmShowIntent = new Intent(this, AlarmActivity.class);
-        alarmShowIntent.putExtra("Title", visitName);
-        PendingIntent alarmPendingIntent = PendingIntent.getActivity(this, 0, alarmShowIntent, 0);
-
-        Notification noti = new Notification.Builder(getApplicationContext())
-                .setContentTitle("Visita Tecnica a " + visitName)
-                .setContentText("esta por empezar")
-                .setSmallIcon(R.drawable.ic_launcher)
-                //.setLargeIcon(aBitmap)
-                .setWhen(calendar.getTimeInMillis())
-                .setContentIntent(alarmPendingIntent)
-                .build();
-
-        NotificationManager mNotificationManager =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
-        mNotificationManager.notify(1, noti);
-
-
-    }
 }

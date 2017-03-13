@@ -50,8 +50,8 @@ public class SqliteConector extends SQLiteOpenHelper {
         insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
         name="Ketobac";
-        hour=18;
-        minute=40;
+        hour=19;
+        minute=5;
         number=1;
         insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
