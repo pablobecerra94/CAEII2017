@@ -22,7 +22,7 @@
             android:title="Quienes somos" />
     </group>
 
-    <item android:title="Communicate">
+   <!-- <item android:title="Communicate">
         <menu>
             <item
                 android:id="@+id/nav_share"
@@ -34,5 +34,5 @@
                 android:title="Send" />
         </menu>
     </item>
-
+    -->
 </menu>
