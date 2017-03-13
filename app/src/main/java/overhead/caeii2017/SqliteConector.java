@@ -32,26 +32,26 @@ public class SqliteConector extends SQLiteOpenHelper {
 
     private void insertTurns(SQLiteDatabase sqLiteDatabase) {
         String name = "Bodega Garbin";
-        int hour = 17;
-        int minute = 17;
+        int hour = 18;
+        int minute = 38;
         int number=1;
 
 
         insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
-        hour =17;
-        minute = 20;
+        hour =18;
+        minute = 32;
         number=2;
         insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
-        hour = 20;
-        minute = 45;
+        hour = 18;
+        minute = 34;
         number=3;
         insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
         name="Ketobac";
-        hour=7;
-        minute=45;
+        hour=18;
+        minute=40;
         number=1;
         insertSpecificTurn(sqLiteDatabase, name, hour, minute,number);
 
@@ -93,7 +93,7 @@ public class SqliteConector extends SQLiteOpenHelper {
         String name = "Bodega Garbin";
         int duration = 60;
         String address = "Castelli 1331";
-        int day = 12;
+        int day = 13;
         int month = 3;
         int year = 2017;
         String place = "Terminal de ómnibus Nestor Kirchner";

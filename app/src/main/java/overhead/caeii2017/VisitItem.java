@@ -1,6 +1,8 @@
 package overhead.caeii2017;
 
 import android.app.AlarmManager;
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +13,7 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
@@ -38,6 +41,7 @@ public class VisitItem extends AppCompatActivity {
     private int year;
     private String visitName;
     private String turnNumber;
+
 
 
     @Override
@@ -196,19 +200,48 @@ public class VisitItem extends AppCompatActivity {
             Calendar today = Calendar.getInstance();
             if (cal.compareTo(today) >= 0) {
 
+                //  launchNotification(cal);
+                launchAlarm(objAlarmManager, cal);
 
-                Intent alarmShowIntent = new Intent(this, AlarmActivity.class);
-            alarmShowIntent.putExtra("Title", visitName);
-            PendingIntent alarmPendingIntent = PendingIntent.getActivity(this, 0, alarmShowIntent, 0);
-
-
-            objAlarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), alarmPendingIntent);
-
-        }
+            }
 
 
             database.close();
+
+
         }
+
+
+    }
+
+    private void launchAlarm(AlarmManager objAlarmManager, Calendar cal) {
+        Intent alarmShowIntent = new Intent(getApplicationContext(), AlarmActivity.class);
+        alarmShowIntent.putExtra("Title", visitName);
+        PendingIntent alarmPendingIntent = PendingIntent.getActivity(getApplicationContext(), AlarmCounter.getCount(), alarmShowIntent, 0);
+        AlarmCounter.add();
+
+        objAlarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), alarmPendingIntent);
+    }
+
+    private void launchNotification(Calendar calendar) {
+
+        Intent alarmShowIntent = new Intent(this, AlarmActivity.class);
+        alarmShowIntent.putExtra("Title", visitName);
+        PendingIntent alarmPendingIntent = PendingIntent.getActivity(this, 0, alarmShowIntent, 0);
+
+        Notification noti = new Notification.Builder(getApplicationContext())
+                .setContentTitle("Visita Tecnica a " + visitName)
+                .setContentText("esta por empezar")
+                .setSmallIcon(R.drawable.ic_launcher)
+                //.setLargeIcon(aBitmap)
+                .setWhen(calendar.getTimeInMillis())
+                .setContentIntent(alarmPendingIntent)
+                .build();
+
+        NotificationManager mNotificationManager =
+                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        mNotificationManager.notify(1, noti);
 
 
     }
