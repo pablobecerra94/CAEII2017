@@ -172,36 +172,42 @@ public class VisitItem extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void alarm(View view) {
+        int id=0;
+
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.DAY_OF_MONTH, day);
+        cal.set(Calendar.MONTH, month - 1);
+        cal.set(Calendar.YEAR, year);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+
+
+        SqliteConector conector = new SqliteConector(this, "DBCaeii2017", null, 1);
+        SQLiteDatabase database = conector.getReadableDatabase();
+        if (database != null) {
+            String[] durationField = {"hour", "minute","id"};
+            String[] arguments = {visitName, turnNumber};
+            Cursor cursor = database.query("Turns", durationField, "name=? AND number=?", arguments, null, null, null);
+            if (cursor.moveToFirst()) {
+                cal.set(Calendar.HOUR_OF_DAY, cursor.getInt(0));
+                cal.set(Calendar.MINUTE, cursor.getInt(1));
+                id=cursor.getInt(2);
+
+            }
+        }
+        AlarmManager objAlarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+
         if (checkBox.isChecked()) {
 
-            AlarmManager objAlarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-
-            Calendar cal = Calendar.getInstance();
-            cal.set(Calendar.DAY_OF_MONTH, day);
-            cal.set(Calendar.MONTH, month - 1);
-            cal.set(Calendar.YEAR, year);
-            cal.set(Calendar.SECOND, 0);
-            cal.set(Calendar.MILLISECOND, 0);
 
 
-            SqliteConector conector = new SqliteConector(this, "DBCaeii2017", null, 1);
-            SQLiteDatabase database = conector.getReadableDatabase();
-            if (database != null) {
-                String[] durationField = {"hour", "minute"};
-                String[] arguments = {visitName, turnNumber};
-                Cursor cursor = database.query("Turns", durationField, "name=? AND number=?", arguments, null, null, null);
-                if (cursor.moveToFirst()) {
-                    cal.set(Calendar.HOUR_OF_DAY, cursor.getInt(0));
-                    cal.set(Calendar.MINUTE, cursor.getInt(1));
 
-                }
-            }
 
             Calendar today = Calendar.getInstance();
             if (cal.compareTo(today) >= 0) {
 
                 //  launchNotification(cal);
-                launchAlarm(objAlarmManager, cal);
+                launchAlarm(objAlarmManager, cal,id);
 
             }
 
@@ -210,17 +216,31 @@ public class VisitItem extends AppCompatActivity {
 
 
         }
+        else{
+            stopAlarm(objAlarmManager,cal,id);
+
+        }
 
 
     }
 
-    private void launchAlarm(AlarmManager objAlarmManager, Calendar cal) {
+    private void stopAlarm(AlarmManager objAlarmManager, Calendar cal,int id) {
+
         Intent alarmShowIntent = new Intent(getApplicationContext(), AlarmActivity.class);
         alarmShowIntent.putExtra("Title", visitName);
-        PendingIntent alarmPendingIntent = PendingIntent.getActivity(getApplicationContext(), AlarmCounter.getCount(), alarmShowIntent, 0);
+        PendingIntent alarmPendingIntent = PendingIntent.getActivity(getApplicationContext(), id, alarmShowIntent, 0);
+        objAlarmManager.cancel(alarmPendingIntent);
+    }
+
+    private void launchAlarm(AlarmManager objAlarmManager, Calendar cal,int id) {
+        Intent alarmShowIntent = new Intent(getApplicationContext(), AlarmActivity.class);
+        alarmShowIntent.putExtra("Title", visitName);
+        PendingIntent alarmPendingIntent = PendingIntent.getActivity(getApplicationContext(), id, alarmShowIntent, 0);
         AlarmCounter.add();
 
         objAlarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), alarmPendingIntent);
+
+
     }
 
 }
