@@ -1,18 +1,10 @@
 package overhead.caeii2017;
 
-import android.app.PendingIntent;
 import android.content.Intent;
-import android.net.Uri;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.TaskStackBuilder;
+import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,24 +16,21 @@ import java.util.List;
 
 public class ActivitiesActivity extends AppCompatActivity {
 
-    private ViewPager viewPager;
+    String[] web = new String[] { "Cronograma", "Conferencias y Talleres", "Visitas Tecnicas", "Disertantes" };
+    Integer[] imageId = { R.drawable.schedules, R.drawable.conferences, R.drawable.technical_visits, R.drawable.speakers };
+
+    ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String[]items={getString(R.string.scheduleTitle),getString(R.string.conferencesTitle),getString(R.string.technicalVisitsTitle),getString(R.string.speakersTitle)};
-        ListView itemList;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_us);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        setDisplayHomeAsUp();
-        setTitle(R.string.activitiesTitle);
-        itemList=(ListView) findViewById(R.id.itemList);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items);
-        itemList.setAdapter(adapter);
+        setContentView(R.layout.activity_activities);
 
-        itemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
+        CustomList adapter = new CustomList(this, web, imageId);
+        list = (ListView)findViewById(R.id.list);
+        list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i){
                     case 0:
@@ -56,7 +45,6 @@ public class ActivitiesActivity extends AppCompatActivity {
                         Intent technicalVisits = new Intent(getApplicationContext(), TechnicalVisitisActivity.class);
                         startActivity(technicalVisits);
                         break;
-
                     case 3:
                         Intent speakers= new Intent(getApplicationContext(), SpeakersActivity.class);
                         startActivity(speakers);
@@ -64,8 +52,6 @@ public class ActivitiesActivity extends AppCompatActivity {
                     default:
 
                 }
-
-
             }
         });
     }
