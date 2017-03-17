@@ -4,6 +4,7 @@ import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -41,6 +42,7 @@ public class VisitItem extends AppCompatActivity {
     private int year;
     private String visitName;
     private String turnNumber;
+    private SQLiteDatabase database;
 
 
 
@@ -67,7 +69,8 @@ public class VisitItem extends AppCompatActivity {
 
         SqliteConector conector = new SqliteConector(this, "DBCaeii2017", null, 1);
 
-        SQLiteDatabase database = conector.getReadableDatabase();
+      //  SQLiteDatabase database = conector.getReadableDatabase();
+         database = conector.getWritableDatabase();
 
         if (database != null) {
             String[] durationField = {"duration"};
@@ -146,6 +149,7 @@ public class VisitItem extends AppCompatActivity {
                 public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 
                     turnNumber = spinner.getSelectedItem().toString().substring(0, 1);
+                    changeCheckBox();
                 }
 
                 @Override
@@ -155,7 +159,20 @@ public class VisitItem extends AppCompatActivity {
 
             });
 
-            database.close();
+           // database.close();
+        }
+    }
+
+    private void changeCheckBox() {
+        String[] fields = {"alarm"};
+        String[] arguments = {visitName,turnNumber};
+        Cursor cursor = database.query("Turns", fields, "name=? AND number=?", arguments, null, null, null);
+        if(cursor.moveToFirst()){
+            if(cursor.getString(0).equals("True")){
+                checkBox.setChecked(true);
+            }else{
+                checkBox.setChecked(false);
+            }
         }
     }
 
@@ -182,8 +199,8 @@ public class VisitItem extends AppCompatActivity {
         cal.set(Calendar.MILLISECOND, 0);
 
 
-        SqliteConector conector = new SqliteConector(this, "DBCaeii2017", null, 1);
-        SQLiteDatabase database = conector.getReadableDatabase();
+       // SqliteConector conector = new SqliteConector(this, "DBCaeii2017", null, 1);
+      //  SQLiteDatabase database = conector.getReadableDatabase();
         if (database != null) {
             String[] durationField = {"hour", "minute","id"};
             String[] arguments = {visitName, turnNumber};
@@ -199,10 +216,6 @@ public class VisitItem extends AppCompatActivity {
 
         if (checkBox.isChecked()) {
 
-
-
-
-
             Calendar today = Calendar.getInstance();
             if (cal.compareTo(today) >= 0) {
 
@@ -211,17 +224,21 @@ public class VisitItem extends AppCompatActivity {
 
             }
 
+            ContentValues values= new ContentValues();
+            values.put("alarm","True");
 
-            database.close();
-
-
+            String[] updateArguments={visitName,turnNumber};
+            database.update("Turns",values,"name=? AND number=?",updateArguments);
+           // database.close();
         }
         else{
+            ContentValues values= new ContentValues();
+            values.put("alarm","False");
+
+            String[] updateArguments={visitName,turnNumber};
+            database.update("Turns",values,"name=? AND number=?",updateArguments);
             stopAlarm(objAlarmManager,cal,id);
-
         }
-
-
     }
 
     private void stopAlarm(AlarmManager objAlarmManager, Calendar cal,int id) {
@@ -241,6 +258,12 @@ public class VisitItem extends AppCompatActivity {
         objAlarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), alarmPendingIntent);
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        database.close();
+        this.finish();
     }
 
 }
