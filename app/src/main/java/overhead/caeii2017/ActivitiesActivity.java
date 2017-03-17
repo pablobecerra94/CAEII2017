@@ -25,6 +25,10 @@ public class ActivitiesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activities);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        setDisplayHomeAsUp();
+        setTitle(R.string.aboutUsTitle);
 
         CustomList adapter = new CustomList(this, web, imageId);
         list = (ListView)findViewById(R.id.list);
