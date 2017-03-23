@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/appbar"
-        android:id="@+id/itemList" />
+        android:id="@+id/list" />
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"

@@ -12,10 +12,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by Martin Artime on 14/03/2017.
- */
-
 public class CustomList extends ArrayAdapter<String> {
 
     private final Activity context;
@@ -27,8 +23,8 @@ public class CustomList extends ArrayAdapter<String> {
         this.context = context;
         this.web = web;
         this.imageId = imageId;
-
     }
+
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();

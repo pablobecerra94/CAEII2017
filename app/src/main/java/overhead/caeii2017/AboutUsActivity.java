@@ -14,19 +14,20 @@ public class AboutUsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-         String[]items={getString(R.string.mision_fragment),getString(R.string.aareiiTitle),getString(R.string.delegationsTitle),getString(R.string.contactTitle)};
-         ListView itemList;
+        String[]items={getString(R.string.mision_fragment),getString(R.string.aareiiTitle),getString(R.string.delegationsTitle),getString(R.string.contactTitle)};
+        Integer[] imageId = { R.drawable.mision, R.drawable.que_es, R.drawable.delegations, R.drawable.contact };
+        ListView list;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setDisplayHomeAsUp();
         setTitle(R.string.aboutUsTitle);
-        itemList=(ListView) findViewById(R.id.itemList);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items);
-        itemList.setAdapter(adapter);
-
-        itemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        list=(ListView) findViewById(R.id.list);
+        CustomList adapter = new CustomList(this, items, imageId);
+        list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i){
@@ -50,8 +51,6 @@ public class AboutUsActivity extends AppCompatActivity {
                     default:
 
                 }
-
-
             }
         });
     }
