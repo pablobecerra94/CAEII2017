@@ -28,10 +28,10 @@ tools:showIn="@layout/app_bar_main"
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/aareii"
+                    app:srcCompat="@drawable/instagram"
                     android:layout_marginLeft="23dp"
                     android:layout_marginStart="23dp"
-                    android:id="@+id/aareiiImage"
+                    android:id="@+id/instagramImage"
                     android:layout_alignTop="@+id/twitterImage"
                     android:layout_toRightOf="@+id/twitterImage"
                     android:layout_toEndOf="@+id/twitterImage" />
@@ -70,7 +70,7 @@ tools:showIn="@layout/app_bar_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/logomenuprincipal2"
                     android:id="@+id/imageView11"
-                    android:layout_alignBottom="@+id/aareiiImage"
+                    android:layout_alignBottom="@+id/instagramImage"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="48dp" />
             </RelativeLayout>

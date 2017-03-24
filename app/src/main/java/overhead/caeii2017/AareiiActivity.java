@@ -2,11 +2,13 @@ package overhead.caeii2017;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class AareiiActivity extends AppCompatActivity {
@@ -22,6 +24,16 @@ public class AareiiActivity extends AppCompatActivity {
         setTitle(R.string.aareiiTitle);
         setFont(aareiiiText);
         setDisplayHomeAsUp();
+
+        ImageView aareiiImageView = (ImageView) findViewById(R.id.aareiiImage);
+        aareiiImageView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                Uri uri = Uri.parse(getString(R.string.aareiiURL));
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setFont(TextView aareiiiText) {

@@ -17,7 +17,7 @@ public class TechnicalVisitisActivity extends AppCompatActivity {
         String[]items={getString(R.string.visitItemTest1),getString(R.string.visitItemTest2),getString(R.string.visitItemTest3)};
         ListView itemList;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_us);
+        setContentView(R.layout.activity_technical_visitis);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setDisplayHomeAsUp();
