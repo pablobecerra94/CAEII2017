@@ -132,7 +132,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_tourist_guide) {
             Intent touristicGuide= new Intent(this, TouristGuideActivity.class );
             startActivity(touristicGuide);
-        } /*else if (id == R.id.nav_share) {
+        }else if(id==R.id.nav_sponsors){
+            Intent sponsors= new Intent(this, SponsorsActivity.class );
+            startActivity(sponsors);
+        }
+        /*else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 

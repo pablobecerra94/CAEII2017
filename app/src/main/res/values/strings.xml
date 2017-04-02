@@ -64,4 +64,12 @@ varios años de estudio de Coreano, Japonés,Chino, Inglés, Alemán y Latín.</
     <string name="utngpWebPage">http://www.frgp.utn.edu.ar/</string>
     <string name="unluWebPage">http://www.unlu.edu.ar/</string>
     <string name="instagramURL">https://www.instagram.com/caeii_oficial/</string>
+    <string name="sponsorsTitle">Sponsors</string>
+    <string name="exclusiveSponsor">Sponsor Exclusivo</string>
+    <string name="sponsors">Sponsors</string>
+    <string name="techintWebPage">http://www.techint.com</string>
+    <string name="arcorWebPage">http://www.arcor.com.ar</string>
+    <string name="penaflorWebPage">http://www.grupopenaflor.com.ar/</string>
+    <string name="paeWebPage">https://www.pan-energy.com</string>
+    <string name="cneaWebPage">http://www.cnea.gov.ar/</string>
 </resources>

@@ -17,9 +17,14 @@
             android:icon="@android:drawable/ic_menu_directions"
             android:title="Guia Turistica" />
         <item
-            android:id="@+id/nav_about_us"
-            android:icon="@android:drawable/ic_menu_help"
-            android:title="Quienes somos" />
+        android:id="@+id/nav_about_us"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Quienes somos" />
+
+        <item
+            android:id="@+id/nav_sponsors"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Sponsors" />
     </group>
 
    <!-- <item android:title="Communicate">
