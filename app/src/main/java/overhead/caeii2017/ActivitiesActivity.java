@@ -38,7 +38,8 @@ public class ActivitiesActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i){
                     case 0:
-                        Intent schedule = new Intent(getApplicationContext(), ScheduleActivity.class);
+                        //Intent schedule = new Intent(getApplicationContext(), ScheduleActivity.class);
+                        Intent schedule = new Intent(getApplicationContext(), ScheduleDaysActivity.class);
                         startActivity(schedule);
                         break;
                     case 1:

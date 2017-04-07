@@ -72,4 +72,10 @@ varios años de estudio de Coreano, Japonés,Chino, Inglés, Alemán y Latín.</
     <string name="penaflorWebPage">http://www.grupopenaflor.com.ar/</string>
     <string name="paeWebPage">https://www.pan-energy.com</string>
     <string name="cneaWebPage">http://www.cnea.gov.ar/</string>
+    <string name="title_activity_test">test</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="ThursdayTitle">Jueves</string>
+    <string name="FridayTitle">Viernes</string>
+    <string name="SaturdayTitle">Sabado</string>
+    <string name="SundayTitle">Domingo</string>
 </resources>
