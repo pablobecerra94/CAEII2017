@@ -26,6 +26,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.GregorianCalendar;
 
 public class VisitItem extends AppCompatActivity {
@@ -136,11 +137,11 @@ public class VisitItem extends AppCompatActivity {
                 count--;
             }
 
-            String[] opcions = list.toArray(new String[list.size()]);
-
+            Collections.reverse(list);
+            String[] options = list.toArray(new String[list.size()]);
 
             spinner = (Spinner) findViewById(R.id.spinner);
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opcions);
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, options);
             spinner.setAdapter(adapter);
 
 

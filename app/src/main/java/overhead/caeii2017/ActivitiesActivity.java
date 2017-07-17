@@ -16,8 +16,8 @@ import java.util.List;
 
 public class ActivitiesActivity extends AppCompatActivity {
 
-    String[] web = new String[] { "Cronograma", "Conferencias y Talleres", "Visitas Tecnicas", "Disertantes" };
-    Integer[] imageId = { R.drawable.schedules, R.drawable.conferences, R.drawable.technical_visits, R.drawable.speakers };
+    String[] web = new String[] { "Cronograma", "Conferencias y Talleres", "Visitas Tecnicas", "Pilares fundamentales", "Disertantes" };
+    Integer[] imageId = { R.drawable.schedules, R.drawable.conferences, R.drawable.technical_visits, R.drawable.pilars, R.drawable.speakers };
 
     ListView list;
 
@@ -51,6 +51,10 @@ public class ActivitiesActivity extends AppCompatActivity {
                         startActivity(technicalVisits);
                         break;
                     case 3:
+                        Intent pilars= new Intent(getApplicationContext(), PilarsActivity.class);
+                        startActivity(pilars);
+                        break;
+                    case 4:
                         Intent speakers= new Intent(getApplicationContext(), SpeakersActivity.class);
                         startActivity(speakers);
                         break;

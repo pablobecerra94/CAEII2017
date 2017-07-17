@@ -86,6 +86,14 @@
                 android:value=".AboutUsActivity" />
         </activity>
         <activity
+            android:name=".PilarsActivity"
+            android:label="PilarsActivity"
+            android:parentActivityName=".ActivitiesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivitiesActivity" />
+        </activity>
+        <activity
             android:name=".ScheduleActivity"
             android:label="ScheduleActivity"
             android:parentActivityName=".ActivitiesActivity"
