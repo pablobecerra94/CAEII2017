@@ -2,11 +2,24 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_activities"
+    android:id="@+id/interest_link"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     tools:context="overhead.caeii2017.ActivitiesActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tecnopolis"
+            android:id="@+id/imageView3" />
+    </LinearLayout>
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -25,11 +38,5 @@
             />
 
     </android.support.design.widget.AppBarLayout>
-
-    <ListView
-        android:id="@+id/list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/appbar" />
 
 </RelativeLayout>

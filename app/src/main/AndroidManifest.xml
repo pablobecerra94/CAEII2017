@@ -151,13 +151,28 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
-        <activity android:name=".ScheduleDaysActivity"
-            android:parentActivityName=".ActivitiesActivity"
-            >
+        <activity
+            android:name=".ScheduleDaysActivity"
+            android:parentActivityName=".ActivitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ActivitiesActivity" />
+        </activity>
+        <activity
+            android:name=".InterestLinkActivity"
+            android:label="InterestLinkActivity"
+            android:parentActivityName=".TouristGuideActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TouristGuideActivity" />
+        </activity>
+        <activity
+            android:name=".PlaneActivity"
+            android:label="PlaneActivity"
+            android:parentActivityName=".TouristGuideActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TouristGuideActivity" />
         </activity>
     </application>
 

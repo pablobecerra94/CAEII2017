@@ -78,4 +78,9 @@ varios años de estudio de Coreano, Japonés,Chino, Inglés, Alemán y Latín.</
     <string name="FridayTitle">Viernes</string>
     <string name="SaturdayTitle">Sabado</string>
     <string name="SundayTitle">Domingo</string>
+    <string name="UsefulInformation">Información Útil</string>
+    <string name="InterestLink">Links de Interés</string>
+    <string name="encontramasURL">http://encontramas.com.ar/</string>
+    <string name="turismoURL">https://turismo.buenosaires.gob.ar/</string>
+    <string name="Plane">Planos del Lugar</string>
 </resources>

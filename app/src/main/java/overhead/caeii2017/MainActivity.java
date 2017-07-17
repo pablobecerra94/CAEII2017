@@ -120,10 +120,11 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_news) {
-            Intent news = new Intent(this, NewsActivity.class );
-            startActivity(news);
-        } else if (id == R.id.nav_activities) {
+       // if (id == R.id.nav_news) {
+        //    Intent news = new Intent(this, NewsActivity.class );
+         //   startActivity(news);
+        //} else
+        if (id == R.id.nav_activities) {
             Intent activities = new Intent(this, ActivitiesActivity.class );
             startActivity(activities);
         } else if (id == R.id.nav_about_us) {
