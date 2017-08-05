@@ -28,7 +28,7 @@ public class ActivitiesActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setDisplayHomeAsUp();
-        setTitle(R.string.aboutUsTitle);
+        setTitle(R.string.activitiesTitle);
 
         CustomList adapter = new CustomList(this, web, imageId);
         list = (ListView)findViewById(R.id.list);
