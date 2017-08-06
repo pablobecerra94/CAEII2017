@@ -19,6 +19,7 @@ public class SqliteConector extends SQLiteOpenHelper {
         sqlCreate = "DROP TABLE IF EXISTS Speakers";
         sqlCreate = "DROP TABLE IF EXISTS TechnicalVisits";
         sqlCreate = "DROP TABLE IF EXISTS Turns";
+        sqlCreate = "DROP TABLE IF EXISTS Conferences";
 
         sqlCreate = "CREATE TABLE Speakers (name TEXT, SpeakerText TEXT)";
         sqLiteDatabase.execSQL(sqlCreate);
@@ -30,8 +31,230 @@ public class SqliteConector extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(sqlCreate);
         insertTurns(sqLiteDatabase);
 
+        sqlCreate = "CREATE TABLE Conferences(name TEXT, text TEXT, speaker TEXT )";
+        sqLiteDatabase.execSQL(sqlCreate);
+        insertConferences(sqLiteDatabase);
+
 
         // sqLiteDatabase.close();
+    }
+
+    private void insertConferences(SQLiteDatabase sqLiteDatabase) {
+
+        //Mision 2050
+        String name = "Transformando en hielo el calor";
+        String text = " En un futuro no muy lejano el cuidado del recurso energético pasara a " +
+                "ser una cuestión de importancia fundamental. En la producción de " +
+                "frio, tanto sea para la conservación de alimentos como la " +
+                "aclimatación de los espacios habitables, el consumo energético " +
+                "siempre resulta ser elevado. El propósito de nuestro trabajo como " +
+                "investigadores de la Universidad Nacional de General Sarmiento, es el " +
+                " desarrollo de sistemas de refrigeración que convierten directamente";
+        String speaker="Andrés Sartarelli";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "De la Biomecánica a la Ingeniería del Movimiento";
+        text = "¿Cuáles son los campos de la biomecánica actual? ¿Cómo se " +
+                 "estudian? La importancia de comprender el complejo equilibrio " +
+                 "humano. Su impacto en el área de los Factores Humanos y de la " +
+                 "Ergonomía. El movimiento visto a partir del procesamiento de " +
+                 "señales. ¿Qué hacemos en el LaBIS-UCA?";
+        speaker="Mónica Miralles";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "Nanotecnología. Lo pequeño puede cambiar el mundo.";
+        text = "Qué es la nanotecnología. Nano-soluciones industriales. Nuevos " +
+                "modelos de negocios. La nanotecnología como desafío para la " +
+                "ingeniería industrial.";
+        speaker="Laura Toledo";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "Rol del Ingeniero en las economías regionales";
+        text = "Generar economías regionales sostenibles requiere cubrir " +
+                "necesidades básicas, detectar recursos locales aprovechables, " +
+                "convertir al habitante del lugar en protagonista de cambios, facilitar " +
+                "nexos en la región, la provincia, el país. El rol del ingeniero abarca " +
+                "infraestructura, capacitación técnica, concientización para el cuidado " +
+                "del ambiente, proyectos de inversión, desarrollo de productos, " +
+                "logística. El desafío es sumar pequeños aportes con gran impacto; la " +
+                "huella es el desarrollo integral, progresivo, sostenible.";
+        speaker="Cecilia Smoglie";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "Ideas del futuro para ingenieros de hoy";
+        text = "Enfocado en el emprendedorismo con desarrollo tecnológico y las " +
+                "posibilidades desde el Open Source, para la salud y el medio " +
+                "ambiente. Se dará un panorama de las posibilidades que pueden " +
+                "tener hoy los jóvenes de desarrollar un negocio rentable con baja " +
+                "inversión y buena proyección. " +
+                "Por último, con una visión más futura de lo que es la inteligencia " +
+                "artificial, se hablará de qué manera Argentina puede entrar a ese tipo " +
+                "de desarrollos con ingenieros recién recibidos. " +
+                "La charla está enfocada desde una visión y experiencia personal " +
+                "dentro del mercado emprendedor y sobre cómo una idea junto a la " +
+                "tecnología pueden abrir nuevos horizontes.";
+        speaker="Martin Vila";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "La era de la innovación disruptiva";
+        text = "Vivimos rodeados de nuevos dispositivos, paradigmas digitales, " +
+                "interfaces hombre-máquina y un mundo que converge y se fusiona " +
+                "tecnológicamente a ritmos exponenciales. Nos proponemos acercar " +
+                "claves y brújulas para analizar estos escenarios: los impactos, riesgos " +
+                "y oportunidades que traen a la sociedad. Reflexionaremos acerca de " +
+                "tres grandes paraguas tecnológicos: robótica e inteligencia artificial; " +
+                "realidad virtual/aumentada; y la impresión 3D, para así llegar a " +
+                "conversar acerca de los escenarios disruptivos que seremos testigos " +
+                "en los próximos años (telemedicina, computación para vestir, " +
+                "extensión radical de la vida, dinero 2.0, movimiento maker, smart " +
+                "cities, smart homes, automatización 2.0 etc.)";
+        speaker="Joan Cwaik";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "Proyectos de Inversión con Acero Galvanizado por Inmersión en Caliente";
+        text = "Esta presentación forma parte de un Programa de Capacitación y " +
+                "Actualización Profesional que ofrece la Asociación Argentina de " +
+                "Galvanizado por Inmersión en Caliente (AAGIC) a Universidades, " +
+                "Institutos Tecnológicos, Centros y Consejos Profesionales, Cámaras " +
+                "Empresarias y Entidades Gubernamentales, cumpliendo su misión de " +
+                "informar y difundir las consecuencias de la corrosión del acero y la " +
+                "necesidad de prevenir este fenómeno natural. La corrosión del acero " +
+                "constituye un problema mundial de grandes proporciones que " +
+                "requiere ser controlado, por ello es objeto de estudio en " +
+                "universidades y centros de investigación de todo el mundo para tratar " +
+                "de cuantificar y minimizar los peligros que esta representa. " +
+                "Se expone de una manera sencilla la naturaleza de este fenómeno, " +
+                "presentando algunos mecanismos de control de la corrosión " +
+                "incursionando en detalle en el proceso del galvanizado en caliente. " +
+                "En esta presentación se describe el proceso físico químico e industrial " +
+                "del galvanizado en caliente en sus diversas etapas y se exponen las " +
+                "propiedades y ventajas de este sistema de protección de reconocida " +
+                "eficacia. Además se explica la utilización del acero galvanizado en los " +
+                "proyectos industriales para la mejora de la eficiencia, la seguridad y la " +
+                "sustentabilidad.";
+        speaker="Victor Manuel Fontan";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "Transformemos el presente, porque el futuro es hoy";
+        text = "Presentación de la Fundación Foro Estratégico para el Desarrollo " +
+                "Nacional y de los proyectos que buscan contribuir al desarrollo del " +
+                "país a través una innovación basada en la ciencia, la tecnología y la " +
+                "industria nacional, a partir de la experiencia que tienen en ciencia einnovación nuestras instituciones, y haciendo foco en la incorporación " +
+                "de los jóvenes estudiantes y profesionales que serán los responsables " +
+                "de afrontar el desafío de colaborar con el bienestar para la Argentina " +
+                "del mañana.";
+        speaker="Norma Cadoppi";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "La caña de azúcar en el nuevo escenario energético";
+        text = "Argentina hoy mezcla sus naftas con un 12% de etanol , el cual " +
+                "proviene de la caña de azúcar y del maíz . El gobierno nacional tiene " +
+                "en carpeta llevar ese 12% al 15 % y la idea es llegar al uso de motores " +
+                "flex. Esto significa un cambio en la matriz energética de la República " +
+                "Argentina, cuyo sistema de energías no renovables colapsara hacia " +
+                "2.030. Con la ponencia se pretenderá demostrar cómo el cultivo de " +
+                "caña de azúcar podrá cumplir con este objetivo";
+        speaker="Catalina Lonac";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "Inteligencia Tecnológica: conocer el camino recorrido para llegar más lejos en la innovación sostenible";
+        text = "El rol de las patentes como fuente de información tecnológica. La " +
+                "vigilancia como factor clave de las decisiones estratégicas en las " +
+                "organizaciones. Desafíos de las tecnologías sustentables.";
+        speaker="Hernán Charreau";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        //cartas
+
+        name = "La excepción a la regla de Pareto";
+        text = "La disertación, centra su objetivo en aquellas habilidades de liderazgo que " +
+                "deberá desarrollar el profesional egresado de la universidad. " +
+                "Al llegar el profesional a la empresa, enfrentará un sin número de problemas " +
+                "y son justamente aquellos dónde menos hemos sido capacitados. " +
+                "Generalmente recibimos un 80% de capacitación que nos sirve para el 20% " +
+                "de los problemas cotidianos. Mientras que el 80% de la carga laboral la " +
+                "tendremos que llevar adelante con habilidades que debemos desarrollar en " +
+                "forma personal. " +
+                "Liderazgo, objetivos personales, ganar – ganar, empatía, psicología laboral, " +
+                "coaching ontológico, serán algunos de los temas tratados.";
+        speaker="Jorge Camblong";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+
+        name = "Siempre ganamos el juego que realmente estamos jugando";
+        text = "Teniendo en cuenta los tiempos que corren, los roles dentro de las " +
+                "Organizaciones actuales, en todas sus dimensiones, se acercan más a " +
+                "los de generar nuevas realidades que a los de administrar la realidad " +
+                "existente. La posibilidad de generar una “diferencia” está más en " +
+                "nuestra capacidad de comprometernos con futuros distintos más que " +
+                "sólo con el conocimiento específico de herramientas, técnicas o " +
+                "modelos que lleven a sostener o mejorar los resultados que se están " +
+                "logrando. " +
+                "El compromiso es compartir una serie de disparadores, " +
+                "conocimientos y experiencias que nos ayuden a reflexionar sobre " +
+                "nuestros objetivos y a entender qué significa ser parte de las " +
+                "Organizaciones actuales desde una posición de liderazgo,protagonismo y constante interacción en equipos de trabajo, " +
+                "actuando cada día en forma consistente con los objetivos buscados. " +
+                "Lo que veremos puede ser aplicado desde el primer día, en una " +
+                "Organización grande, mediana o pequeña. Podrá significar cambiar " +
+                "muchos, algunos o pocos de los paradigmas con los que hoy vemos el " +
+                "mundo. Pero sólo una cosa poseerá una total certeza: la decisión " +
+                "sobre el juego que realmente queremos jugar está únicamente en " +
+                "cada uno de nosotros.";
+        speaker="Daniel Rodríguez";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        //TODO Eficiencia e imaginación para la Salud – Un Exo para Linda tiene dos disertantes, ver como se va a manejar.
+
+        name = "La experiencia personal es intransferible";
+        text = "Los Planes de Estudios tratan de brindar al profesional una formación " +
+                "básica, de modo tal que intentan prepararlos para que pueda hacer " +
+                "frente a los problemas y desafíos que se le presentan en la vida " +
+                "cotidiana de la empresa. " +
+                "Los avances de la tecnología han hecho que los temas de ingeniería " +
+                "que se resolvían aplicando recetas de libros, ahora hay que recurrir al " +
+                "criterio y creatividad del profesional, buscando la solución del " +
+                "problema y si además es la mejor solución, mejor aún. Por lo cual la " +
+                "especialización resulta muy importante. " +
+                "Resulta difícil anticiparles a ustedes, situaciones en las cuales todavía " +
+                "no se encuentran involucrados, pero el objetivo de esta exposición es " +
+                "simplemente narrar parte de las actividades profesionales en las " +
+                "cuales desarrollé mi carrera profesional.";
+        speaker="Enrique Alberto Pesl";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "En búsqueda de tu propósito";
+        text = "Te invito a hacer un recorrido por tus principios y talentos, " +
+                "permitiendo así encontrar el propósito de tu vida y definir tus " +
+                "objetivos.";
+        speaker="Alejandro Mangioni";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+        name = "¿Que nos dejó la Física del Siglo XX y cómo impactó en nuestras vidas?";
+        text = "El desarrollo de la Mecánica Cuántica durante las primera décadas del " +
+                "siglo XX fueron, tal vez, una de las mayores revoluciones en nuestra " +
+                "forma de interpretar el universo y cambió definitivamente nuestra " +
+                "forma de relacionarse con él. Hoy, en un mundo globalizado e " +
+                "hiperconectado, casi todas las tecnologías están basadas en las leyes " +
+                "y conceptos de la Mecánica Cuántica. " +
+                "¿Cuáles fueron los mayores desafíos que se debieron afrontar a la " +
+                "hora de formular esta nueva visión? ¿Cómo las entonces nuevasteorías atentan contra nuestro sentido común? Y finalmente ¿Cómo " +
+                "éstas han impactado en el desarrollo tecnológico de la humanidad? " +
+                "Pensar y analizar algunas de estas preguntas nos llevarán a " +
+                "comprender y valorar el impacto de la investigación, y de la mal " +
+                "llamada investigación básica, en el desarrollo tecnológico y cultural " +
+                "de nuestra época.";
+        speaker="Carlos Balseiro";
+        insertSpecificConference(name, text,speaker,sqLiteDatabase);
+
+    }
+
+    private void insertSpecificConference(String name, String text, String speaker,SQLiteDatabase sqLiteDatabase) {
+        ContentValues conference = new ContentValues();
+        conference.put("name", name);
+        conference.put("text", text);
+        conference.put("speaker", speaker);
+        sqLiteDatabase.insert("Conferences", null, conference);
     }
 
     private void insertTurns(SQLiteDatabase sqLiteDatabase) {
