@@ -15,7 +15,10 @@ public class SpeakersActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String[]items={"Martín Urquizo", "Marcos Aquino", "Andrés Villamor", "Augusto Cicaré", "Eduardo Jorge Oreste", "Alejandro Leiras", "Mario Paredes", "Diego Prado"};
+        String[]items={"Martín Urquizo", "Marcos Aquino", "Andrés Villamor", "Augusto Cicaré", "Eduardo Jorge Oreste", "Alejandro Leiras", "Mario Paredes", "Diego Prado",
+                "Andrés Sartarelli", "Mónica Miralles","Laura Toledo","Cecilia Smoglie","Martin Vila","Joan Cwaik","Victor Manuel Fontan","Norma Cadoppi","Catalina Lonac","Hernán Charreau","Paulo Strina",
+                "Jorge Camblong", "Gastón Morales", "Daniel Rodríguez", "Lucas Damián Herrero", "Brian Vallejo","Enrique Alberto Pesl","Alejandro Mangioni","Carlos Balseiro"};
+
         ListView itemList;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speakers);
