@@ -148,138 +148,679 @@ public class SqliteConector extends SQLiteOpenHelper {
 
     private void insertSpeakers(SQLiteDatabase sqLiteDatabase) {
 
-        String name = "Marcela Riccillo";
-        String text = "Doctora en Ciencias de la Computación de la Universidad de Buenos " +
-                "Aires, con especialización en Robótica e Inteligencia Artificial. " +
-                "Su foco actual es la Robótica Humanoide en el mundo, estudia las " +
-                "características de los principales robots, la historia de su evolución y el " +
-                "análisis de sus comportamientos sociales (HRI). " +
-                "Participó en grupos de investigación y tiene publicados trabajos en " +
-                "congresos internacionales. Escribe en revistas de divulgación (como Muy " +
-                "Interesante y Cómo Ves? de México) y dicta seminarios de Robótica en " +
-                "universidades e institutos. " +
-                "Invitada como oradora en TEDxRosario 2012 Argentina, TEDxBarcelona " +
-                "2013 España, Campus Party México 2013 y AXIS México 2014 entre " +
-                "otros. " +
-                "Participa como jurado de competencias de robots en universidades y condujo por 2 temporadas una " +
-                "columna sobre Robótica en radio. Fue profesora varios años en la Universidad de Buenos Aires. Lleva " +
-                "varios años de estudio de Coreano, Japonés,Chino, Inglés, Alemán y Latín.";
+        // ADN Industrial
+        String name = "Martín Urquizo";
+        String text = "Actualmente es Gerente de Negocios Online de" +
+                "OCA, compañía líder en servicios logísticos para ecommerce en Argentina. También es Director de la" +
+                "Cámara Argentina de Comercio Electrónico" +
+                "(Comisión de Logística)." +
+                "Martin Urquizo es Licenciado en Marketing, Máster en" +
+                "Administración de Empresas y cuenta con un post grado" +
+                "en eBusiness Management. Tiene experiencia en la implementación" +
+                "de canales de venta online, operaciones y el desarrollo de negocios" +
+                "web para diferentes empresas líderes del sector.";
 
         insertSpecificSpeaker(sqLiteDatabase, name, text);
 
-        name = "Lino Barañao";
-        text = "Recibido como Licenciado en Ciencias Quimicas y luego Doctor en " +
-                "Ciencias Quimicas en la UBA, realizó diversos posgrados en instituciones " +
-                "de renombre como ser el Instituto Max Planck. " +
-                "Profecionalmente se desempeña como investigador principal del " +
-                "CONICET en el Instituto de Biología y Medicina Experimental. En 2002 fue " +
-                "parte del equipo que logro el nacimiento de la primer ternera clonada de " +
-                "Iberoamérica alterada geneticamente para la produccion en leche de " +
-                "hormona de crecimiento humano. " +
-                "Entre sus azañas politicas se desempeño como Presidente de Tecnología " +
-                "del CONICET entre 1999 y 2000, del 2003 al 2007 ocupó el cargo de " +
-                "Presidente de la Agencia Nacional de Promoción Cientifica y Tecnología. " +
-                "Desde el 2007 hasta la fecha es el Ministro de Ciencia, Tecnología e Innovación " +
-                "Productiva de la Nación.";
+        name = "Marcos Aquino";
+        text = "Ingeniero Industrial (ITBA). Master Ingeniería de la" +
+                "Innovación (U. de Bologna). Master Gestión de" +
+                "Negocios (Universidad San Andrés). Wine Executive" +
+                "Program (UC Davis, California)." +
+                "Gerente de logística de Grupo Peñaflor. Se" +
+                "desempeñó como Supply Planner Manager en Danone" +
+                "(Alimentos) y como Supply Chain Perf. Manager Dairy Latam Danone" +
+                "(Alimentos). Trabajo durante 10 años en Quilmes ocupando diversos" +
+                "puestos de diferentes niveles jerárquicos";
 
         insertSpecificSpeaker(sqLiteDatabase, name, text);
 
-        name = "Debora Giorgi";
-        text = "Es Licenciada en Economía de la Universidad " +
-                "Católica Argentina con Diploma de Honor. " +
-                "Ex Secretaria de industria, comercio, minería " +
-                "Fue directora del Centro de Estudios para las " +
-                "Negociaciones Internacionales " +
-                "(CENI) " +
-                "A partir de 2005 fue Ministra de " +
-                "Asuntos Agrarios y Producción " +
-                "Ex Ministra de Industria";
+        name = "Andrés Villamor";
+        text = "Ingeniero industrial (UBA). Gerente de operaciones de" +
+                "Tenaris. Sus principales Responsabilidades son:" +
+                "Planificar, organizar, dirigir y ejecutar operaciones" +
+                "óptimas en el día a día, enfocarse en la excelencia" +
+                "industrial en seguridad, calidad y cumplimiento para" +
+                "superar las expectativas de nuestros clientes. Desarrollar" +
+                "con centros de I + D nuevos productos de acuerdo a las" +
+                "expectativas nuevas y futuras de los clientes. Comprender las necesidades y " +
+                "requisitos de los clientes para desarrollar procesos efectivos de control de" +
+                "calidad. Apoyar y resolver las reclamaciones de los clientes. Implementar" +
+                "estrategias alineadas con las iniciativas estratégicas y proporcionar un" +
+                "sentido claro de dirección y enfoque, asegurando que el negocio funcione" +
+                "dentro de la declaración de la empresa. Desarrollar e implementar nuevos" +
+                "sistemas y procesos que rastreen y optimicen la productividad y estándares," +
+                "métricas y metas de desempeño para asegurar un retorno efectivo de los" +
+                "activos. Asegurar que los objetivos industriales, financieros y otros" +
+                "acordados se cumplan en todos los departamentos. Abordar los problemas" +
+                "o quejas de los empleados y administrar los convenios colectivos. Mantener" +
+                "a los empleados motivados y organizando el entrenamiento apropiado." +
+                "Diseñar e implementar planes de desarrollo para WC y BC";
 
         insertSpecificSpeaker(sqLiteDatabase, name, text);
 
-        name = "Gino Tubaro";
-        text = "Es inventor, fundador de Atomic Lab, donde se " +
-                "encuentra innovaciones como “Libs”, una plataforma " +
-                "para solicitar una prótesis 3D, un “braile dinamico” " +
-                "que traduce texto a braile y muchas cosas más. Fue " +
-                "reconocido por Barack Obama por sus proyectos. " +
-                "Ganó premios de la OMPI (ONU). Fue “Alumni of the " +
-                "month” internacional por parte del Departamento de " +
-                "Estados de los Estados Unidos de forma mundial en " +
-                "“reconocimiento a su liderazgo en crear innovadoras " +
-                "soluciones para ayudar a las personas con " +
-                "discapacidades a vivir sin límites”. Ganó el primer " +
-                "premio de Una Idea para Cambiar la historia de The " +
-                "History Channel.";
+        name = "Augusto Cicaré";
+        text = "A los 11 años, cursando 5º grado, construye su primer" +
+                "motor de cuatro tiempos con el cual hace funcionar un" +
+                "lavarropas. Siendo apenas un joven de 18 años de edad," +
+                "desarrolla y fabrica totalmente un motor diesel de dos" +
+                "tiempos. A los 21 años de edad Augusto concreta su" +
+                "ambición de niño de fabricar y volar su primer" +
+                "helicóptero, el CICARE CH-1. En 1970 el Ministerio de" +
+                "Educación y Cultura de la Nación lo nombra Maestro Técnico." +
+                "A pedido de Juan Manuel Fangio diseña y construye un nuevo motor de" +
+                "cuatro cilindros en V de cuatro tiempos para instalar en automóviles DKW." +
+                "En el año 1975 transforma los motores nafteros de seis cilindros de Ford y" +
+                "Chevrolet a diesel, mediante el agregado de una nueva tapa de cilindros." +
+                "El 6 de Octubre de 1993 se forma la Empresa Cicaré Helicópteros S.A.." +
+                "Augusto Cicaré es designado Director y Responsable Técnico de la misma." +
+                "En el año 1994 desarrolla para Cicaré Helicópteros S.A. el" +
+                "Simulador/Entrenador de Vuelo para Helicópteros CICARE SVH-3, que" +
+                "revolucionó el sistema de enseñanza en el mundo entero por sus" +
+                "características únicas. Este Simulador obtuvo patentes en Argentina y" +
+                "Estados Unidos." +
+                "El 10 de Agosto de 1996 recibe la distinción de Amigo de la Fuerza Aérea" +
+                "Argentina según resolución 476/88. El 20 de Septiembre de 1996 el Consejo" +
+                "Profesional de la Ingeniería Aeronáutica y Espacial le otorga a Cicaré, por ser" +
+                "referencia mundial en el campo de la Ingeniería Aeronáutica, la Matrícula" +
+                "Honoraria de Ingeniero Aeronáutico y Espacial." +
+                "En noviembre de 1998 participa del concurso Ladislao José Biro, auspiciado" +
+                "por el Instituto Nacional de la Propiedad Industrial (INPI) y la Asociación" +
+                "Argentina de Inventores. Se le otorga el primer premio en la categoría" +
+                "Mecánica y es seleccionado como el mejor invento nacional del año, con el" +
+                "reconocimiento de la Federación Internacional de Inventores ( IFIA ) y la" +
+                "Organización Mundial de la Propiedad Intelectual (OMPI). Por tal motivo" +
+                "representa a la República Argentina en la Exposición Internacional de" +
+                "inventos en Ginebra, Suiza, obteniendo Medalla de Oro en la Categoría P" +
+                "(Aeronáutica, náutica, vehículos y accesorios)." +
+                "El 12 de mayo de 1999 el Senado y la Honorable Cámara de Diputados" +
+                "nombra por unanimidad como Ciudadano Ilustre de la Provincia de Buenos" +
+                "Aires a Augusto Ulderico Cicaré. A mediados de 2002 realiza las primeras pruebas de un novedoso sistema" +
+                "que permite alimentar en forma dual (Gasoil y GNC) motores de ciclo Diesel." +
+                "El 19 de Enero de 2004 el Instituto del Gas Argentino (IGA) emite el" +
+                "Certificado de Homologación del Sistema Diesel-Gas Cicaré." +
+                "El 20 Diciembre de 2004 es galardonado por segunda vez con el Premio" +
+                "“Juan Manuel Fangio” a la innovación tecnológica en la industria automotriz" +
+                "y autopartista, instituido por el Banco de la Provincia de Buenos Aires." +
+                "El 1º de Setiembre de 2005 el Consejo Académico de la Facultad de" +
+                "Ingeniería de la Universidad Nacional del Centro de la Provincia de Buenos" +
+                "Aires lo distingue como Empresario Innovador 2005, por su contribución al" +
+                "medio ambiente en general, y al sector del transporte en particular," +
+                "mediante el desarrollo del Sistema Dual Diesel-Gas Cicaré. El 2 de Setiembre" +
+                "de 2005 recibe el 2º Premio del concurso INNOVAR 2005 en el marco de las" +
+                "Terceras Jornadas Nacionales de Diseño, por su innovación tecnológica" +
+                "denominada Sistema Dual Diesel-Gas Cicaré. El 27 de Mayo de 2008 recibe" +
+                "la Orden al Mérito Newberiano y es incorporado como Miembro de Honor al" +
+                "Instituto Nacional Newberiano.";
+
         insertSpecificSpeaker(sqLiteDatabase, name, text);
 
 
-        name = "Andy Freire";
-        text = "Andrés \"Andy\" Freire es el Ministro de Modernización, Innovación y " +
-                "Tecnología y titular del Ente de Turismo de la Ciudad de Buenos Aires. " +
-                "Es licenciado en Economía Magna Cum Laude por la Universidad " +
-                "de San Andrés, Argentina, y realizó el Owner President Management " +
-                "Program de la Escuela de Negocios de la Universidad de Harvard. " +
-                "Junto a Santiago Bilinkis fundó y lideró Officenet, una empresa de " +
-                "distribución de artículos de oficina en Latinoamérica, cuyo éxito fue caso " +
-                "de estudio en varias universidades en todo el mundo. Más tarde, cofundó " +
-                "Axialent, una consultora que ayuda a las mayores empresas del mundo a " +
-                "alinear su cultura organizacional. Participó, en algunos casos como " +
-                "inversor y en otros como miembro de junta, en distintas start ups, entre ellas Wanako, Coffice, Reed " +
-                "Argentina, Restorando, The Mind Company, Estrella limited y Parque Austral. " +
-                "Reconocido como “Emprendedor del año de Latinoamérica” (2001) por la Fundación Endeavor y " +
-                "“Líder Global del Mañana” (2002) por el Foro Económico Mundial, también fue uno de los dos finalistas " +
-                "premiados en el “World Young Business Achiever Award”, celebrado en Filipinas en 2002, y en 2008 fue " +
-                "distinguido como “Joven Líder Global” entre más de 100 jóvenes empresarios por el Foro Económico " +
-                "Mundial en Davos, Suiza.";
+        name = "Eduardo Jorge Oreste";
+        text = "Ingeniero Mecánico (UNLP). Especialización en" +
+                "combustibles (UBA). BMA (University of Texas at Austin)." +
+                "Actualmente se desempeña como Gerente General en" +
+                "Cicaré S.A." +
+                "Nos hablará sobre el desafío de realizar el salto" +
+                "productivo de la empresa Cicaré, única productora de" +
+                "helicópteros en Sudamérica, para que además de ser un" +
+                "orgullo argentino, triplicara su producción y adaptaran su modo de producir" +
+                "para cumplir la demanda creciente.";
         insertSpecificSpeaker(sqLiteDatabase, name, text);
 
 
-        name = "Miguel Galuccio";
-        text = "Ingeniero en Petroleo del Instituto Tecnológico de Buenos Aires (ITBA). Ex " +
-                "CEO de YPF. " +
-                "Es un experto en la localización y perforación para hallar petróleo, lo que " +
-                "se conoce como \"reservorista\". A pesar de su corta edad, tiene una " +
-                "experiencia confiable en todos los continentes y un alto grado de " +
-                "especialización en la profesión.";
+        name = "Alejandro Leiras";
+        text = "Director de Estudios e Investigacón de ARLOG" +
+                "(Asociación Argentina de Logística Empresaria)." +
+                "Docente Universitario en ITBA. Licenciado en" +
+                "comercialización, canales de distribución y logística" +
+                "(UAI). Posgrado en Redes Logísticas (ITBA).";
         insertSpecificSpeaker(sqLiteDatabase, name, text);
 
+
+        name = "Mario Paredes";
+        text = "Trabaja actualmente y desde hace 13 años, en el" +
+                "Instituto Nacional de Tecnología Industrial y se" +
+                "desempeña como Asesor en Tecnologías de Gestión" +
+                "(ATG)." +
+                "Experto en materiales de caucho, rubro en el que se" +
+                "destacó sucesivamente durante 15 años para la industria nacional y privada: operador, formulador, programador de la" +
+                "producción, supervisor y jefe de planta." +
+                "Técnico Mecánico y Técnico Superior en Tecnología Industrial," +
+                "actualmente finalizando la carrera de Ingeniería Industrial en la UNGS." +
+                "Experto en manejo de equipos de trabajo, liderazgo y motivación del" +
+                "personal. Experto y docente en Mejora de la Productividad para" +
+                "Pymes." +
+                "Asesoró empresas y organismos como: YPF, Fabricaciones Militares," +
+                "Ministerio de Producción, Ministerio de Seguridad, Ministerio de" +
+                "Desarrollo, cooperativas de trabajo y PyMEs de diversos rubros" +
+                "industriales." +
+                "Es Asesor en los Programas Experto PyME y Crédito Fiscal, para el" +
+                "Ministerio de Producción." +
+                "Disertante para el INTI, en temáticas relacionadas a las Herramientas" +
+                "de Gestión Productiva (Lean Manufacturing, Toyota Production" +
+                "Sistem y otras)." +
+                "Conferencia: ¿Por qué la Ingeniería Industrial?";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Diego Prado";
+        text = "Diego Prado es abogado recibido en la Universidad" +
+                "de Buenos Aires. Ingresó a Toyota Argentina en" +
+                "noviembre de 2006 como Gerente General de" +
+                "Recursos Humanos. En enero de 2017 asumió el" +
+                "cargo de Director de Asuntos Corporativos de la" +
+                "compañía. Tiene 53 años, está casado y tiene 3 hijos.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        //Mision 2050
+
+        name = "Dr. Andrés Sartarelli";
+        text = "Licenciado en Ciencias Físicas (UBA). Doctor en" +
+                "Ciencias Físicas (UBA). Especialización en" +
+                "Energía solar térmica (INTI) y en aprovechamiento" +
+                "de la energía solar (UNLU). Docente universitario en" +
+                "UNGS. Investigador en las temáticas: “Eficiencia" +
+                "energética y energías renovables apropiadas para la" +
+                "agricultura familiar y el desarrollo rural” y en" +
+                "“Refrigeración solar apropiable”. Ha publicado numerosos artículos en" +
+                "revistas nacionales e internacionales. Ha participado como orador en" +
+                "diversos eventos relacionados con las energías renovables. Ha" +
+                "recibido el premio Fundación Ford Motor Company de conservación y" +
+                "Medio Ambiente por su proyecto “Energía solar aplicada a la" +
+                "producción de frío”." +
+                "Conferencia: “Transformando en hielo el calor”" +
+                "En un futuro no muy lejano el cuidado del recurso energético pasara a" +
+                "ser una cuestión de importancia fundamental. En la producción de" +
+                "frio, tanto sea para la conservación de alimentos como la" +
+                "aclimatación de los espacios habitables, el consumo energético" +
+                "siempre resulta ser elevado. El propósito de nuestro trabajo como" +
+                "investigadores de la Universidad Nacional de General Sarmiento, es el" +
+                "desarrollo de sistemas de refrigeración que convierten directamente la energía térmica provista por el sol en “frio”, para ello venimos" +
+                "desarrollando un sistema de refrigeración por adsorción de tecnología" +
+                "sencilla que utiliza el par refrigerante: Carbón Activado-Metanol. En" +
+                "esta exposición nos referiremos brevemente al principio de" +
+                "funcionamiento de tales dispositivos y los usos potenciales de los" +
+                "mismos.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Dra. Mónica Miralles";
+        text = "Doctora en Ciencias Físicas (FCEyN- UBA), Licenciada" +
+                "en Ciencias Físicas (FCEyN- UBA), Profesora de" +
+                "Ciencias Físicas (FFyL-UBA). Profesora Adjunta" +
+                "Regular de Física para Diseño Industrial (FADU-UBA)," +
+                "y JTP Regular en FI-UBA, Profesora Titular de" +
+                "Mecánica de los Fluidos en UCA; Profesora Titular de" +
+                "Biomateriales (ITBA).Directora del Laboratorio de" +
+                "Biomecánica e Ingeniería para la Salud (LaBIS-UCA). Como" +
+                "investigadora, cuenta con numerosas publicaciones, presentaciones a" +
+                "congresos, dirección de proyectos, diversos comités de evaluación," +
+                "formación de recursos humanos, entre otras actividades académicas" +
+                "relacionadas." +
+                "Conferencia: “De la Biomecánica a la" +
+                "Ingeniería del Movimiento”" +
+                "¿Cuáles son los campos de la biomecánica actual? ¿Cómo se" +
+                "estudian? La importancia de comprender el complejo equilibrio" +
+                "humano. Su impacto en el área de los Factores Humanos y de la" +
+                "Ergonomía. El movimiento visto a partir del procesamiento de" +
+                "señales. ¿Qué hacemos en el LaBIS-UCA?";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Laura Toledo";
+        text = "Ingeniera Industrial, egresada de la Universidad" +
+                "Tecnológica Nacional, Facultad Regional Haedo, y" +
+                "especializada en Gestión de la Vinculación y la" +
+                "Transferencia Científico-Tecnológica por la" +
+                "Universidad Nacional del Litoral. Desde 2012 es" +
+                "coordinadora del área de Promoción e Innovación de la" +
+                "Fundación Argentina de Nanotecnología. Allí es responsable de la evaluación de proyectos emprendedores, su financiamiento e" +
+                "incubación. Previamente, se desempeñó en tareas de producción," +
+                "marketing, logística y comercio internacional en PyMEs y" +
+                "multinacionales." +
+                "Conferencia: “Nanotecnología. Lo pequeño" +
+                "puede cambiar el mundo.”" +
+                "Qué es la nanotecnología. Nano-soluciones industriales. Nuevos" +
+                "modelos de negocios. La nanotecnología como desafío para la" +
+                "ingeniería industrial.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
 
         name = "Cecilia Smoglie";
-        text = "Licenciada en Física (Instituto Balseiro, abanderada, 1977), Postgrado " +
-                "en Ingeniería Nuclear (Universidad de Londres, 1982) y Doctora en " +
-                "Ingeniería Mecánica (Universidad de Karlsruhe, 1984). Fue Profesora " +
-                "Adjunta de Termodinámica en el Instituto Balseiro (1985-88), " +
-                "Investigadora de la CNEA, Investigadora Invitada en el Centro Atómico " +
-                "Karlsruhe (1988-90), Ingeniera de Desarrollo para centrales eléctricas en " +
-                "Asea Brown Boveri (Suiza, 1990-96), e Instructora de ASME en temas de " +
-                "intercambiadores de calor. Desde 1996 se desempeña en el Instituto " +
-                "Tecnológico de Buenos Aires, donde es Profesora Titular de " +
-                "Termodinámica y de Transferencia de Calor, fue Directora de Ingeniería Mecánica e Ingeniería Naval " +
-                "(1996-2010) y desde 2011 es Directora del Área de Energía. Su principal interés es la cooperación entre " +
-                "universidad - empresa. Tiene 22 trabajos escritos para la Industria, 14 publicaciones y 3 patentes.";
+        text = "Licenciada en Física, Instituto Balseiro, Argentina." +
+                "Postgrado en Ingeniería Nuclear, University of" +
+                "London, Inglaterra. Doctorado en Ingeniería" +
+                "Mecánica, Karlsruhe Institut für Technologie (KIT)," +
+                "Alemania. Trabajo como investigadora en el Centro" +
+                "Atómico de Bariloche. Fue investigadora invitada en" +
+                "el Centro Atómico de Karlsruhe, Alemania. Trabajó como" +
+                "ingeniera de desarrollo, Asea Brown Boveri, Suiza. Actualmente se" +
+                "desempeña en el ITBA como Prof. de Postgrado en Termodinámica," +
+                "Calor, Energía. Es Directora de la Maestría ITBA-KIT en Energía y" +
+                "Ambiente y Coordinadora del Área de Energía" +
+                "Conferencia: “Rol del Ingeniero en las" +
+                "economías regionales”" +
+                "Generar economías regionales sostenibles requiere cubrir" +
+                "necesidades básicas, detectar recursos locales aprovechables," +
+                "convertir al habitante del lugar en protagonista de cambios, facilitar" +
+                "nexos en la región, la provincia, el país. El rol del ingeniero abarca" +
+                "infraestructura, capacitación técnica, concientización para el cuidado" +
+                "del ambiente, proyectos de inversión, desarrollo de productos," +
+                "logística. El desafío es sumar pequeños aportes con gran impacto; la" +
+                "huella es el desarrollo integral, progresivo, sostenible.";
         insertSpecificSpeaker(sqLiteDatabase, name, text);
 
-        name = "Alejandro Ceccatto";
-        text = "Realizó sus estudios en la Universidad Nacional de Rosario como " +
-                "Licenciado en Física recibiendose en 1979. En 1985 culmina con " +
-                "su doctorado en Fisica en la Universidad Nacional de La Plata, " +
-                "dando lugar luego a dos Posdoctorados en la Universidad de " +
-                "Colonia (Alemania) y la Universidad de Standford (USA). " +
-                "En la actualidad participa como Investigador principal en el CONICET " +
-                "ademas de ser miembro asociado del Centro Internacional de " +
-                "Fisica Teorica (Triesta, Italia). Además desde 2008 es el " +
-                "Secretario de Articulacíón Cientifico Tecnologico del Ministerio de " +
-                "Ciencia, Tecnología e Innovación Productiva.";
+        name = "Martin Vila";
+        text = "Desarrollador DevOps, Python developer. Insignia" +
+                "Microsoft de Seguridad para Profesionales de IT." +
+                "Experto universitario en Ethical Hacking, Vocero" +
+                "junior de Argentina Cibersegura, realice varios" +
+                "cursos en la Microsoft Virtual Academy relacionados" +
+                "a la virtualización y la gestión en \"la nube\"." +
+                "Fundador de Synapdica IT, Emprendimiento que" +
+                "desarrolla tecnología con plataforma Open Source para sensorizado y" +
+                "automatización." +
+                "Conferencia: “Ideas del futuro para ingenieros" +
+                "de hoy”" +
+                "Enfocado en el emprendedorismo con desarrollo tecnológico y las" +
+                "posibilidades desde el Open Source, para la salud y el medio" +
+                "ambiente. Se dará un panorama de las posibilidades que pueden" +
+                "tener hoy los jóvenes de desarrollar un negocio rentable con baja" +
+                "inversión y buena proyección." +
+                "Por último, con una visión más futura de lo que es la inteligencia" +
+                "artificial, se hablará de qué manera Argentina puede entrar a ese tipo" +
+                "de desarrollos con ingenieros recién recibidos." +
+                "La charla está enfocada desde una visión y experiencia personal" +
+                "dentro del mercado emprendedor y sobre cómo una idea junto a la" +
+                "tecnología pueden abrir nuevos horizontes.";
         insertSpecificSpeaker(sqLiteDatabase, name, text);
 
-        name = "Graciela Chichilnisky";
-        text = "Doctora en Matemáticas recibida en la " +
-                "Universidad de California. " +
-                "Economista y Profesora de economía de " +
-                "la Universidad de Columbia. Experta en " +
-                "Cambio climático. Participó en el " +
-                "TEDxUTN 2013, entre otros.";
+        name = "Joan Cwaik";
+        text = "Joan Cwaik es un innovador tecnológico, autor," +
+                "docente, productor y conferencista internacional." +
+                "Joan es una de las voces más vigentes en" +
+                "tecnologías disruptivas y paradigmas digitales de" +
+                "América Latina. Licenciado en Gestión de Medios y" +
+                "Entretenimiento (UADE). Posgrado en Convergencia" +
+                "Multimedial (UBA). Gerente de Marketing para" +
+                "Latinoamérica en Maytronics. Responsable del Centro de Divulgación" +
+                "Tecnológica de la Facultad de Ingeniería y Ciencias Exactas de la" +
+                "Fundación UADE. Columnista de tecnología en La Nación, Infobae," +
+                "C5N, FM UNO 103.1 y FM Millenium 106.7. Nominado por la Revista Apertura y La Red Innova como uno de los emprendedores" +
+                "tecnológicos más influyentes de la Argentina en 2015." +
+                "Título de la conferencia: “La era de la" +
+                "innovación disruptiva”" +
+                "Vivimos rodeados de nuevos dispositivos, paradigmas digitales," +
+                "interfaces hombre-máquina y un mundo que converge y se fusiona" +
+                "tecnológicamente a ritmos exponenciales. Nos proponemos acercar" +
+                "claves y brújulas para analizar estos escenarios: los impactos, riesgos" +
+                "y oportunidades que traen a la sociedad. Reflexionaremos acerca de" +
+                "tres grandes paraguas tecnológicos: robótica e inteligencia artificial;" +
+                "realidad virtual/aumentada; y la impresión 3D, para así llegar a" +
+                "conversar acerca de los escenarios disruptivos que seremos testigos" +
+                "en los próximos años (telemedicina, computación para vestir," +
+                "extensión radical de la vida, dinero 2.0, movimiento maker, smart" +
+                "cities, smart homes, automatización 2.0 etc.).";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Victor Manuel Fontan";
+        text = "Es Ingeniero Químico graduado de la Universidad" +
+                "Tecnológica Nacional – Facultad Regional Buenos" +
+                "Aires, con Postgrado en Administración de" +
+                "Empresas. Posee una extensa trayectoria" +
+                "gerenciando calidad, investigación y desarrollo" +
+                "tecnológico en empresas nacionales de distinta" +
+                "envergadura. Se desempeñó como Jefe de Calidad," +
+                "Medio Ambiente y Seguridad e Higiene de la" +
+                "empresa GALVASA S.A. y posteriormente ejerció la Gerencia de" +
+                "Planta. Es Auditor de Sistemas de Gestión de la Calidad ISO 9001 del" +
+                "Instituto Argentino para la Calidad habiendo implementado ISO9000" +
+                "en empresas con más de 50 años de trayectoria. Llevó a cabo el" +
+                "Management de Proyectos como el diseño y construcción de una" +
+                "Planta de pre-procesado de caucho, diseño de aislación de hornos de" +
+                "galvanizado y diseño y construcción de planta de tratamiento de" +
+                "efluentes. Project Manager de la construcción del laboratorio de" +
+                "simulación de procesos del Departamento de Ingeniería Química de" +
+                "la Universidad Tecnológica Nacional, Facultad Regional Buenos Aires." +
+                "Miembro Consultor de la Asociación Argentina de Galvanizado por" +
+                "Inmersión en Caliente (AAGIC) cuya misión es la de difundir y" +
+                "promover las consecuencias de la corrosión y las bondades del" +
+                "galvanizado por inmersión en caliente. A través de AAGIC participó de" +
+                "la visita y el asesoramiento de numerosas empresas dedicadas al" +
+                "galvanizado por inmersión caliente en Chile, Argentina, Brasil y España. Se capacitó en Gestión de industrias de Galvanizado en" +
+                "Santiago de Chile, Chile. Participó en el Congreso Internacional de la" +
+                "Industria del Galvanizado INTERGALVA 2009 Madrid-Barcelona," +
+                "España. Participó en el Congreso Latinoamericano de la Industria del" +
+                "Galvanizado Latingalva São Paulo 2007 y en foros y charlas" +
+                "específicas de la industria en el ámbito latinoamericano. Ha disertado" +
+                "en las Jornada Argentina de Galvanizado “GalvArgentina” en sus" +
+                "ediciones 2013 y 2014, evento internacional organizado por el Instituto" +
+                "Nacional de Tecnología Industrial (INTI), junto a disertantes de la" +
+                "Comunidad Europea. Es miembro experto del IRAM para ISO en la" +
+                "elaboración y discusión de normas técnicas, actualmente en el" +
+                "proyecto de la norma argentina de Galvanizado por Inmersión en" +
+                "Caliente." +
+                "Conferencia: “Proyectos de Inversión con" +
+                "Acero Galvanizado por Inmersión en Caliente”" +
+                "Esta presentación forma parte de un Programa de Capacitación y" +
+                "Actualización Profesional que ofrece la Asociación Argentina de" +
+                "Galvanizado por Inmersión en Caliente (AAGIC) a Universidades," +
+                "Institutos Tecnológicos, Centros y Consejos Profesionales, Cámaras" +
+                "Empresarias y Entidades Gubernamentales, cumpliendo su misión de" +
+                "informar y difundir las consecuencias de la corrosión del acero y la" +
+                "necesidad de prevenir este fenómeno natural. La corrosión del acero" +
+                "constituye un problema mundial de grandes proporciones que" +
+                "requiere ser controlado, por ello es objeto de estudio en" +
+                "universidades y centros de investigación de todo el mundo para tratar" +
+                "de cuantificar y minimizar los peligros que esta representa." +
+                "Se expone de una manera sencilla la naturaleza de este fenómeno," +
+                "presentando algunos mecanismos de control de la corrosión" +
+                "incursionando en detalle en el proceso del galvanizado en caliente." +
+                "En esta presentación se describe el proceso físico químico e industrial" +
+                "del galvanizado en caliente en sus diversas etapas y se exponen las" +
+                "propiedades y ventajas de este sistema de protección de reconocida" +
+                "eficacia. Además se explica la utilización del acero galvanizado en los" +
+                "proyectos industriales para la mejora de la eficiencia, la seguridad y la" +
+                "sustentabilidad.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Norma Cadoppi";
+        text = "La Dra. Norma Cadoppi es Médica de la Universidad" +
+                "de Buenos Aires, y desde 2005 es Presidente de la" +
+                "Fundación Foro Estratégico para el Desarrollo" +
+                "Nacional, que nuclea a más de 300 especialistas de" +
+                "distintas áreas del conocimiento y reconocida" +
+                "idoneidad profesional, con la Misión de pensar nuevas" +
+                "oportunidades de desarrollo socio-productivo" +
+                "sustentable para la Argentina." +
+                "Es Magister en Energías Renovables y Cambio Climático del Instituto" +
+                "Europeo del Empleo (I.E.E.), dependiente de la Unión Europea. Hizo su" +
+                "especialidad médica en Oncología Clínica y Quimioterapia en el" +
+                "Hospital de la Santa Creu y Sant Pau de Barcelona, España, y en el" +
+                "Instituto Nazionale per lo Studio e la Cura dei Tumoride Milán, Italia." +
+                "Fue Coordinadora General de Política Ambiental y Desarrollo" +
+                "Sustentable de la Jefatura de Gabinete de Ministros de la Nación;" +
+                "Representante del Gobierno Nacional en la 4º Cumbre de Cambio" +
+                "Climático en Bonn, Alemania; Chair del Banco Mundial por la" +
+                "República Argentina ante el Steering Committee en la “Iniciativa Aire" +
+                "Limpio para las ciudades de América Latina”. Washington 1998-2003;" +
+                "Coordinadora General del Programa Aire Limpio 1998-2000, GCABA;" +
+                "Representante del Gobierno Nacional en la 1ª Reunión del Comité de" +
+                "Países Huéspedes (HCC) para la Mitigación de Gases Efecto" +
+                "Invernadero; Coordinadora del Centro de Estudios de Salud y Medio" +
+                "Ambiente de la Academia Nacional de Medicina. Dr. Andino Pavlovsky" +
+                "y Dr. Horacio Rubio." +
+                "Recibió en 1999 el Premio otorgado por el Congreso de la Nación" +
+                "Argentina a la Mujer Destacada en el ámbito nacional, por su" +
+                "desempeño en las áreas de Medio Ambiente y Salud." +
+                "Conferencia: \"Transformemos el presente," +
+                "porque el futuro es hoy\"" +
+                "Presentación de la Fundación Foro Estratégico para el Desarrollo" +
+                "Nacional y de los proyectos que buscan contribuir al desarrollo del" +
+                "país a través una innovación basada en la ciencia, la tecnología y la" +
+                "industria nacional, a partir de la experiencia que tienen en ciencia e innovación nuestras instituciones, y haciendo foco en la incorporación" +
+                "de los jóvenes estudiantes y profesionales que serán los responsables" +
+                "de afrontar el desafío de colaborar con el bienestar para la Argentina" +
+                "del mañana.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Catalina Lonac";
+        text = "Abogada (Universidad Nacional de Tucumán)." +
+                "Procuradora (Universidad Nacional de Tucumán)." +
+                "Postgrado en negociación (Universidad de" +
+                "Berkeley). Presidente de la Fundación para el" +
+                "Desarrollo de la Universidad de San Pablo Tucumán." +
+                "Vicepresidente de Cía. Azucarera Los Balcanes S.A.," +
+                "ingenios y destilerías La Florida y Cruz Alta." +
+                "Vicepresidente de Cía. Energética La Florida. Socia gerente" +
+                "de Covemat S.R.L. – petrolera de segundo grado. Miembro del" +
+                "Honorable Directorio del IDEP, Instituto de Desarrollo Productivo de" +
+                "Tucumán. Representante de la Industria Azucarera. Miembro del" +
+                "Honorable Directorio de la Estación Experimental Agroindustrial" +
+                "Obispo Colombres, ente autárquico de la provincia. Representante de" +
+                "la Industria Azucarera. Cónsul Honoraria de la República de Croacia" +
+                "para las siete provincias del Norte Argentino. Miembro de Número de" +
+                "la Academia Internacional de Derecho Comparado." +
+                "Conferencia: \"La caña de azúcar en el nuevo" +
+                "escenario energético\"" +
+                "Argentina hoy mezcla sus naftas con un 12% de etanol , el cual" +
+                "proviene de la caña de azúcar y del maíz . El gobierno nacional tiene" +
+                "en carpeta llevar ese 12% al 15 % y la idea es llegar al uso de motores" +
+                "flex. Esto significa un cambio en la matriz energética de la República" +
+                "Argentina, cuyo sistema de energías no renovables colapsara hacia" +
+                "2.030. Con la ponencia se pretenderá demostrar cómo el cultivo de" +
+                "caña de azúcar podrá cumplir con este objetivo.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Hernán Charreau";
+        text = "Licenciado en Ciencias Químicas con orientación en" +
+                "Análisis Biológicos – Facultad de Ciencias Exactas" +
+                "UBA." +
+                "Magister en Organización e Innovación - Université" +
+                "Paris DAUPHINE" +
+                "Magister en Prospectiva y Estrategia de las" +
+                "Organizaciones y Magister en Prospectiva y Evaluación de la Investigación y la Tecnología - Conservatoire des" +
+                "Arts et Métiers, París" +
+                "Desde el 2008 está a cargo de la unidad de Inteligencia Tecnológica" +
+                "en Clarke, Modet & Co Argentina." +
+                "Con anterioridad a la incorporación a Clarke, Modet & Cº fue consultor" +
+                "de la Agencia Nacional de Promoción Científica y Tecnológica" +
+                "(ANPCyT) y del Ministerio de Ciencia, Tecnología e Innovación" +
+                "Productiva (MinCyT)." +
+                "Conferencia: “Inteligencia Tecnológica:" +
+                "conocer el camino recorrido para llegar más" +
+                "lejos en la innovación sostenible”" +
+                "El rol de las patentes como fuente de información tecnológica. La" +
+                "vigilancia como factor clave de las decisiones estratégicas en las" +
+                "organizaciones. Desafíos de las tecnologías sustentables.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Paulo Strina";
+        text = "Conferencia: “Sistema automático" +
+                "de siembra por inyección”" +
+                "“La agricultura constituye una de las actividades" +
+                "más importantes de Argentina”. Pero debido a la" +
+                "extensión del territorio y el diverso parque de" +
+                "maquinaria utilizada incurre en un gran consumo de" +
+                "combustible, lo cual tiene un impacto negativo tanto en el" +
+                "medioambiente como en los costos operativos de la actividad." +
+                "Aquí se propone una nueva manera de sembrar y trabajar la tierra" +
+                "ocasionando importantes beneficios económicos, relacionados al" +
+                "aumento de la eficiencia y la mejora del rendimiento del cultivo; y" +
+                "beneficios ambientales, permitiendo la sustitución de combustibles" +
+                "fósiles por energía eléctrica como fuente de alimentación. Además," +
+                "contribuye indirectamente al desarrollo de una serie de actividades" +
+                "tecnológicas-productivas en torno al sector, con requerimiento de" +
+                "mano de obra de alta y baja calificación.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        // Cartas
+
+        name = "Lic. Jorge Camblong";
+        text = "Profesional de las ramas del área Electrónica y de la" +
+                "Organización Industrial. Socio fundador de TCC con 20" +
+                "años de existencia en el mercado en el rubro" +
+                "teleinformática. Docente con más de 30 años de" +
+                "experiencia en Secundarios, Terciarios, Universidades e" +
+                "Institutos propios. Consultor Industrial. Con tesis en" +
+                "Maestría en Educación presentada a punto de defender y en" +
+                "proceso de desarrollo de tesis doctoral en Ingeniería Industrial." +
+                "Conferencia: “La excepción a la regla de" +
+                "Pareto”" +
+                "La disertación, centra su objetivo en aquellas habilidades de liderazgo que" +
+                "deberá desarrollar el profesional egresado de la universidad." +
+                "Al llegar el profesional a la empresa, enfrentará un sin número de problemas" +
+                "y son justamente aquellos dónde menos hemos sido capacitados." +
+                "Generalmente recibimos un 80% de capacitación que nos sirve para el 20%" +
+                "de los problemas cotidianos. Mientras que el 80% de la carga laboral la" +
+                "tendremos que llevar adelante con habilidades que debemos desarrollar en" +
+                "forma personal." +
+                "Liderazgo, objetivos personales, ganar – ganar, empatía, psicología laboral," +
+                "coaching ontológico, serán algunos de los temas tratados.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Gastón Morales";
+        text = "Formación y consultoría en Creatividad e Innovación /" +
+                "Estilos de Pensamiento BTSA (Test de Dominancia" +
+                "Cerebral) / Desarrollo de Carrera / Coaching / Diseño de" +
+                "Marca Personal / Marketing focalizado en Cliente /" +
+                "Experiencia de Cliente (Marketing Experience) /" +
+                "Psicología de Consumidor." +
+                "Licenciado en sistemas y computación (UCA). Docente universitario en UCA" +
+                "y en Escuela Argentina de negocios. Coordinador del programa" +
+                "“neurociencia para lideres” en Universidad de San Andrés.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Daniel Rodríguez";
+        text = "Ingeniero Químico (UBA). Master en Administración" +
+                "de Empresas (Universidad del CEMA). South Latin" +
+                "Division Customers’ Service Director de COCACOLA DE ARGENTINA. Responsable por liderar el" +
+                "desarrollo de estrategias y proyectos a nivel Regional" +
+                "en el nivel de servicio a clientes clave (Carrefour," +
+                "Walmart, Cencosud, etc). Liderazgo en la implementación de" +
+                "procesos de mejora y eficiencia a lo largo de toda la cadena de valor" +
+                "orientados a incrementar la disponibilidad de productos en el" +
+                "mercado. Introducción de nuevos modelos operativos, herramientas y" +
+                "metodologías alineadas con la búsqueda de excelencia en el servicio" +
+                "a clientes. Desarrollo de capacidades e integración de equipos" +
+                "multifuncionales alineados con las necesidades de servicio a clientes." +
+                "Conferencia: “Siempre ganamos el juego que" +
+                "realmente estamos jugando”" +
+                "Teniendo en cuenta los tiempos que corren, los roles dentro de las" +
+                "Organizaciones actuales, en todas sus dimensiones, se acercan más a" +
+                "los de generar nuevas realidades que a los de administrar la realidad" +
+                "existente. La posibilidad de generar una “diferencia” está más en" +
+                "nuestra capacidad de comprometernos con futuros distintos más que" +
+                "sólo con el conocimiento específico de herramientas, técnicas o" +
+                "modelos que lleven a sostener o mejorar los resultados que se están" +
+                "logrando." +
+                "El compromiso es compartir una serie de disparadores," +
+                "conocimientos y experiencias que nos ayuden a reflexionar sobre" +
+                "nuestros objetivos y a entender qué significa ser parte de las" +
+                "Organizaciones actuales desde una posición de liderazgo,protagonismo y constante interacción en equipos de trabajo," +
+                "actuando cada día en forma consistente con los objetivos buscados." +
+                "Lo que veremos puede ser aplicado desde el primer día, en una" +
+                "Organización grande, mediana o pequeña. Podrá significar cambiar" +
+                "muchos, algunos o pocos de los paradigmas con los que hoy vemos el" +
+                "mundo. Pero sólo una cosa poseerá una total certeza: la decisión" +
+                "sobre el juego que realmente queremos jugar está únicamente en" +
+                "cada uno de nosotros.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Ing. Lucas Damián Herrero y Brian Vallejo";
+        text = "Ing. Lucas Damián Herrero: Maestría en Gestión de" +
+                "Proyectos (Universidad Politécnica de Cataluña), y" +
+                "Especialista en Ingeniería Ambiental (UTN) y Diplomatura" +
+                "en Tratamiento de agua (ONU). Posee experiencia en" +
+                "gerenciamiento de proyectos de desarrollo energético y" +
+                "desarrollo. Especialista de Proyectos de energía," +
+                "remediación ambiental y saneamiento. Experiencia en" +
+                "desarrollo e implementación de soluciones de" +
+                "abastecimiento y tratamiento de aguas para distintas" +
+                "ONG´s y Fundaciones. Docente UTN y UP. Director del" +
+                "proyecto de investigación y desarrollo “Relevamiento integral de empresas" +
+                "pymes con desarrollo de alternativas para mejorar su eficiencia energética”" +
+                "en la Universidad Tecnológica Nacional. Actualmente es Socio Gerente de" +
+                "Vadeka Servicios SRL, consultora Energética y Ambiental" +
+                "Brian Daniel Vallejo: Estudiante de ingeniería industrial," +
+                "adeudando solo tesis. Técnico en industria plástica para" +
+                "mejoras para los procesos productivos. Es docente" +
+                "auxiliar en UTN Haedo de la cátedra Estudio del trabajo." +
+                "Ha coordinado actividades de voluntariado universitario" +
+                "en su facultad y también forma parte de un grupo de" +
+                "investigación de eficiencia energética" +
+                "Conferencia: “Eficiencia e" +
+                "imaginación para la Salud – Un Exo para Linda”" +
+                "Imaginación, sentido común, ingeniería, una impresora 3d y gomitas, nos" +
+                "permitieron diseñar para Linda, una chica con una discapacidad motriz de 4" +
+                "años, un exoesqueleto para mejorar su movilidad." +
+                "Los desafíos en el proceso de diseño, de armado y de prototipado fue un" +
+                "valioso camino a recorrer, y todavía no se llegó al final. En la charla" +
+                "contaremos la historia, los avances, y lo que vendrá.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Enrique Alberto Pesl";
+        text = "Ingeniero Industrial egresado de la Universidad" +
+                "Nacional del Sur (Orientación Organización de" +
+                "Empresas). Especializado en Protección Ambiental." +
+                "Se desempeñó como docente en diversas áreas." +
+                "Trabajó en peritaje para Estudios Jurídicos y como" +
+                "Perito Técnico de oficio en tribunales de la provincia" +
+                "de Buenos Aires y en el Tribunal del Poder Judicial de la" +
+                "Nación. También se desempeñó como consultor en áreas de gestión" +
+                "ambiental y para la Subsecretaría de Minería de la Nación." +
+                "Título: “La experiencia personal es" +
+                "intransferible”" +
+                "Los Planes de Estudios tratan de brindar al profesional una formación" +
+                "básica, de modo tal que intentan prepararlos para que pueda hacer" +
+                "frente a los problemas y desafíos que se le presentan en la vida" +
+                "cotidiana de la empresa." +
+                "Los avances de la tecnología han hecho que los temas de ingeniería" +
+                "que se resolvían aplicando recetas de libros, ahora hay que recurrir al" +
+                "criterio y creatividad del profesional, buscando la solución del" +
+                "problema y si además es la mejor solución, mejor aún. Por lo cual la" +
+                "especialización resulta muy importante." +
+                "Resulta difícil anticiparles a ustedes, situaciones en las cuales todavía" +
+                "no se encuentran involucrados, pero el objetivo de esta exposición es" +
+                "simplemente narrar parte de las actividades profesionales en las" +
+                "cuales desarrollé mi carrera profesional.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Alejandro Mangioni";
+        text = "Ingeniero en sistemas de información (UTN)." +
+                "Especialización en gestión de proyectos (UTN)" +
+                "Especialización en liderazgo (UTN)." +
+                "Coach ontológico (Técnico en liderazgo y diseño" +
+                "ontológico)." +
+                "Docente universitario en UTN." +
+                "Arquitecto Sr de sistemas en Banco Galicia." +
+                "Conferencia: “En búsqueda de tu propósito”" +
+                "Te invito a hacer un recorrido por tus principios y talentos," +
+                "permitiendo así encontrar el propósito de tu vida y definir tus" +
+                "objetivos.";
+        insertSpecificSpeaker(sqLiteDatabase, name, text);
+
+        name = "Carlos Balseiro";
+        text = "Licenciado en Física Instituto Balseiro 1973. Doctor" +
+                "en Física Instituto Balseiro 1978. Estadía posdoctoral" +
+                "beca externa CONICET en la Universidad de" +
+                "California, Berkeley 1978 y 1979." +
+                "Vicedirector del Instituto Balseiro 1984-1988" +
+                "Subgerente Instito de Nanociencia y NanotecnologíaCNEA desde su creación hasta 2013" +
+                "Coordindor Funta de Calificaciones CONICET 2012 (como miembro" +
+                "2010 y 2011)" +
+                "Director Instituto Balseiro 2016" +
+                "Investigador CNEA, Investigador Superior CONICET, Profesor Titular" +
+                "IB – UNCuyo." +
+                "Proyectos de Investigación recientes: Responsable PICT Bicentenario" +
+                ", ANPCYT (2010). Se trata de un proyecto teórico-experimental en el" +
+                "que participan investigadores de distintos grupos del CAB" +
+                "Responsable administrativo PAE 2006 CINN. Se trata de un proyecto" +
+                "interinstitucional CNEA- UBA-CONICET: Grupo responsable Dres" +
+                "Calvo, Salvarezza, Balseiro, Bragas, Fainstein Soler-Illia, Requejo." +
+                "Responsable frente a CNEA de Proyecto Eulasur entre países de la UE" +
+                "y Mercosur." +
+                "En el pasado responsable proyectos: Antorchas (600.000usd). PME" +
+                "2003 para compra de equipamiento ANPCYT (600.000 usd) y varios" +
+                "PICT de ANPCYT." +
+                "Producción en Investigación: Más de 170 trabajos publicados en" +
+                "revistas internacionales incluyendo un par de artículos de difusión." +
+                "Entre estos cabe destacar un artículo publicado en Science, 20 en" +
+                "Phys. Rev. Lett y 94 en Phys Rev B." +
+                "Participación como expositor invitado en más de 25 conferencias" +
+                "internacionales." +
+                "Conferencia: \"¿Que nos dejó la Física del Siglo" +
+                "XX y cómo impactó en nuestras vidas?\"" +
+                "El desarrollo de la Mecánica Cuántica durante las primera décadas del" +
+                "siglo XX fueron, tal vez, una de las mayores revoluciones en nuestra" +
+                "forma de interpretar el universo y cambió definitivamente nuestra" +
+                "forma de relacionarse con él. Hoy, en un mundo globalizado e" +
+                "hiperconectado, casi todas las tecnologías están basadas en las leyes" +
+                "y conceptos de la Mecánica Cuántica." +
+                "¿Cuáles fueron los mayores desafíos que se debieron afrontar a la" +
+                "hora de formular esta nueva visión? ¿Cómo las entonces nuevas teorías atentan contra nuestro sentido común? Y finalmente ¿Cómo" +
+                "éstas han impactado en el desarrollo tecnológico de la humanidad?" +
+                "Pensar y analizar algunas de estas preguntas nos llevarán a" +
+                "comprender y valorar el impacto de la investigación, y de la mal" +
+                "llamada investigación básica, en el desarrollo tecnológico y cultural" +
+                "de nuestra época.";
         insertSpecificSpeaker(sqLiteDatabase, name, text);
 
     }

@@ -23,12 +23,12 @@ public class SpeakerItemActivity extends AppCompatActivity {
         String speakerName=bundle.getString("SpeakerName");
         ImageView speakerPicture = (ImageView) findViewById(R.id.speakerPicture);
         TextView speakerText=(TextView) findViewById(R.id.speakerText);
-
+/*
         Resources res = getResources();
         String imageName = speakerName.toLowerCase().replace(" ","").replace("ñ","n");
         int resID = res.getIdentifier(imageName , "drawable", getPackageName());
         speakerPicture.setImageResource(resID);
-
+*/
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setDisplayHomeAsUp();
