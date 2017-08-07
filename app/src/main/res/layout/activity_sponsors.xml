@@ -18,49 +18,116 @@
             android:orientation="vertical" >
 
             <TextView
+                android:id="@+id/exclusiveSponsorTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/exclusiveSponsorTextView"
-                android:text="@string/exclusiveSponsor"
                 android:layout_weight="1"
-                android:gravity="center" />
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/exclusiveSponsor" />
 
             <ImageView
+                android:id="@+id/techint"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/techint"
-                android:id="@+id/techint" />
+                android:layout_height="265dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/techint" />
 
             <TextView
-                android:text="@string/sponsors"
+                android:id="@+id/sponsorsTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/sponsorsTextView"
-                android:gravity="center" />
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/sponsors" />
 
             <ImageView
+                android:id="@+id/pae"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                app:srcCompat="@drawable/pae"
-                android:id="@+id/pae" />
+                android:layout_height="90dp"
+                android:layout_weight="0.53"
+                android:padding="10dp"
+                app:srcCompat="@drawable/pae" />
 
             <ImageView
+                android:id="@+id/unilever"
                 android:layout_width="match_parent"
-                android:layout_height="165dp"
-                app:srcCompat="@drawable/cnea"
-                android:id="@+id/cnea" />
+                android:layout_height="150dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/unilever" />
 
             <ImageView
+                android:id="@+id/femsa"
                 android:layout_width="match_parent"
-                android:layout_height="107dp"
-                app:srcCompat="@drawable/arcor"
-                android:id="@+id/arcor" />
+                android:layout_height="150dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/femsa" />
 
             <ImageView
+                android:id="@+id/cnea"
                 android:layout_width="match_parent"
-                android:layout_height="165dp"
-                app:srcCompat="@drawable/penaflor"
-                android:id="@+id/penaflor" />
+                android:layout_height="180dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/cnea" />
+
+            <ImageView
+                android:id="@+id/penaflor"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/penaflor" />
+
+            <ImageView
+                android:id="@+id/arcor"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/arcor" />
+
+            <ImageView
+                android:id="@+id/mercadolibre"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="20dp"
+                app:srcCompat="@drawable/mercadolibre" />
+
+            <ImageView
+                android:id="@+id/dana"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                app:srcCompat="@drawable/dana" />
+
+            <TextView
+                android:id="@+id/aliadosTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/aliados" />
+
+            <ImageView
+                android:id="@+id/socialab"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/socialab" />
+
+            <ImageView
+                android:id="@+id/inti"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/inti" />
+
+            <ImageView
+                android:id="@+id/cecilia"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/cecilia" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -81,15 +148,5 @@
             />
 
     </android.support.design.widget.AppBarLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/appbar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-    </LinearLayout>
 
 </RelativeLayout>

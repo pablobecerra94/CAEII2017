@@ -32,23 +32,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/speakerPicture"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/logomenuprincipal"
-
-                android:id="@+id/speakerPicture"
-                android:layout_below="@+id/speakerName"
-                android:layout_toRightOf="@+id/speakerName"
-                android:layout_toEndOf="@+id/speakerName" />
+                app:srcCompat="@drawable/logomenuprincipal" />
 
             <TextView
+                android:id="@+id/speakerText"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/speakerText" />
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>
 

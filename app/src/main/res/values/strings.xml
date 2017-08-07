@@ -75,4 +75,12 @@
     <string name="mision2050Text">Cómo será la vida en poco más de 30 años es un misterio, y en ese tiempo estaremos viviendo no solo nosotros sino nuestros hijos y hasta tal vez nuestros nietos. Te invitamos a hacer un recorrido por los avances de la ciencia, la tecnología y la sustentabilidad, 3 temas que están hermanados a la hora de pensar en un futuro prospero para todos.</string>
     <string name="industrialADNText">Estudiamos la carrera que más se adapta a cualquier sector de una industria, el poder de adaptarnos a las diversas situaciones que te presenta el día a día en una empresa corre por nuestras venas básicamente. Con este pilar conoceremos experiencias de profesionales que estuvieron involucrados en algún inconveniente y lograron sobreponerse con éxito.</string>
     <string name="deckText">Acompañando nuestra formación profesional van apareciendo herramientas que funcionan de facilitadores a la hora de querer emprender, de querer medir la efectividad de un proceso, etc. Con este pilar esperamos acercarnos a dichas herramientas, tomar conciencia de su utilidad y por sobre todo, salir con ganas de utilizarlas.</string>
+    <string name="aliados">Aliados</string>
+    <string name="danaWebPage">http://dana.com.ar//</string>
+    <string name="ceciliaWebPage">http://www.ceciliademadonna.com.ar/</string>
+    <string name="socialabWebPage">http://www.socialab.com/</string>
+    <string name="intiWebPage">https://www.inti.gob.ar/</string>
+    <string name="mercadolibreWebPage">https://www.mercadolibre.com.ar/</string>
+    <string name="femsaWebPage">https://www.coca-colafemsa.com/presencia/presencia-argentina.html</string>
+    <string name="unileverWebPage">https://www.unilever.com.ar/</string>
 </resources>
