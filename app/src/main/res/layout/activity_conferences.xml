@@ -28,34 +28,40 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/appbar">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:weightSum="1">
 
-            <RelativeLayout
+            <TextView
+                android:id="@+id/conferenceSpeaker"
                 android:layout_width="match_parent"
-                android:layout_height="516dp">
+                android:layout_height="wrap_content"
+                android:text="TextView" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/logotransparente"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/imageView4" />
+            <ImageView
+                android:id="@+id/speakerPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conferenceSpeaker"
+                android:layout_toEndOf="@+id/conferenceSpeaker"
 
-                <TextView
-                    android:text="@string/construction"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/imageView4"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="56dp"
-                    android:id="@+id/constructionTextView" />
-            </RelativeLayout>
+                android:layout_toRightOf="@+id/conferenceSpeaker"
+                app:srcCompat="@drawable/logotransparente" />
+
+            <TextView
+                android:id="@+id/conferenceText"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:text="TextView" />
+
+
         </LinearLayout>
     </ScrollView>
 

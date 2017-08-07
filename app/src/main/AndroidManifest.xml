@@ -190,6 +190,28 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TouristGuideActivity" />
         </activity>
+        <activity
+            android:name=".PilarOptionsActivity"
+            android:label="PilarOptionsActivity"
+            android:parentActivityName=".PilarsActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".PilarsActivity" />
+        </activity>
+        <activity android:name=".PilarConferencesActivity"
+            android:label="PilarConferencesActivity"
+            android:parentActivityName=".PilarsActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".PilarsActivity" />
+        </activity>
+        <activity android:name=".ConferenceExoActivity"
+            android:label="PilarConferencesActivity"
+            android:parentActivityName=".PilarsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PilarsActivity" />
+        </activity>
     </application>
 
 </manifest>

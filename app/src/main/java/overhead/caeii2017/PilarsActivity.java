@@ -38,7 +38,7 @@ public class PilarsActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String selectedItem = adapter.getItem(i);
-                Intent intent = new Intent(getApplicationContext(), PilarsItemActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PilarOptionsActivity.class);
                 intent.putExtra("PilarName", selectedItem);
                 startActivity(intent);
             }
