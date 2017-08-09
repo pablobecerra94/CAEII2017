@@ -374,8 +374,566 @@ public class SqliteConector extends SQLiteOpenHelper {
         web="http://www.galvasa.com.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
+        name="Sabic";
+        text="SABIC’s Innovative Plastics business es líder mundial en el suministro\n" +
+                "de soluciones de materiales termoplásticos de ingeniería. En más de\n" +
+                "35 países de todo el mundo, ayuda a los fabricantes de equipos\n" +
+                "originales a redefinir el diseño, desde el concepto hasta la realidad.\n" +
+                "SABIC’s Innovative Plastics business suministra información,\n" +
+                "tecnología y soluciones avanzadas de materiales para satisfacer las\n" +
+                "necesidades de los clientes de todo el mundo.";
 
+        web="http://www.sabic.com";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
+        name="Techo";
+        text="En 1997 un grupo de jóvenes comenzó a trabajar por el sueño de\n" +
+                "superar la situación de pobreza en la que vivían millones de personas.\n" +
+                "El sentido de urgencia en los asentamientos los movilizó\n" +
+                "masivamente a construir viviendas de emergencia en conjunto con\n" +
+                "las familias que vivían en condiciones inaceptables y a volcar su\n" +
+                "energía en busca de soluciones concretas a las problemáticas que las\n" +
+                "comunidades afrontaban cada día.\n" +
+                "Esta iniciativa se convirtió en un desafío institucional que hoy se\n" +
+                "comparte en todo el continente. Desde sus inicios en Chile, seguido\n" +
+                "por El Salvador y Perú, la organización emprendió su expansión bajo\n" +
+                "el nombre “Un Techo para mi País”.";
+
+        web="http://www.techo.org";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Inti";
+        text="El INTI fue creado en el marco del surgimiento de un conjunto de\n" +
+                "instituciones nacionales destinadas a poner en movimiento, de\n" +
+                "manera planificada, la inversión pública, la ciencia y la tecnología.\n" +
+                "Sus primeros laboratorios se ubicaron en el Parque Tecnológico\n" +
+                "Miguelete en un predio de 19 hectáreas en el Partido de General San\n" +
+                "Martín, provincia de Buenos Aires, en el que hoy se concentran una\n" +
+                "treintena de centros, además de áreas administrativas y de soporte.\n" +
+                "Hoy el INTI está presente con Centros Regionales y Multipropósito en\n" +
+                "todo el país, que generan investigación y desarrollo en red, con el fin\n" +
+                "de acompañar e impulsar el crecimiento industrial de cada provincia.";
+
+        web="http://www.inti.gob.ar";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Ruhrpumpen";
+        text="Ruhrpumpen es una empresa dedicada a la fabricación de bombas\n" +
+                "centrífugas cuyos principales mercados son la petroquímica, la\n" +
+                "minería, la industria, la energía, los productos químicos y la\n" +
+                "prevención de aguas residuales.\n" +
+                "En el día de hoy Ruhrpumpen cuenta con instalaciones, oficinas de\n" +
+                "ventas y centros de servicio ubicados en Alemania, México, Estados\n" +
+                "Unidos, la fabricación de Egipto , Argentina , Brasil , India, Rusia,\n" +
+                "Canadá, Colombia y Chile.";
+
+        web="http://www.ruhrpumpen.com";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Dana";
+        text="Dana es un líder mundial en suministro de ejes diferenciales; ejes\n" +
+                "cardán; transmisiones para fuera de carretera; sistemas de sellado,\n" +
+                "productos de gestión térmica y piezas de repuesto originales. Su\n" +
+                "posición en el mercado se construyó a partir de algunas de las marcas\n" +
+                "más sólidas del sector, trabajando para ampliar aún más el legado de\n" +
+                "larga data de Dana en desempeño, innovación, durabilidad, calidad y\n" +
+                "servicio de posventa.";
+
+        web="http://www.dana.com.ar";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Genrod";
+        text="Genrod es parte de la Industria metalúrgica y plástica dedicada a la\n" +
+                "fabricación y desarrollo de sistemas integrales de canalización y\n" +
+                "envolventes para instalaciones eléctricas.\n" +
+                "Fabrica y comercializa gabinetes, cajas y envolventes de usos\n" +
+                "múltiples, desarrollados en termoplásticos aislantes y metálicos.\n" +
+                "Utilizados para la construcción de instalaciones eléctricas\n" +
+                "domiciliarias, industriales en general y para la distribución, y medición\n" +
+                "de energía en baja tensión.\n" +
+                "Produce además múltiples accesorios del Sistema Integral de\n" +
+                "Instalación Eléctrica desarrollado e impulsado por la empresa como\n" +
+                "así también elementos necesarios para puesta a tierra.";
+
+        web="http://www.genrod.com.ar";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Loreal";
+        text="Durante más de un siglo , L' Oréal se ha dedicado a un único negocio :\n" +
+                "la belleza. Es un negocio rico en significado, ya que permite a los\n" +
+                "individuos expresar sus personalidades, ganar confianza en sí mismos\n" +
+                "y abrirse a los demás.\n" +
+                "L' Oréal se ha impuesto a sí mismo la misión de ofrecer a todas las\n" +
+                "mujeres y hombres del mundo lo mejor de la innovación cosmética en\n" +
+                "términos de calidad , eficacia y seguridad . Persigue este objetivo\n" +
+                "mediante el cumplimiento de la infinita diversidad de necesidades y\n" +
+                "deseos de belleza en todo el mundo.";
+
+        web="http://www.loreal.com.ar";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Metalsa";
+        text="Dentro de la industria automotriz y vehículos comerciales Metalsa ha\n" +
+                "probado ser una de las mejores opciones en la solución de\n" +
+                "componentes estructurales para vehículos ligeros y pesados.\n" +
+                "Siendo una empresa global, Metalsa cuenta con operaciones y\n" +
+                "centros de tecnología localizados estratégicamente alrededor del\n" +
+                "mundo, proporcionando un soporte integral a sus clientes a través de\n" +
+                "un servicio inigualable.";
+
+        web="http://www.metalsa.com";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Mercado Libre";
+        text="MercadoLibre es una empresa argentina dedicada a las compras entre\n" +
+                "usuarios inscritos a su servicio de compras, ventas y pagos por\n" +
+                "Internet. Cuenta con operaciones en su país de origen, así como\n" +
+                "en Bolivia, Brasil, Chile, Colombia, Costa\n" +
+                "Rica, Ecuador, Guatemala, México, Panamá, Perú, Portugal, República\n" +
+                "Dominicana, Uruguay, Honduras y Venezuela.\n" +
+                "Los usuarios pueden vender tanto productos nuevos como usados a\n" +
+                "precio fijo. MercadoLibre también posee MercadoPago, una\n" +
+                "plataforma de cobro a los vendedores. Sus oficinas centrales se\n" +
+                "encuentran en Buenos Aires, Argentina.";
+
+        web="http://www.mercadolibre.com.ar";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Edelflex";
+        text="Desde su creación en el año 2004, Edelflex S.A. es referente en\n" +
+                "numerosas industrias como proveedor de componentes y sistemas\n" +
+                "de manejo de fluidos. Es parte del proceso productivo aportando su\n" +
+                "experiencia y enfoque en la innovación, brindando ideas y soluciones\n" +
+                "inteligentes para industrias que requieren de tecnología avanzada.";
+
+        web="http://www.edelflex.com";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Valmec";
+        text="Desde el comienzo de sus actividades, VALMEC S.A. tiene como\n" +
+                "objetivo principal brindar a los clientes un producto de excelencia\n" +
+                "para el control de fluidos, considerando las mejoras continuas, la\n" +
+                "tecnología de punta y su integración con el personal, como las bases\n" +
+                "fundamentales de una estructura eficiente, que es el fiel reflejode la\n" +
+                "misión y los valores de la organización.\n" +
+                "La visión de VALMEC S.A. se fundamenta en la innovación tecnológica\n" +
+                "constante y el desarrollo profesional de su equipo de trabajo, siendo\n" +
+                "estos los elementos inspiradores para el alcance de nuevas\n" +
+                "soluciones, seguras y confiables con elevados estándares de calidad.\n" +
+                "Actualmente, VALMEC S.A. es un actor importante en el mercado\n" +
+                "Latinoamericano y local, encontrándose posicionada entre las líderes\n" +
+                "del sector, lo cual constituye proyecciones de expansión hacia el\n" +
+                "resto del mundo.";
+
+        web="http://www.valmec.com.ar";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Droguería del Sud";
+        text="Droguería del Sud es la Distribuidora integral a farmacias número uno\n" +
+                "del país (medicamentos, productos de perfumería y alimentos\n" +
+                "medicamentados) líder en tecnología aplicada a la logística y\n" +
+                "distribución.\n" +
+                "Droguería del Sud fue fundada en 1950 por el Dr. Silvio Macchiavello,\n" +
+                "quien adquirió una pequeña droguería situada en la calle México 1932,\n" +
+                "que contaba con apenas 20 clientes y 6 empleados. Al año siguiente,\n" +
+                "la compañía ya tenía 40 empleados, 200 clientes y operaba con todos\n" +
+                "los laboratorios del país. En 1967, Droguería del Sud se muda al\n" +
+                "edificio de la calle Humberto Primo donde hoy funciona su casa\n" +
+                "central.\n" +
+                "En la década del 80, la Droguería comienza a expandirse\n" +
+                "geográficamente. En 1988 se inaugura la primera Sucursal: Córdoba,\n" +
+                "hoy la mayor de las 7 dependencias con que cuenta.\n" +
+                "En 1994 la sede de Buenos Aires se convierte en la primera planta de\n" +
+                "distribución totalmente automatizada a nivel mundial.También ese\n" +
+                "año se inaugura la segunda sucursal de la compañía en Santo Tomé\n" +
+                "(provincia de Santa Fe). En 1999 se producen dos nuevas aperturas:\n" +
+                "Corrientes y Bahía Blanca, ampliando considerablemente su volumen\n" +
+                "de negocios con una fuerte mejora en el nivel de servicios a los\n" +
+                "clientes del interior del país. En el nuevo siglo, la compañía se sigue\n" +
+                "ampliando a partir de la apertura de sus Centros en Neuquén (hoy en\n" +
+                "día trasladado a Allen, en la Provincia de Rio Negro), Mendoza y Mar\n" +
+                "del Plata. Actualmente Droguería del Sud S.A es la mayor y más\n" +
+                "importante droguería de la República Argentina y se encuentra entre\n" +
+                "las 50 empresas de mayor facturación del país.";
+
+        web="http://www.delsud.com.ar";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Globant";
+        text="Globant es una empresa de desarrollo de software y TI que opera en\n" +
+                "Argentina, Colombia, Uruguay, Reino Unido, Brasil, Estados Unidos,\n" +
+                "Perú, India, México, Chile y España. Fue fundada en 2003 por Martín\n" +
+                "Migoya, Guibert Englebienne, Martín Umaran y Néstor Nocetti. Tiene\n" +
+                "su sede en Buenos Aires y sirve principalmente clientes en los\n" +
+                "Estados Unidos y el Reino Unido.";
+
+        web="http://www.globant.com/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Banco Alimentario de La Plata";
+        text="Es una Organización de la Sociedad Civil (OSC), que tiene como\n" +
+                "objetivo disminuir el hambre y la desnutrición a través del recupero\n" +
+                "de alimentos.\n" +
+                "Nació como Asociación Civil sin fines de lucro en el año 2000, como\n" +
+                "en el primer Banco de Alimentos del país.\n" +
+                "Son socios fundadores de la Red Argentina de Bancos de Alimentos,\n" +
+                "que nuclea a otros 16 Bancos constituidos en el país y 2 en formación.\n" +
+                "Defienden el Derecho Humano a una alimentación saludable, logrado\n" +
+                "a través del esfuerzo de su staff, voluntarios y la solidaridad de\n" +
+                "empresarios, productores y donantes.";
+
+        web="http://bancoalimentario.org.ar";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Tigre";
+        text="Multinacional brasileña, líder en los diversos mercados en los que\n" +
+                "actúa, Tigre es sinónimo de pionerismo e innovación. La marca ofrece\n" +
+                "productos que atienden los mercados predial, de infraestructura, de\n" +
+                "riego e industrial. El grupo está presente en aproximadamente 40\n" +
+                "países, posee siete mil funcionarios, 9 plantas en Brasil y 13 en el\n" +
+                "exterior. Además de tubos y conexiones, también forman parte del\n" +
+                "portafolio las marcas Claris Soluções em Esquadrias, Tigre\n" +
+                "Herramientas para Pintura y Tigre-ADS, con tuberías de PEAD para\n" +
+                "saneamiento y drenaje.";
+
+        web="http://www.tigre.com.ar";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Sandvik";
+        text="Sandvik es un grupo de ingeniería de alta tecnología y global con\n" +
+                "cerca de 43.000 empleados con un fuerte compromiso de mejorar la\n" +
+                "productividad, rentabilidad y seguridad del cliente.\n" +
+                "Sus operaciones se basan en una experiencia única en tecnología de\n" +
+                "materiales, un amplio conocimiento de los procesos industriales y una\n" +
+                "estrecha cooperación con los clientes. Esta combinación, sumada a\n" +
+                "las continuas inversiones en investigación y desarrollo (I + D), les ha\n" +
+                "permitido alcanzar posiciones de liderazgo mundial en las siguientes\n" +
+                "áreas:\n" +
+                "\uF0B7 Herramientas y sistemas de herramientas para corte industrial\n" +
+                "de metales\n" +
+                "\uF0B7 Equipos y herramientas, servicios y soluciones técnicas para la\n" +
+                "industria minera y de la construcción\n" +
+                "\uF0B7 Aceros inoxidables avanzados y aleaciones especiales, así como\n" +
+                "productos para calefacción industrial";
+
+        web="http://www.home.sandvik/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Telefónica";
+        text="Telefónica, SA es una empresa española multinacional de banda\n" +
+                "ancha y telecomunicaciones con operaciones en Europa, Asia y Norte,\n" +
+                "América Central y del Sur. Operando a nivel mundial, es uno de los\n" +
+                "mayores operadores de telefonía y proveedores de redes móviles en\n" +
+                "el mundo.";
+
+        web="http://www.telefonica.com.ar/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Peisa";
+        text="LA EMPRESA PEISA inicia sus actividades en el año 1979. Introdujo en\n" +
+                "el país el primer radiador de aluminio para calefacción, producto de\n" +
+                "elevada tecnología y diseño europeo, hasta el momento desconocido\n" +
+                "en nuestro país.\n" +
+                "En el año 1982 se desarrollan productos que hasta entonces eran\n" +
+                "importados. Nace así el primer radiador de aluminio inyectado\n" +
+                "fabricado en Argentina y Latinoamérica. Este producto de alta calidad\n" +
+                "fue íntegramente fabricado en el país y se alcanzó la calidad de los\n" +
+                "productos italianos lo mismo ocurrió con las calderas individuales\n" +
+                "para calefacción.\n" +
+                "A estos desarrollos le sucedieron otros, que hoy completan la línea de\n" +
+                "productos PEISA, la más amplia obtenible en el Mercado Nacional.\n" +
+                "Hoy cuenta con una fabrica propia de 2.500 m2, en Parque Patricios y\n" +
+                "un importante edificio en Av. del Libertador y Congreso (Nuñez),\n" +
+                "donde tiene su Showroom y las oficinas de administración.";
+
+        web="http://www.peisa.com.ar";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Pirelli";
+        text="Pirelli & CSpA es una empresa multinacional con sede en Milán, Italia.\n" +
+                "La compañía es uno de los mayores fabricantes de neumáticos. Está\n" +
+                "presente en más de 160 países, tiene 19 centros de fabricación [4] en\n" +
+                "13 países y una red de alrededor de 12.500 distribuidores y minoristas.\n" +
+                "Pirelli ha patrocinado competiciones deportivas desde 1907 y es el\n" +
+                "proveedor exclusivo de neumáticos para el Campeonato de Fórmula\n" +
+                "Uno y para el Campeonato Mundial de Superbikes FIM.";
+
+        web="http://www.pirelli.com";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Du Pont";
+        text="Un Líder Mundial en Innovación y Ciencia Basadas en el Mercado. Con\n" +
+                "una experiencia que abarca dos siglos, diversas industrias y más de 90\n" +
+                "países, La empresa está exclusivamente posicionada para ayudar a\n" +
+                "resolver algunos de los desafíos más grandes del mundo. DuPont ha\n" +
+                "llevado la ciencia y la ingeniería de clase mundial al mercado global a\n" +
+                "través de productos, materiales y servicios innovadores. Nuestra\n" +
+                "innovación basada en el mercado presenta miles de productos\n" +
+                "nuevos y aplicaciones de patentes cada año, con lo que presta\n" +
+                "servicios a mercados tan diversos como la agricultura, la nutrición, la\n" +
+                "electrónica y las comunicaciones, la seguridad y la protección, el\n" +
+                "hogar y la construcción, el transporte y la ropa.";
+
+        web="";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="CNEA";
+        text="El 31 de mayo de 1950, mediante el Decreto Nº 10.936/50, el\n" +
+                "Presidente Juan Perón creó la Comisión Nacional de Energía Atómica\n" +
+                "(CNEA). Desde entonces, la institución se dedica al estudio, al\n" +
+                "desarrollo y a las aplicaciones en todos los aspectos vinculados con la\n" +
+                "utilización pacífica de la energía nuclear. Hoy es el organismo\n" +
+                "promotor del área en nuestro país.\n" +
+                "La Argentina se destaca por impulsar el uso de la energía nuclear con\n" +
+                "fines pacíficos, apostando a la investigación y a la innovación en el\n" +
+                "ámbito nuclear. De hecho, desde su creación hace más de 60 años, la\n" +
+                "CNEA aporta logros de importancia, que acompañan y contribuyen al\n" +
+                "crecimiento del país, de la región e incluso de la ciencia en todo el\n" +
+                "mundo.\n" +
+                "En la actualidad, la CNEA avanza en la construcción del proyecto\n" +
+                "CAREM, primera central de diseño 100 % argentino.\n" +
+                "El liderazgo a nivel regional también se observa en el campo de la\n" +
+                "medicina nuclear y, muy particularmente, en el de la producción de\n" +
+                "radioisótopos. Cabe destacar que la CNEA produce el molibdeno-99,\n" +
+                "e incluso exporta otros radioisótopos —como el iodo-131 y el cobalto-\n" +
+                "60— que contribuyen al tratamiento de ciertos tipos de cáncer.";
+
+        web="";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Textil Galfione";
+        text="La visita abordará la seguridad en instalaciones electricas industriales\n" +
+                "y domiciliarias poniendo enfasis en la automatizacion logica cableada.\n" +
+                "Los orígenes de la Empresa Galfione y CIA S.R.L. se remontan\n" +
+                "alrededor del año1947, cundo e Sr Hugo Galfione y su madre, la Sra.\n" +
+                "Josefina Ciliario compraron una fábrica de medias, ubicada en Capital\n" +
+                "Federal; en ese entonces ocupaba un solo lote y era alquilado, más\n" +
+                "tarde será adquirido.\n" +
+                "A partir de los años ´50, se incorporó la producción de hilados para\n" +
+                "su propio consumo, creciendo la demando de hilados, en detrimento\n" +
+                "de las medias. También por esos años trae la marca “Helenca”, siendo\n" +
+                "los primeros texturizadores del país. A principio de los ´90 se\n" +
+                "incorporan máquinas para producir hilados de lycra y equipos para el\n" +
+                "retorcido de hilados y para la producción de hilados de fantasía. En\n" +
+                "1996 se incorporan nuevas máquinas de última generación con una\n" +
+                "producción mensual de 40 toneladas.\n" +
+                "Actualmente la empresa se encuentra operando en su nuevo\n" +
+                "domicilio de Ferré 2770, donde construyo una nueva planta industrial\n" +
+                "en el año 2001, con los últimos adelantos de la materia tanto de\n" +
+                "funcionalidad desde el punto de vista del lay-out, como desde el\n" +
+                "punto de vista de seguridad.";
+
+        web="";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="TRF";
+        text="Desde 1972, en TRF brinda soluciones logísticas integrales de primer\n" +
+                "nivel a cada uno de sus clientes. Con TRF, tercerizar resulta fácil\n" +
+                "porque es un socio estratégico en la distribución segura y eficaz de\n" +
+                "los productos que le confía cada cliente. Sus unidades de negocio son\n" +
+                "dos: Abastecimiento y preparación, y Distribución. Ofrece recepción y\n" +
+                "retiro de productos, almacenamiento y administración de stock,\n" +
+                "preparación de pedidos y entrega al destinatario final en todo el país.\n" +
+                "Asimismo, nos ocupamos del acondicionamiento secundario que\n" +
+                "implica el reembalaje y etiquetado de los productos de acuerdo a los\n" +
+                "requisitos del ANMAT. Estamos para lo que necesites.";
+
+        web="http://www.metalsa.com";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Pura";
+        text="Pura es Empresa Líder en Tratamiento y Purificación de Aguas.\n" +
+                "Contamos con tecnologías exclusivas de desarrollo propio. Cuentan\n" +
+                "con el respaldo y enfoque global de AISA IONIC Technologies, con\n" +
+                "más de 30 años de trayectoria en investigación y desarrollo. Cada\n" +
+                "equipo Pura está avalado por el Ministerio de Salud y Anmat, como\n" +
+                "también sus procesos de trabajo bajo Normas ISO 9001. Permitiendo\n" +
+                "que sus productos tengan Garantía de por Vida. Mediante sus\n" +
+                "laboratorios propios, conocen todas las calidades de agua de nuestro\n" +
+                "país y Latinoamérica, lo que les permite brindar soluciones a medida\n" +
+                "para toda escala, Hogares, Comunidades, Negocios e Industrias.\n" +
+                "Cuentan con el equipo de trabajo más especializado, y la mayor\n" +
+                "solidez técnica. Los productos Pura deben facilitar la vida a quien los\n" +
+                "usa. Por eso adaptan soluciones fácil de instalar, de mantener, de\n" +
+                "poner en marcha y de usar.";
+
+        web="";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Schneider Electric";
+        text="Schneider Electric está presente en Argentina presente desde 1982.\n" +
+                "En su planta industrial fabrican soluciones y productos de media y\n" +
+                "baja tensión, cumpliendo con los más exigentes estándares\n" +
+                "internacionales de calidad y eficiencia en los procesos de\n" +
+                "manufactura. Proveen al mercado interno y destinan a la exportación\n" +
+                "un 40% de su producción.";
+
+        web="http://www.metalsa.com";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Quilmes";
+        text="Cervecería y Maltería Quilmes forma parte de Anheuser-Busch InBev,\n" +
+                "la compañía cervecera internacional líder y una de las cuatro\n" +
+                "empresas de consumo masivo más grandes del mundo, con sede en\n" +
+                "Leuven, Bélgica. Anheuser-Busch InBev cuenta con un portfolio de\n" +
+                "más de 200 marcas y con operaciones en más de 23 países.\n" +
+                "Cervecería y Maltería Quilmes es una de las compañías de bebidas\n" +
+                "más importantes de la región. Produce, elabora, distribuye y\n" +
+                "comercializa cervezas, gaseosas, aguas minerales, jugos e isotónicos,\n" +
+                "en alianza con empresas internacionales líderes como PepsiCo y\n" +
+                "Nestlé. Cervecería y Maltería Quilmes es líder en la categoría cervezas\n" +
+                "con alrededor del 75% del mercado y cuenta con una participación del\n" +
+                "mercado total de bebidas cercano al 30%, entre sus participaciones\n" +
+                "en cervezas, gaseosas y aguas.";
+
+        web="";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Laminados Reforzados";
+        text="En laminados reforzados su principal actividad es el procesamiento\n" +
+                "de piezas realizadas con plásticos reforzados con fibra de vidrio y\n" +
+                "resinas. No fabrica solamente piezas, si no que agrega valor al\n" +
+                "proceso. Se prevé el montaje, obteniéndose una pieza y una solución.\n" +
+                "Realizan componentes, lo que incluye su estudio para que sean\n" +
+                "productivos a la hora del ensamble. Su cadena logística, y su\n" +
+                "reposición y reparación.";
+
+        web="";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Gersolar";
+        text="La visita constará de tres partes, donde se visitará al Grupo Gersolar,\n" +
+                "dedicado al Asesoramiento, capacitación y difusión acerca de la\n" +
+                "distribución espacio-temporal de la irradiación solar global incidente\n" +
+                "sobre la superficie terrestre. Tambíen se visitará la planta piloto\n" +
+                "donde se realizan quesos y otros productos lácteos, y los tambos que\n" +
+                "posee la universidad.";
+
+        web="";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Metalsa";
+        text="Dentro de la industria automotriz y vehículos comerciales Metalsa ha\n" +
+                "probado ser una de las mejores opciones en la solución de\n" +
+                "componentes estructurales para vehículos ligeros y pesados.\n" +
+                "Siendo una empresa global, Metalsa cuenta con operaciones y\n" +
+                "centros de tecnología localizados estratégicamente alrededor del\n" +
+                "mundo, proporcionando un soporte integral a sus clientes a través de\n" +
+                "un servicio inigualable.";
+
+        web="http://www.metalsa.com";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="UNLP";
+        text="La universidad cuenta con bancos de prueba para la certificación de\n" +
+                "turbinas, a escala 1:1. Se visitará uno de los laboratorios de Hidraulica\n" +
+                "más grandes del país. A su vez se realizará una visita al laboratorio de\n" +
+                "Alta Tensión.";
+
+        web="";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="FRD";
+        text="Se realizará una visita técnica a los laboratorios de Mecánica,\n" +
+                "Biotecnología, Nanotecnología y Óptica, apreciando equipamiento\n" +
+                "diseñado por la propia universidad, e indagando sobre los grupos de\n" +
+                "investigación que funcionan allí.";
+
+        web="";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Trimak";
+        text="Trimak es una empresa formada en el año 1966 por un grupo familiar\n" +
+                "con amplios conocimientos técnicos en la elaboración de galletitas y\n" +
+                "budines.\n" +
+                "En los comienzos estuvimos abocados a la producción de pepas y\n" +
+                "scons; la constante superación nos ha permitido a través de los años\n" +
+                "aplicar nuevas y modernas tecnologías, las cuales han hecho que\n" +
+                "nuestra línea de productos creciera, pudiendo ofrecer hoy una amplia\n" +
+                "variedad de galletitas dulces (muchas de ellas bañadas con un\n" +
+                "exquisito chocolate de repostería), alfajores y budines (los cuales son\n" +
+                "elaborados durante todo el año).\n" +
+                "Nuestra producción esta cuidadosamente supervisada, por personal\n" +
+                "especializado que realiza un exhaustivo control tanto en las materias\n" +
+                "primas como en los productos finales, para acercarles a ustedes la\n" +
+                "mejor calidad.";
+
+        web="http://www.trimak.com.ar/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Gottert";
+        text="Diseñamos, fabricamos, comercializamos y brindamos servicios de\n" +
+                "montaje y asistencia técnica de equipos propios y marcas que\n" +
+                "representamos. Brindando atención personalizada con pilares en:\n" +
+                "flexibilidad, desarrollo profesional, satisfacción del cliente, ética y\n" +
+                "compromiso social y confiabilidad. Somos una empresa líder en\n" +
+                "soluciones para la industria ofreciendo equipamientos para el\n" +
+                "tratamiento de superficies, movimiento de materiales, industria de la\n" +
+                "madera y equipos especiales.";
+
+        web="http://www.gottert.com.ar/empresa";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Spirax Sarco";
+        text="Como proveedor líder de soluciones para el sistema de vapor, Spirax\n" +
+                "Sarco es el nombre que primero viene a la mente cuando los\n" +
+                "ingenieros en cualquier lugar del mundo piensan en ‘vapor’. La razón\n" +
+                "es que nuestro prestigio está construido sobre un siglo de experiencia\n" +
+                "y presencia global con más de 1.300 ingenieros de la industria en 34\n" +
+                "países diferentes.\n" +
+                "Estamos comprometidos a ayudarle a mejorar el rendimiento de su\n" +
+                "planta, a cumplir con la legislación, a alcanzar sus metas y a\n" +
+                "mantenerse un paso adelante de sus competidores.\n" +
+                "Desde el diseño, la instalación y la puesta en servicio de nuevas\n" +
+                "instalaciones y la optimización y actualización de los sistemas de\n" +
+                "vapor existentes hasta mantener el desempeño de planta por medio\n" +
+                "del mantenimiento programado, contamos con la experiencia, los\n" +
+                "recursos, los productos y los servicios para ayudarlo a alcanzar un\n" +
+                "crecimiento rentable.";
+
+        web="http://www.spiraxsarco.com/global/ar/Pages/About-Us.aspx";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Industrias Guidi";
+        text="Somos empresa familiar de capitales nacionales fundada por Fernand\n" +
+                "Guidi en 1960 dedicada a la fabricación de autopartes, como paneles\n" +
+                "de capot, paragolpes, paneles de piso, entre otras. Reconocemos la\n" +
+                "necesidad de realizar mejoras continuas en todos nuestros procesos\n" +
+                "para hacer frente al desafio de la competencia global de mercados.\n" +
+                "En este sentido, los objetivos propuestos año a año en materia de\n" +
+                "Seguridad, Calidad, Costos y Productividad son siempre desafiantes.";
+
+        web="http://www.industriasguidi.com.ar/esp/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Cartocor";
+        text="Somos una empresa con una visión clara, inclusiva e integradora;\n" +
+                "trabajamos sobre estrategias apoyadas en un sistema innovador, la\n" +
+                "continua evolución y la idea de ser parte de un mundo mejor.\n" +
+                "La integración de las empresas Cartocor y Converflex es un resultado\n" +
+                "natural, basado en los fuertes valores compartidos, como pilares\n" +
+                "fundamentales de la evolución.\n" +
+                "Vivimos la etapa anterior como la apertura a las oportunidades y ésta,\n" +
+                "como una etapa donde convergen la experiencia individual, los\n" +
+                "conocimientos adquiridos y el capital humano, puestos al servicio de\n" +
+                "un nuevo ciclo lleno de sueños por cumplir.\n" +
+                "La sinergia de Cartocor, una empresa enfocada en la fabricación y\n" +
+                "comercialización de cartón corrugado, y Converflex, especializada en\n" +
+                "los empaques flexibles, permite que hoy podamos verlas como una\n" +
+                "compañía sólida de empaque, con un enfoque más abarcador y la\n" +
+                "posibilidad de ofrecer al cliente soluciones integrales, sostenidas por\n" +
+                "el trabajo cooperativo.";
+
+        web="http://www.cartocor.com/cartocor/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Dimare";
+        text="Dimare SA somos una pyme familiar dedicada a fabricar juguetes. Fue\n" +
+                "fundada en 1965 por Antonio Dimare y actualmente se encuentra bajo\n" +
+                "su directiva junto con la de sus cinco hijos, que siguieron su legado.";
+
+        web="http://www.rasti.com.ar/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
     }
 

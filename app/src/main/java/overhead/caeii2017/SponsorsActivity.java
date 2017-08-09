@@ -35,12 +35,22 @@ public class SponsorsActivity extends AppCompatActivity {
         ImageView mercadolibre = (ImageView) findViewById(R.id.mercadolibre);
         ImageView femsa = (ImageView) findViewById(R.id.femsa);
         ImageView unilever = (ImageView) findViewById(R.id.unilever);
+        //ImageView pura = (ImageView) findViewById(R.id.pura);
         //ImageView inti = (ImageView) findViewById(R.id.inti);
 
         TextView exclusiveSponsor= (TextView) findViewById(R.id.exclusiveSponsorTextView);
         TextView sponsor= (TextView) findViewById(R.id.sponsorsTextView);
         //TextView aliados = (TextView) findViewById(R.id.aliadosTextView);
-
+/*
+        pura.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                Uri uri = Uri.parse(getString(R.string.puraWebPage));
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+*/
         dana.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
