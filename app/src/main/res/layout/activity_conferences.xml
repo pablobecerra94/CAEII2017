@@ -43,7 +43,9 @@
                 android:id="@+id/conferenceSpeaker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:padding="10dp"
+                android:text="TextView"
+                android:textSize="15sp" />
 
             <ImageView
                 android:id="@+id/speakerPicture"
@@ -59,7 +61,9 @@
                 android:id="@+id/conferenceText"
                 android:layout_width="match_parent"
                 android:layout_height="500dp"
-                android:text="TextView" />
+                android:padding="10dp"
+                android:text="TextView"
+                android:textSize="15sp" />
 
 
         </LinearLayout>
