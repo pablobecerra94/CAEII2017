@@ -14,7 +14,7 @@ public class TechnicalVisitisActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String[]items={getString(R.string.visitItemTest1),getString(R.string.visitItemTest2),getString(R.string.visitItemTest3)};
+        String[]items={"Tenaris","Bayer","Unilever"};
         ListView itemList;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_technical_visitis);
@@ -30,7 +30,7 @@ public class TechnicalVisitisActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String selectedItem = adapter.getItem(i);
-                Intent intent = new Intent(getApplicationContext(), VisitItem.class);
+                Intent intent = new Intent(getApplicationContext(), VisitsOpcionActivity.class);
                 intent.putExtra("VisitName", selectedItem);
                 startActivity(intent);
             }

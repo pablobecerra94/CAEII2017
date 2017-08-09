@@ -17,9 +17,13 @@ public class SqliteConector extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqlCreate = "DROP TABLE IF EXISTS Speakers";
+        sqLiteDatabase.execSQL(sqlCreate);
         sqlCreate = "DROP TABLE IF EXISTS TechnicalVisits";
+        sqLiteDatabase.execSQL(sqlCreate);
         sqlCreate = "DROP TABLE IF EXISTS Turns";
+        sqLiteDatabase.execSQL(sqlCreate);
         sqlCreate = "DROP TABLE IF EXISTS Conferences";
+        sqLiteDatabase.execSQL(sqlCreate);
 
         sqlCreate = "CREATE TABLE Speakers (name TEXT, SpeakerText TEXT)";
         sqLiteDatabase.execSQL(sqlCreate);
@@ -35,9 +39,14 @@ public class SqliteConector extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(sqlCreate);
         insertConferences(sqLiteDatabase);
 
+        sqlCreate = "CREATE TABLE VisitText(name TEXT, text TEXT, web TEXT)";
+        sqLiteDatabase.execSQL(sqlCreate);
+        insertVisitsText(sqLiteDatabase);
 
         // sqLiteDatabase.close();
     }
+
+
 
     private void insertConferences(SQLiteDatabase sqLiteDatabase) {
 
@@ -257,8 +266,66 @@ public class SqliteConector extends SQLiteOpenHelper {
         sqLiteDatabase.insert("Conferences", null, conference);
     }
 
+    private void insertVisitsText(SQLiteDatabase sqLiteDatabase) {
+
+        String name = "Tenaris";
+        String text = "Tenaris ofrece tecnología de productos avanzada y servicios de " +
+                "gestión de supply chain integrados a escala global a clientes tales " +
+                "como las principales compañías de petróleo y gas más importantes " +
+                "del mundo y a empresas de ingeniería e industriales. " +
+                "Tenaris es líder mundial en conexiones premium, y está a la " +
+                "vanguardia en el desarrollo de tecnologías tubulares necesarias no " +
+                "sólo para operar en los campos de petróleo y gas más complejos, sino " +
+                "también en aplicaciones estructurales y mecánicas de alto " +
+                "rendimiento. Constituida en Luxemburgo, Tenaris cotiza en las bolsas " +
+                "de valores de Milán, Buenos Aires y México; sus acciones bajo la " +
+                "forma de American Depositary Securities (ADS) cotizan en la Bolsa de " +
+                "Valores de Nueva York. Tenaris cumple con estándares de " +
+                "responsabilidad corporativa, transparencia financiera y publicación de " +
+                "información.";
+        String  web= "http://www.tenaris.com/es-ES/tenarisworldwide/southamerica/argentina.aspx";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+         name = "Bayer";
+         text = "Bayer es una compañía de Ciencias de la Vida con una historia de más " +
+                 "de 150 años y competencias básicas en las áreas de cuidados de la " +
+                 "salud y agricultura. Con sus productos innovadores, estan " +
+                 "contribuyendo a encontrar soluciones a algunos de los principales " +
+                 "desafíos de nuestro tiempo. Una población mundial en crecimiento y " +
+                 "cada vez más longeva requiere atención médica mejorada y un " +
+                 "suministro adecuado de alimentos. Bayer está mejorando la calidad " +
+                 "de vida de las personas mediante la prevención, alivio y tratamiento " +
+                 "de enfermedades. Y estan ayudando a proporcionar un suministro " +
+                 "fiable de alimentos de alta calidad, piensos y materias primas de " +
+                 "origen vegetal";
+        web= "http://www.bayer.com.ar/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+         name = "Unilever";
+         text = "Unilever produce y vende productos bajo el nombre de 400 marcas a " +
+                "nivel mundial. Cada día, dos mil millones de personas utilizan " +
+                "productos de Unilever para verse bien, sentirse bien y sacarle más " +
+                "provecho a la vida. Siete de cada diez hogares en el mundo tienen al " +
+                "menos un producto Unilever. Nuestras marcas líderes: Lipton, Knorr, " +
+                "Dove, Axe, Hellmann's y Omo. Cualquiera que sea la marca, donde sea " +
+                "que se compre, Unilever busca garantizar que ayude a cumplir su " +
+                "propósito como empresa: hacer de la sostenibilidad algo cotidiano";
+         web= "http://www.unilever.com.ar/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+
+    }
+
+    private void insertSpecificVisitText(SQLiteDatabase sqLiteDatabase, String name, String text,String web) {
+        ContentValues visit = new ContentValues();
+        visit.put("name", name);
+        visit.put("text", text);
+        visit.put("web",web);
+        sqLiteDatabase.insert("VisitText", null, visit);
+    }
+
     private void insertTurns(SQLiteDatabase sqLiteDatabase) {
-        String name = "Bodega Garbin";
+        String name = "Tenaris";
         int hour = 16;
         int minute =55;
         int number=1;
@@ -281,7 +348,7 @@ public class SqliteConector extends SQLiteOpenHelper {
         id++;
         insertSpecificTurn(sqLiteDatabase, name, hour, minute,number,id,alarm);
 
-        name="Ketobac";
+        name="Bayer";
         hour=19;
         minute=5;
         number=1;
@@ -305,7 +372,7 @@ public class SqliteConector extends SQLiteOpenHelper {
         id++;
         insertSpecificTurn(sqLiteDatabase, name, hour, minute,number,id,alarm);
 
-        name="El Secreto";
+        name="Unilever";
         hour=15;
         minute=45;
         number=1;
@@ -328,7 +395,7 @@ public class SqliteConector extends SQLiteOpenHelper {
     }
 
     private void insertTechnicalVisits(SQLiteDatabase sqLiteDatabase) {
-        String name = "Bodega Garbin";
+        String name = "Tenaris";
         int duration = 60;
         String address = "Castelli 1331";
         int day = 14;
@@ -338,7 +405,7 @@ public class SqliteConector extends SQLiteOpenHelper {
 
         insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
 
-        name = "Ketobac";
+        name = "Bayer";
         duration = 40;
         address = "Av San Martin 175 - Av. Hip. Irigoyen y Pelegrini";
         day = 13;
@@ -348,7 +415,7 @@ public class SqliteConector extends SQLiteOpenHelper {
 
         insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
 
-        name = "El Secreto";
+        name = "Unilever";
         duration = 90;
         address = "Ruta 144, km 674.5";
         day = 13;

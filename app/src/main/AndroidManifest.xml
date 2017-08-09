@@ -194,24 +194,45 @@
             android:name=".PilarOptionsActivity"
             android:label="PilarOptionsActivity"
             android:parentActivityName=".PilarsActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".PilarsActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PilarsActivity" />
         </activity>
-        <activity android:name=".PilarConferencesActivity"
-            android:label="PilarConferencesActivity"
-            android:parentActivityName=".PilarsActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".PilarsActivity" />
-        </activity>
-        <activity android:name=".ConferenceExoActivity"
+        <activity
+            android:name=".PilarConferencesActivity"
             android:label="PilarConferencesActivity"
             android:parentActivityName=".PilarsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PilarsActivity" />
         </activity>
+        <activity
+            android:name=".ConferenceExoActivity"
+            android:label="PilarConferencesActivity"
+            android:parentActivityName=".PilarsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PilarsActivity" />
+        </activity>
+
+        <activity
+            android:name=".VisitsOpcionActivity"
+            android:label="VisitsOpcionActivity"
+            android:parentActivityName=".TechnicalVisitisActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TechnicalVisitisActivity" />
+        </activity>
+
+        <activity
+            android:name=".VisitDescriptionActivity"
+            android:label="VisitDescriptionActivity"
+            android:parentActivityName=".TechnicalVisitisActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TechnicalVisitisActivity" />
+        </activity>
+        
     </application>
 
 </manifest>
