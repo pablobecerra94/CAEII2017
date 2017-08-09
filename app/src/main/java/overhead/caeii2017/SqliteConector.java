@@ -312,6 +312,69 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "propósito como empresa: hacer de la sostenibilidad algo cotidiano";
          web= "http://www.unilever.com.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
+        
+        name="La Fármaco";
+        text="Es una compañía que ofrece productos cosméticos de calidad y " +
+                "brinda soluciones para las necesidades diarias de cuidado e higiene " +
+                "personal.";
+        web="http://www.lafarmaco.com.ar/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Femsa";
+        text="FEMSA es una empresa líder que participa en la industria de bebidas" +
+                "operando Coca-Cola FEMSA, el embotellador público más grande de" +
+                "productos Coca-Cola en el mundo; y en el sector cervecero como el" +
+                "segundo accionista más importante de Heineken, una de las" +
+                "cerveceras líderes en el mundo con presencia en más de 70 países.";
+        web="http://www.coca-colafemsa.com/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Cesvi";
+        text="Es una empresa dedicada a la investigación, experimentación y" +
+                "análisis de la seguridad vial y automotriz. Desde 1996 analizan" +
+                "siniestros graves, estudian las causas que los generan y evaluan la" +
+                "seguridad de los autos y rutas del país. Todo este conocimiento se" +
+                "aplica en las capacitaciones de conducción segura y en los programas" +
+                "de educación vial destinados a niños y adolescentes. Además, CESVI" +
+                "ARGENTINA contribuye informando a la sociedad mediante la" +
+                "publicación de las investigaciones realizadas.";
+
+        web="http://www.cesvi.com.ar/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="I-Flow";
+        text="I-Flow es una empresa creada para Co-Gerenciar y operar las cadenas" +
+                "de abastecimiento de sus clientes en Argentina y MERCOSUR." +
+                "Es una única fuente para soluciones logísticas integrales. Basa su" +
+                "actividad en tres elementos: " +
+                "*Capacidad de reformular procesos" +
+                "*Gestión operativa" +
+                "*Sistemas de gestión" +
+                "Su Unidad de Comercio Internacional se encuentra exclusivamente" +
+                "dedicada al transporte terrestre entre Argentina, Brasil, Chile y el" +
+                "resto del MERCOSUR, creando condiciones de servicio que hacen que" +
+                "la atención sea prácticamente personalizada.";
+
+        web="http://www.iflow21.com/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="Galvasa";
+        text="GALVASA S.A., una empresa de capitales nacionales, participa desde" +
+                "hace treinta años en el mercado del galvanizado por inmersión en" +
+                "caliente. La planta de producción, de 2.000 m2, está ubicada a pocas" +
+                "cuadras de la ruta Panamericana (Autopistas del Sol; Acceso Norte)," +
+                "en la localidad de Munro, partido de Vicente López." +
+                "La empresa posee un sistema de galvanización para piezas pequeñas" +
+                "y roscadas, por sistema de centrifugado." +
+                "Las materias primas utilizadas en GALVASA no afectan el equilibrio del" +
+                "medio ambiente. La compañía participa del programa de producción" +
+                "limpia y competitividad empresarial, auspiciado por la Secretaría de" +
+                "Ambiente y Desarrollo Sustentable de la Nación.";
+
+        web="http://www.galvasa.com.ar/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+
 
 
     }
@@ -379,6 +442,42 @@ public class SqliteConector extends SQLiteOpenHelper {
         id++;
         insertSpecificTurn(sqLiteDatabase, name, hour, minute,number,id,alarm);
 
+        name="La Fármaco";
+        hour=15;
+        minute=45;
+        number=1;
+        id++;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number,id,alarm);
+
+        name="Femsa";
+        hour=15;
+        minute=45;
+        number=1;
+        id++;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number,id,alarm);
+
+        name="Cesvi";
+        hour=15;
+        minute=45;
+        number=1;
+        id++;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number,id,alarm);
+
+        name="I-Flow";
+        hour=15;
+        minute=45;
+        number=1;
+        id++;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number,id,alarm);
+
+        name="Galvasa";
+        hour=15;
+        minute=45;
+        number=1;
+        id++;
+        insertSpecificTurn(sqLiteDatabase, name, hour, minute,number,id,alarm);
+
+
 
     }
 
@@ -416,6 +515,56 @@ public class SqliteConector extends SQLiteOpenHelper {
         insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
 
         name = "Unilever";
+        duration = 90;
+        address = "Ruta 144, km 674.5";
+        day = 13;
+        month = 3;
+        year = 2017;
+        place = "Terminal de ómnibus Nestor Kirchner";
+
+        insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
+
+        name = "La Fármaco";
+        duration = 90;
+        address = "Ruta 144, km 674.5";
+        day = 13;
+        month = 3;
+        year = 2017;
+        place = "Terminal de ómnibus Nestor Kirchner";
+
+        insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
+
+        name = "Femsa";
+        duration = 90;
+        address = "Ruta 144, km 674.5";
+        day = 13;
+        month = 3;
+        year = 2017;
+        place = "Terminal de ómnibus Nestor Kirchner";
+
+        insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
+
+        name = "Cesvi";
+        duration = 90;
+        address = "Ruta 144, km 674.5";
+        day = 13;
+        month = 3;
+        year = 2017;
+        place = "Terminal de ómnibus Nestor Kirchner";
+
+        insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
+
+        name = "I-Flow";
+        duration = 90;
+        address = "Ruta 144, km 674.5";
+        day = 13;
+        month = 3;
+        year = 2017;
+        place = "Terminal de ómnibus Nestor Kirchner";
+
+        insertSpecificVisit(sqLiteDatabase, name, duration, address, day, month, year, place);
+
+        name = "Galvasa";
         duration = 90;
         address = "Ruta 144, km 674.5";
         day = 13;

@@ -14,7 +14,7 @@ public class TechnicalVisitisActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String[]items={"Tenaris","Bayer","Unilever"};
+        String[]items={"Tenaris","Bayer","Unilever","La Fármaco","Femsa","Cesvi","I-Flow","Galvasa"};
         ListView itemList;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_technical_visitis);
