@@ -99,35 +99,6 @@
                 android:padding="20dp"
                 app:srcCompat="@drawable/dana" />
 
-            <TextView
-                android:id="@+id/aliadosTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="@string/aliados" />
-
-            <ImageView
-                android:id="@+id/socialab"
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:padding="10dp"
-                app:srcCompat="@drawable/socialab" />
-
-            <ImageView
-                android:id="@+id/inti"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:padding="10dp"
-                app:srcCompat="@drawable/inti" />
-
-            <ImageView
-                android:id="@+id/cecilia"
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:padding="10dp"
-                app:srcCompat="@drawable/cecilia" />
-
         </LinearLayout>
     </ScrollView>
 

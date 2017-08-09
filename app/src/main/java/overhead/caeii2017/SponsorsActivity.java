@@ -28,18 +28,18 @@ public class SponsorsActivity extends AppCompatActivity {
         ImageView arcor = (ImageView) findViewById(R.id.arcor);
         ImageView penaflor = (ImageView) findViewById(R.id.penaflor);
         ImageView cnea = (ImageView) findViewById(R.id.cnea);
-        ImageView socialab = (ImageView) findViewById(R.id.socialab);
-        ImageView cecilia = (ImageView) findViewById(R.id.cecilia);
+        //ImageView socialab = (ImageView) findViewById(R.id.socialab);
+        //ImageView cecilia = (ImageView) findViewById(R.id.cecilia);
         ImageView dana = (ImageView) findViewById(R.id.dana);
         ImageView pae = (ImageView) findViewById(R.id.pae);
         ImageView mercadolibre = (ImageView) findViewById(R.id.mercadolibre);
         ImageView femsa = (ImageView) findViewById(R.id.femsa);
         ImageView unilever = (ImageView) findViewById(R.id.unilever);
-        ImageView inti = (ImageView) findViewById(R.id.inti);
+        //ImageView inti = (ImageView) findViewById(R.id.inti);
 
         TextView exclusiveSponsor= (TextView) findViewById(R.id.exclusiveSponsorTextView);
         TextView sponsor= (TextView) findViewById(R.id.sponsorsTextView);
-        TextView aliados = (TextView) findViewById(R.id.aliadosTextView);
+        //TextView aliados = (TextView) findViewById(R.id.aliadosTextView);
 
         dana.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
@@ -58,7 +58,7 @@ public class SponsorsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+/*
         cecilia.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
@@ -77,19 +77,19 @@ public class SponsorsActivity extends AppCompatActivity {
             }
         });
 
-        mercadolibre.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                Uri uri = Uri.parse(getString(R.string.mercadolibreWebPage));
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
-
         inti.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
                 Uri uri = Uri.parse(getString(R.string.intiWebPage));
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+*/
+        mercadolibre.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                Uri uri = Uri.parse(getString(R.string.mercadolibreWebPage));
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
@@ -152,7 +152,7 @@ public class SponsorsActivity extends AppCompatActivity {
 
         setTitleFont(exclusiveSponsor);
         setTitleFont(sponsor);
-        setTitleFont(aliados);
+        //setTitleFont(aliados);
 
     }
 

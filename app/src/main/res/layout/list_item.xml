@@ -5,12 +5,14 @@
     <TableRow>
         <ImageView
             android:id="@+id/image"
+            android:layout_marginLeft="2sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
             android:paddingBottom="@dimen/nav_header_vertical_spacing"/>
         <TextView
             android:id="@+id/text"
+            android:layout_marginLeft="12sp"
             android:textSize="20sp"
             android:gravity="center"
             android:layout_width="match_parent"

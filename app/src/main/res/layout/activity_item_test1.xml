@@ -25,84 +25,94 @@
     </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/appbar"
+        android:orientation="vertical"
+        android:padding="10dp"
         android:weightSum="1">
 
         <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Bodega"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/nameTextView" />
+            android:textSize="15sp" />
 
         <TextView
+            android:id="@+id/durationTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/durationTextView" />
+            android:textSize="15sp" />
 
         <TextView
+            android:id="@+id/addressTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/addressTextView" />
+            android:textSize="15sp" />
 
         <TextView
+            android:id="@+id/dayTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/dayTextView" />
+            android:textSize="15sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/turn1TextView"
-            android:layout_weight="0.97" />
-
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />
 
 
         <TextView
+            android:id="@+id/placeTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/placeTextView" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:elevation="0dp"
+            android:textSize="15sp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="340dp">
 
             <Spinner
+                android:id="@+id/spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="60dp"
-                android:id="@+id/spinner" />
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="60dp" />
 
             <TextView
-                android:text="Seleccionar horario"
+                android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/spinner"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="28dp"
-                android:id="@+id/textView9" />
+                android:text="Seleccionar horario"
+                android:textSize="15sp" />
 
             <CheckBox
-                android:text="Activar Alarma"
+                android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
+                android:layout_below="@+id/spinner"
                 android:layout_marginLeft="84dp"
                 android:layout_marginStart="84dp"
                 android:layout_marginTop="63dp"
-                android:id="@+id/checkBox"
                 android:checked="false"
-                android:onClick="alarm" />
+                android:onClick="alarm"
+                android:text="Activar Alarma" />
 
         </RelativeLayout>
     </LinearLayout>

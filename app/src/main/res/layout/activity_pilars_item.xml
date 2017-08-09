@@ -36,21 +36,20 @@
             android:orientation="vertical" >
 
             <ImageView
+                android:id="@+id/pilarPicture"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/logomenuprincipal"
 
-                android:id="@+id/pilarPicture"/>
+                android:padding="10dp"
+                app:srcCompat="@drawable/logomenuprincipal" />
 
             <TextView
+                android:id="@+id/pilarText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/pilarText" />
+                android:padding="10dp"
+                android:textSize="15sp" />
 
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="299dp"
-                android:id="@+id/itemList" />
         </LinearLayout>
     </ScrollView>
 
