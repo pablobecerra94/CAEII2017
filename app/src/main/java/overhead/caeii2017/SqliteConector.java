@@ -484,7 +484,7 @@ public class SqliteConector extends SQLiteOpenHelper {
         web="http://www.metalsa.com";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
-        name="Mercado Libre";
+        name="MercadoLibre";
         text="MercadoLibre es una empresa argentina dedicada a las compras entre\n" +
                 "usuarios inscritos a su servicio de compras, ventas y pagos por\n" +
                 "Internet. Cuenta con operaciones en su país de origen, así como\n" +
@@ -674,7 +674,7 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "electrónica y las comunicaciones, la seguridad y la protección, el\n" +
                 "hogar y la construcción, el transporte y la ropa.";
 
-        web="";
+        web="http://www.dupont.com.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
         name="CNEA";
@@ -698,10 +698,10 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "e incluso exporta otros radioisótopos —como el iodo-131 y el cobalto-\n" +
                 "60— que contribuyen al tratamiento de ciertos tipos de cáncer.";
 
-        web="";
+        web="http://www.cnea.gov.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
-        name="Textil Galfione";
+        name="Galfione";
         text="La visita abordará la seguridad en instalaciones electricas industriales\n" +
                 "y domiciliarias poniendo enfasis en la automatizacion logica cableada.\n" +
                 "Los orígenes de la Empresa Galfione y CIA S.R.L. se remontan\n" +
@@ -723,7 +723,7 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "funcionalidad desde el punto de vista del lay-out, como desde el\n" +
                 "punto de vista de seguridad.";
 
-        web="";
+        web="http://www.galfioneycia.com.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
         name="TRF";
@@ -757,7 +757,7 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "usa. Por eso adaptan soluciones fácil de instalar, de mantener, de\n" +
                 "poner en marcha y de usar.";
 
-        web="";
+        web="http://pura.com.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
         name="Schneider Electric";
@@ -768,10 +768,10 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "manufactura. Proveen al mercado interno y destinan a la exportación\n" +
                 "un 40% de su producción.";
 
-        web="http://www.metalsa.com";
+        web="http://www.schneider-electric.com.ar/es/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
-        name="Quilmes";
+        name="Cervecería y Maltería Quilmes";
         text="Cervecería y Maltería Quilmes forma parte de Anheuser-Busch InBev,\n" +
                 "la compañía cervecera internacional líder y una de las cuatro\n" +
                 "empresas de consumo masivo más grandes del mundo, con sede en\n" +
@@ -786,7 +786,7 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "mercado total de bebidas cercano al 30%, entre sus participaciones\n" +
                 "en cervezas, gaseosas y aguas.";
 
-        web="";
+        web="http://www.quilmes.com.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
         name="Laminados Reforzados";
@@ -798,7 +798,7 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "productivos a la hora del ensamble. Su cadena logística, y su\n" +
                 "reposición y reparación.";
 
-        web="";
+        web="http://www.laminadosreforzados.com.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
         name="Gersolar";
@@ -809,7 +809,7 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "donde se realizan quesos y otros productos lácteos, y los tambos que\n" +
                 "posee la universidad.";
 
-        web="";
+        web="http://www.gersol.unlu.edu.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
         name="Metalsa";
@@ -830,7 +830,7 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "más grandes del país. A su vez se realizará una visita al laboratorio de\n" +
                 "Alta Tensión.";
 
-        web="";
+        web="http://www.unlp.edu.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
         name="FRD";
@@ -839,7 +839,7 @@ public class SqliteConector extends SQLiteOpenHelper {
                 "diseñado por la propia universidad, e indagando sobre los grupos de\n" +
                 "investigación que funcionan allí.";
 
-        web="";
+        web="http://www.frd.utn.edu.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
         name="Trimak";
@@ -927,6 +927,15 @@ public class SqliteConector extends SQLiteOpenHelper {
         web="http://www.cartocor.com/cartocor/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
 
+        name="Escuela Técnica 29";
+        text="La visita abordará la seguridad en instalaciones electricas industriales"+
+        "y domiciliarias poniendo enfasis en la automatizacion logica cableada";
+        web="http://www.tecnica29.org/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+
+
+
         name="Dimare";
         text="Dimare SA somos una pyme familiar dedicada a fabricar juguetes. Fue\n" +
                 "fundada en 1965 por Antonio Dimare y actualmente se encuentra bajo\n" +
@@ -934,6 +943,18 @@ public class SqliteConector extends SQLiteOpenHelper {
 
         web="http://www.rasti.com.ar/";
         insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
+        name="CEAMSE";
+        text="CEAMSE es una empresa creada por los estados de la Provincia de\n" +
+                "Buenos Aires y la Ciudad de Buenos Aires para realizar la gestión\n" +
+                "integral de los Residuos sólidos urbanos del área metropolitana.\n" +
+                "Desde su creación hace más de 30 años, desarrolla tareas mediante\n" +
+                "los procesos más modernos de gestión ambiental, lo que implica un\n" +
+                "compromiso con la investigación e incorporación de nuevos métodos\n" +
+                "y tecnologías en la materia.";
+        web="http://www.ceamse.gov.ar/";
+        insertSpecificVisitText(sqLiteDatabase,name,text,web);
+
 
     }
 

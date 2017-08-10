@@ -14,7 +14,8 @@ public class TechnicalVisitisActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String[]items={"Tenaris","Bayer","Unilever","La Fármaco","Femsa","Cesvi","I-Flow","Galvasa"};
+        String[]items={"Tenaris","Bayer","Unilever","La Fármaco","Femsa","Cesvi","I-Flow","Galvasa","Sabic","Techo","Inti","Ruhrpumpen","Dana","Genrod","Loreal","Metalsa","MercadoLibre","CEAMSE","Edelflex","Valmec","Droguería del Sud","Globant", "Banco Alimentario de La Plata","Tigre","Sandvik","Telefónica", "Peisa",
+        "Pirelli","Du Pont","CNEA","Escuela Técnica 29","Galfione","TRF","Pura","Schneider Electric","Cervecería y Maltería Quilmes","Laminados Reforzados","Gersolar", "UNLP","FRD","Trimak","Gottert","Spirax Sarco","Industrias Guidi","Cartocor","Dimare"};
         ListView itemList;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_technical_visitis);
