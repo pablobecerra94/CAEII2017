@@ -29,7 +29,7 @@ public class VisitDescriptionActivity extends AppCompatActivity {
         TextView visitText = (TextView) findViewById(R.id.visitText);
         setTitle(visitName);
         Resources res = getResources(); //cambiemos kraken gato!
-        String imageName = visitName.toLowerCase().replace(" ","").replace("ñ","n").replace("í","i").replace("é","e").replace("á","a").replace("ó","o").replace("ú","u");
+        String imageName = visitName.toLowerCase().replace(" ","").replace("ñ","n").replace("í","i").replace("é","e").replace("á","a").replace("ó","o").replace("ú","u").replace("-","");
         int resID = res.getIdentifier(imageName , "drawable", getPackageName());
         visitPicture.setImageResource(resID);
 
