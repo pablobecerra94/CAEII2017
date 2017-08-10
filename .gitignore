@@ -36,5 +36,4 @@ captures/
 .idea/
 *.iml
 
-.app
-app/
+.app/
