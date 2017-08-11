@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -26,10 +27,7 @@ public class PilarConferencesActivity extends AppCompatActivity {
         setTitle(pilarName);
         setDisplayHomeAsUp();
 
-        Integer[] imageMision2050 = { R.drawable.schedules, R.drawable.conferences, R.drawable.technical_visits, R.drawable.speakers,R.drawable.speakers,R.drawable.speakers,R.drawable.speakers,R.drawable.speakers,R.drawable.speakers,R.drawable.speakers };
-        //   Integer[] imageADNIndustrial = { R.drawable.schedules, R.drawable.conferences, R.drawable.technical_visits, R.drawable.speakers, R.drawable.schedules, R.drawable.conferences, R.drawable.technical_visits, R.drawable.speakers };
-        Integer[] imageCartas = { R.drawable.schedules, R.drawable.conferences, R.drawable.technical_visits, R.drawable.speakers, R.drawable.speakers , R.drawable.speakers };
-        String[]itemsMision2050={"Transformando en hielo el calor","De la Biomecánica a la Ingeniería del Movimiento","Nanotecnología. Lo pequeño puede cambiar el mundo.","Rol del Ingeniero en las economías regionales","Ideas del futuro para ingenieros de hoy","La era de la innovación disruptiva","Proyectos de Inversión con Acero Galvanizado por Inmersión en Caliente","Transformemos el presente, porque el futuro es hoy","La caña de azúcar en el nuevo escenario energético","Inteligencia Tecnológica: conocer el camino recorrido para llegar más lejos en la innovación sostenible" };
+         String[]itemsMision2050={"Transformando en hielo el calor","De la Biomecánica a la Ingeniería del Movimiento","Nanotecnología. Lo pequeño puede cambiar el mundo.","Rol del Ingeniero en las economías regionales","Ideas del futuro para ingenieros de hoy","La era de la innovación disruptiva","Proyectos de Inversión con Acero Galvanizado por Inmersión en Caliente","Transformemos el presente, porque el futuro es hoy","La caña de azúcar en el nuevo escenario energético","Inteligencia Tecnológica: conocer el camino recorrido para llegar más lejos en la innovación sostenible" };
         // String[]itemsADNIndustrial={"Martín Urquizo", "Marcos Aquino", "Andrés Villamor", "Augusto Cicaré", "Eduardo Jorge Oreste", "Alejandro Leiras", "Mario Paredes", "Diego Prado"};
         String[]itemsCartas={"La excepción a la regla de Pareto","Siempre ganamos el juego que realmente estamos jugando","Eficiencia e imaginación para la Salud – Un Exo para Linda","La experiencia personal es intransferible","En búsqueda de tu propósito","¿Que nos dejó la Física del Siglo XX y cómo impactó en nuestras vidas?"};
 
@@ -39,7 +37,7 @@ public class PilarConferencesActivity extends AppCompatActivity {
 
         switch (pilarName){
             case "Mision 2050":
-                final CustomList adapterMision2050 = new CustomList(this, itemsMision2050, imageMision2050);
+                final ArrayAdapter<String> adapterMision2050 = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, itemsMision2050);
                 itemList.setAdapter(adapterMision2050);
                 itemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
@@ -66,7 +64,7 @@ public class PilarConferencesActivity extends AppCompatActivity {
                 });*/
                 break;
             case "Suma cartas a tu baraja":
-                final CustomList adapterCartas = new CustomList(this, itemsCartas, imageCartas);
+                final ArrayAdapter<String> adapterCartas = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, itemsCartas);
                 itemList.setAdapter(adapterCartas);
                 itemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
