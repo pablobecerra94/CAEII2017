@@ -30,14 +30,6 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".NewsActivity"
-            android:label="NewsActivity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
             android:name=".InformacionUtil.TouristGuideActivity"
             android:label="TouristGuideActivity"
             android:parentActivityName=".MainActivity">
@@ -100,15 +92,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Actividades.PilarsActivity" />
-        </activity>
-        <activity
-            android:name=".ScheduleActivity"
-            android:label="ScheduleActivity"
-            android:parentActivityName=".Actividades.ActivitiesActivity"
-            android:screenOrientation="landscape">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Actividades.ActivitiesActivity" />
         </activity>
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
