@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActivitiesActivity"
+            android:name=".Actividades.ActivitiesActivity"
             android:label="ActivitiesActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -38,7 +38,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".TouristGuideActivity"
+            android:name=".InformacionUtil.TouristGuideActivity"
             android:label="TouristGuideActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -46,7 +46,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".AboutUsActivity"
+            android:name=".QuienesSomos.AboutUsActivity"
             android:label="AboutUsActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -54,61 +54,61 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".MisionActivity"
+            android:name=".QuienesSomos.MisionActivity"
             android:label="MisionActivity"
-            android:parentActivityName=".AboutUsActivity">
+            android:parentActivityName=".QuienesSomos.AboutUsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".AboutUsActivity" />
+                android:value=".QuienesSomos.AboutUsActivity" />
         </activity>
         <activity
-            android:name=".AareiiActivity"
+            android:name=".QuienesSomos.AareiiActivity"
             android:label="AareiiActivity"
-            android:parentActivityName=".AboutUsActivity">
+            android:parentActivityName=".QuienesSomos.AboutUsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".AboutUsActivity" />
+                android:value=".QuienesSomos.AboutUsActivity" />
         </activity>
         <activity
-            android:name=".DelegationsActivity"
+            android:name=".QuienesSomos.DelegationsActivity"
             android:label="DelegationsActivity"
-            android:parentActivityName=".AboutUsActivity">
+            android:parentActivityName=".QuienesSomos.AboutUsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".AboutUsActivity" />
+                android:value=".QuienesSomos.AboutUsActivity" />
         </activity>
         <activity
-            android:name=".ContactActivity"
+            android:name=".QuienesSomos.ContactActivity"
             android:label="ContactActivity"
-            android:parentActivityName=".AboutUsActivity">
+            android:parentActivityName=".QuienesSomos.AboutUsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".AboutUsActivity" />
+                android:value=".QuienesSomos.AboutUsActivity" />
         </activity>
         <activity
-            android:name=".PilarsActivity"
+            android:name=".Actividades.PilarsActivity"
             android:label="PilarsActivity"
-            android:parentActivityName=".ActivitiesActivity">
+            android:parentActivityName=".Actividades.ActivitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ActivitiesActivity" />
+                android:value=".Actividades.ActivitiesActivity" />
         </activity>
         <activity
-            android:name=".PilarsItemActivity"
+            android:name=".Actividades.PilarsItemActivity"
             android:label="PilarsItemActivity"
-            android:parentActivityName=".PilarsActivity">
+            android:parentActivityName=".Actividades.PilarsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PilarsActivity" />
+                android:value=".Actividades.PilarsActivity" />
         </activity>
         <activity
             android:name=".ScheduleActivity"
             android:label="ScheduleActivity"
-            android:parentActivityName=".ActivitiesActivity"
+            android:parentActivityName=".Actividades.ActivitiesActivity"
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ActivitiesActivity" />
+                android:value=".Actividades.ActivitiesActivity" />
         </activity>
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -119,48 +119,48 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".TechnicalVisitisActivity"
+            android:name=".Actividades.TechnicalVisitisActivity"
             android:label="TechnicalVisitisActivity"
-            android:parentActivityName=".ActivitiesActivity">
+            android:parentActivityName=".Actividades.ActivitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ActivitiesActivity" />
+                android:value=".Actividades.ActivitiesActivity" />
         </activity>
         <activity
-            android:name=".VisitItem"
+            android:name=".Actividades.VisitItem"
             android:label="VisitItem"
-            android:parentActivityName=".TechnicalVisitisActivity">
+            android:parentActivityName=".Actividades.TechnicalVisitisActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TechnicalVisitisActivity" />
+                android:value=".Actividades.TechnicalVisitisActivity" />
         </activity>
-        <activity android:name=".AlarmActivity" />
+        <activity android:name=".Util.AlarmActivity" />
         <activity
-            android:name=".SpeakersActivity"
+            android:name=".Actividades.SpeakersActivity"
             android:label="SpeakersActivity"
-            android:parentActivityName=".ActivitiesActivity">
+            android:parentActivityName=".Actividades.ActivitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ActivitiesActivity" />
+                android:value=".Actividades.ActivitiesActivity" />
         </activity>
         <activity
-            android:name=".ConferencesActivity"
+            android:name=".Actividades.ConferencesActivity"
             android:label="ConferencesActivity"
-            android:parentActivityName=".ActivitiesActivity">
+            android:parentActivityName=".Actividades.ActivitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ActivitiesActivity" />
+                android:value=".Actividades.ActivitiesActivity" />
         </activity>
         <activity
-            android:name=".SpeakerItemActivity"
+            android:name=".Actividades.SpeakerItemActivity"
             android:label="SpeakerItemActivity"
-            android:parentActivityName=".SpeakersActivity">
+            android:parentActivityName=".Actividades.SpeakersActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SpeakersActivity" />
+                android:value=".Actividades.SpeakersActivity" />
         </activity>
         <activity
-            android:name=".SponsorsActivity"
+            android:name=".Sponsors.SponsorsActivity"
             android:label="SponsorsActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -168,69 +168,69 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".ScheduleDaysActivity"
-            android:parentActivityName=".ActivitiesActivity">
+            android:name=".Actividades.ScheduleDaysActivity"
+            android:parentActivityName=".Actividades.ActivitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ActivitiesActivity" />
+                android:value=".Actividades.ActivitiesActivity" />
         </activity>
         <activity
-            android:name=".InterestLinkActivity"
+            android:name=".InformacionUtil.InterestLinkActivity"
             android:label="InterestLinkActivity"
-            android:parentActivityName=".TouristGuideActivity">
+            android:parentActivityName=".InformacionUtil.TouristGuideActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TouristGuideActivity" />
+                android:value=".InformacionUtil.TouristGuideActivity" />
         </activity>
         <activity
-            android:name=".PlaneActivity"
+            android:name=".InformacionUtil.PlaneActivity"
             android:label="PlaneActivity"
-            android:parentActivityName=".TouristGuideActivity">
+            android:parentActivityName=".InformacionUtil.TouristGuideActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TouristGuideActivity" />
+                android:value=".InformacionUtil.TouristGuideActivity" />
         </activity>
         <activity
-            android:name=".PilarOptionsActivity"
+            android:name=".Actividades.PilarOptionsActivity"
             android:label="PilarOptionsActivity"
-            android:parentActivityName=".PilarsActivity">
+            android:parentActivityName=".Actividades.PilarsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PilarsActivity" />
+                android:value=".Actividades.PilarsActivity" />
         </activity>
         <activity
-            android:name=".PilarConferencesActivity"
+            android:name=".Actividades.PilarConferencesActivity"
             android:label="PilarConferencesActivity"
-            android:parentActivityName=".PilarsActivity">
+            android:parentActivityName=".Actividades.PilarsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PilarsActivity" />
+                android:value=".Actividades.PilarsActivity" />
         </activity>
         <activity
-            android:name=".ConferenceExoActivity"
+            android:name=".Actividades.ConferenceExoActivity"
             android:label="PilarConferencesActivity"
-            android:parentActivityName=".PilarsActivity">
+            android:parentActivityName=".Actividades.PilarsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PilarsActivity" />
+                android:value=".Actividades.PilarsActivity" />
         </activity>
 
         <activity
-            android:name=".VisitsOpcionActivity"
+            android:name=".Actividades.VisitsOpcionActivity"
             android:label="VisitsOpcionActivity"
-            android:parentActivityName=".TechnicalVisitisActivity">
+            android:parentActivityName=".Actividades.TechnicalVisitisActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TechnicalVisitisActivity" />
+                android:value=".Actividades.TechnicalVisitisActivity" />
         </activity>
 
         <activity
-            android:name=".VisitDescriptionActivity"
+            android:name=".Actividades.VisitDescriptionActivity"
             android:label="VisitDescriptionActivity"
-            android:parentActivityName=".TechnicalVisitisActivity">
+            android:parentActivityName=".Actividades.TechnicalVisitisActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TechnicalVisitisActivity" />
+                android:value=".Actividades.TechnicalVisitisActivity" />
         </activity>
         
     </application>

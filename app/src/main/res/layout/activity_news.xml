@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="overhead.caeii2017.ActivitiesActivity">
+    tools:context="overhead.caeii2017.Actividades.ActivitiesActivity">
 
     <ScrollView
         android:layout_width="match_parent"

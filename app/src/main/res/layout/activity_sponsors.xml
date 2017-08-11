@@ -5,7 +5,7 @@
     android:id="@+id/activity_sponsors"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="overhead.caeii2017.SponsorsActivity">
+    tools:context="overhead.caeii2017.Sponsors.SponsorsActivity">
 
     <ScrollView
         android:layout_width="match_parent"

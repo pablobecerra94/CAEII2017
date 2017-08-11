@@ -16,6 +16,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
+import overhead.caeii2017.Actividades.ActivitiesActivity;
+import overhead.caeii2017.InformacionUtil.TouristGuideActivity;
+import overhead.caeii2017.QuienesSomos.AboutUsActivity;
+import overhead.caeii2017.Sponsors.SponsorsActivity;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 

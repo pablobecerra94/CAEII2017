@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import overhead.caeii2017.QuienesSomos.AboutUsActivity;
+
 public class NewsActivity extends AppCompatActivity {
 
     @Override

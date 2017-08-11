@@ -5,7 +5,7 @@
     android:id="@+id/activity_speaker_item"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="overhead.caeii2017.SpeakerItemActivity">
+    tools:context="overhead.caeii2017.Actividades.SpeakerItemActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
