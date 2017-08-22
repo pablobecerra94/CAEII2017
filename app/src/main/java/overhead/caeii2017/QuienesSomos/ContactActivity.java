@@ -18,6 +18,9 @@ public class ContactActivity extends AppCompatActivity {
     private TextView coordinationMail;
     private TextView diffusionTitle;
     private TextView diffusionMail;
+    private TextView developers;
+    private TextView martin;
+    private TextView pablo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,13 +29,19 @@ public class ContactActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setTitle(R.string.contactTitle);
-        coordinationTitle=(TextView)findViewById(R.id.coordinationTItle);
+        coordinationTitle=(TextView)findViewById(R.id.coordinationTitle);
         coordinationMail=(TextView)findViewById(R.id.coordinationMail);
         diffusionTitle=(TextView)findViewById(R.id.diffusionTitle);
         diffusionMail=(TextView)findViewById(R.id.diffusionMail);
+        martin=(TextView)findViewById(R.id.martin);
+        pablo=(TextView)findViewById(R.id.pablo);
+        developers=(TextView)findViewById(R.id.developers);
         setFont(coordinationMail);
         setFont(diffusionMail);
+        setFont(martin);
+        setFont(pablo);
         setTitleFont(coordinationTitle);
+        setTitleFont(developers);
         setTitleFont(diffusionTitle);
 
         setDisplayHomeAsUp();
